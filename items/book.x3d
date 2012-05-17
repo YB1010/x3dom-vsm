@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D profile="Immersive" version="3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta content="book.x3d" name="title" />
+		<meta content="Book, Chamchuree Square Virtual Mall, Copyright [2012] By Hassadee Pimsuwan" name="creator" />
+		<meta content="http://hassadee.com" name="reference" />
+		<meta content="18 April 2012" name="created" />
+		<meta content="18 April 2012" name="modified" />
+		<meta content="Book" name="description" />
+		<meta content="/items/book.x3d" name="identifier" />
+		<meta content="Xcode 4.1" name="generator" />
+		<meta content="GNU GPLv2" name="license" />
+	</head>
+	<Scene>
+		<!-- START: BOOK -->
+		<Transform translation="0.15 1.20 1.15" rotation="0 1 0 0.78539816339745">
+			<Shape>
+				<Appearance DEF="top-button_plate_appearance">
+					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040689.gif"' ></ImageTexture>
+					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
+				</Appearance>
+				<Box DEF="BOOK" size="0.2 0.25 0.02" />
+			</Shape>
+		</Transform>
+		<!-- END BOOK -->
+		
+	</Scene>
+</X3D>

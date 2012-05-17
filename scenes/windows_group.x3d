@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D profile="Immersive" version="3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<head>
+		<meta content="window.x3d" name="title" />
+		<meta content="Window, Chamchuree Square Virtual Mall, Copyright [2012] By Hassadee Pimsuwan" name="creator" />
+		<meta content="http://hapztron.wordpress.com" name="reference" />
+		<meta content="28 February 2012" name="created" />
+		<meta content="28 February 2012" name="modified" />
+		<meta content="Definition and use of a Shelf node type." name="description" />
+		<meta content="/scenes/window.x3d" name="identifier" />
+		<meta content="Xcode 4.1" name="generator" />
+		<meta content="GNU GPLv2" name="license" />
+	</head>
+	<Scene>
+		<Transform translation="10.5 0 0">
+			<Group DEF="21_WINDOWS_GROUP">
+				<Transform translation="0 0 0">
+					<Inline DEF="WINDOW_URL" url="window.x3d" />
+				</Transform>
+			
+				<Group DEF="10_WINDOWS">
+					<Transform translation="1 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="2 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="3 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="4 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="5 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="6 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="7 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="8 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="9 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+					<Transform translation="10 0 0">
+						<Inline USE="WINDOW_URL" />
+					</Transform>
+				</Group>
+			
+				<Transform translation="-11 0 0">
+					<Group USE="10_WINDOWS"></Group>
+				</Transform>
+			</Group>
+		</Transform>
+		
+		<Transform translation="-10.5 0 0">
+			<Group USE="21_WINDOWS_GROUP"></Group>
+		</Transform>
+		
+	</Scene>
+</X3D>

@@ -1,0 +1,582 @@
+/*-------------------------------------------------------------------------------------
+ * Licensed under GNU GPLv2 (c) Hassadee Pimsuwan
+ * ------------------------------------------------------------------------------------
+ * ___ ____  _____  _______ _______  _____ _______   ______  ______   ___  ___
+ * | | | | |/ _ \ \/ ___)__) ___)__)/ _ \ \|  _ \ \ / ___)_)/ ___)_) / \_\/ \ \
+ * | |_| | | (_) |( (_(___( (_(___ | (_) | | | | | | (_(___| (_(___ (        ) )
+ * |  _  | |  _  | \___ \ \\___ \ \|  _  | | | | | |  ___)_)  ___)_) \      / /
+ * | | | | | | | | |___) ) )___) ) ) | | | | |_| | | (_(___| (_(___   \    / /
+ * |_|/|_|/|_|/|_|/(____/_/(____/_/|_|/|_|/|____/_/ \____)_)\____)_)   \__/_/
+ * Hassadee Pimsuwan - @hapztron - OTOP3D Project
+ * ------------------------------------------------------------------------------------
+ */
+
+li
+{
+	padding: 0 5px 0 5px;
+}
+
+#container
+{
+	width: 100%;
+}
+	#container > header
+	{
+		width: 960px;
+		height: 70px;
+		background: #FFB316;
+		overflow: hidden;
+		-moz-box-shadow:inset 0 0 3px #333;
+		-webkit-box-shadow:inset 0 0 3px #333;
+		box-shadow:inset 0 0 3px #333;
+	}
+	#container > header h1
+	{
+		position: absolute;
+		left: 50%;
+		margin: 10px 0 0 -470px;
+		width: 450px;
+	}
+	#container > header li, #container > footer li, #container > nav li
+	{
+		float: left;
+	}
+
+	#container > nav
+	{
+		position: absolute;
+		background: transparent;
+		width: 280px;
+		height: 60px;
+		padding: 5px 5px 5px 5px;
+		line-height: 20px;
+		left: 620px;
+		float: right;
+	}
+	#container > nav ul
+	{
+		float: right;
+	}
+	#container > nav a
+	{
+		font-size: 12px;
+		text-decoration: none;
+	}
+	#container > section
+	{
+		margin: 0px 0px 0px 0px;
+	}
+  	#container > footer
+	{
+		position: fixed;
+		width: 100%;	
+		height: 20px;
+		overflow-x: hidden;
+		background: #F9990C;
+		bottom: 0px;
+		
+		box-shadow: inset 0 0 10px #000;
+		-webkit-box-shadow: inset 0 0 10px #000;
+		-moz-box-shadow: inset 0 0 10px #000;
+  	}
+	#container > footer ul
+	{
+		margin: 0px 0 0px 80px;
+	}
+	#container > footer a
+	{
+		position: absolute;
+		left: 50%;
+		margin: 0 0 0 -490px;
+		font-size: 10px;
+		line-height: 20px;
+		color: #FFF;
+	}
+
+.sidebox
+{
+	position: absolute;
+	background-color: #F4F4F4;
+	width: 300px;
+	height: 500px;
+	margin: 10px 0 0 10px;
+}
+
+.sidebox input {
+	width: 25px;
+	height: 25px;
+	margin: 0 0 20px 0;
+	
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.navcircle, .navcircle:hover
+{
+	position: relative;
+	width: 60px; 
+	height: 60px; 
+	border-radius: 30px; 
+	-moz-border-radius: 30px; 
+	-webkit-border-radius: 30px;
+	background: #333;
+	float: left;
+	z-index: 3;
+	
+	-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+}
+
+.navbar
+{
+	position: absolute;
+	width: 60px;
+	top: 10px;
+	color: #FFF;
+	text-align: center;
+}
+
+.navcircle
+{	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+	filter: alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	
+	box-shadow:inset 0 0 5px #000;
+	-webkit-box-shadow:inset 0 0 5px #000;
+	-moz-box-shadow:inset 0 0 5px #000;
+}
+.navcircle:hover
+{	
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	-moz-opacity:1.0;
+	-khtml-opacity: 1.0;
+	opacity: 1.0;
+}
+
+.login_form, .signup_form
+{
+	width: 460px;
+	height: 280px;
+	background-color: #FFF;
+	margin: 20px auto 0 auto;
+	padding: 20px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-box-shadow: inset 0 0 3px #333;
+	-moz-box-shadow: inset 0 0 3px #333;
+	box-shadow: inset 0 0 3px #333;
+}
+
+.login_form h2
+{
+	padding: 10px 10px 10px 10px;
+}
+
+.login_form input[type=submit], .signup_form input[type=submit]
+{
+	width: 180px;
+	height: 40px;
+	margin: 10px auto 0 140px;
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	
+	border: 1px solid #777;
+	background: -moz-linear-gradient(top, #C7E729 0%, #79C21E 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C7E729), color-stop(100%,#79C21E)); /* webkit */
+	
+	font-size: 16px;
+	text-align: center;
+	color: #f2f2f2;
+	text-shadow: 0px -1px 0px #334f71;
+	
+	-transition: all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+}
+
+input {
+	width: 435px;
+	height: 35px;
+	padding: 0px 10px 0px 10px;
+	margin: 0 0 20px 0;
+	
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	
+	-moz-box-shadow: 0px 1px 0px #F2F2F2;
+	-webkit-box-shadow: 0px 1px 0px #F2F2F2;
+	box-shadow: 0px 1px 0px #F2F2F2;
+	
+	font-size: 16px;
+	color: #FFF;
+	text-shadow: 0px -1px 0px #334F71;
+}
+input:-webkit-input-placeholder, input:-moz-placeholder {
+	color: #F4F4F4;
+	text-shadow: 0px -1px 0px #38506B;
+}
+
+textarea {
+	width: 435px;
+	height: 80px;
+	padding: 10px 10px 0px 10px;
+	margin: 0 0 20px 0;
+	
+	background: #5E768D;
+	background: -moz-linear-gradient(top, #546A7F 0%, #5E768D 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#546A7F), color-stop(20%,#5E768D)); /* webkit */
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	-moz-box-shadow: 0px 1px 0px #F2F2F2;
+	-webkit-box-shadow: 0px 1px 0px #F2F2F2;
+	box-shadow: 0px 0px 5px #F2F2F2;
+	
+	font-size: 16px;
+	color: #F4F4F4;
+	text-shadow: 0px -1px 0px #334f71;
+}
+
+select {
+	width: 455px;
+	height: 80px;
+	margin: 0 0 20px 0;
+}
+
+input:focus, textarea:focus {
+	background: #728EAA;
+	background: -moz-linear-gradient(top, #668099 0%, #728eaa 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#668099), color-stop(20%,#728eaa)); /* webkit */
+}
+
+input[type=submit] {
+	width: 455px;
+	height: 40px;
+	padding: 5px 10px 0px 10px;
+	margin: 10px 15px 0 0;
+	
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 5px #999;
+	
+	border: 1px solid #556f8c;
+	background: -moz-linear-gradient(top, #C7E729 0%, #79C21E 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C7E729), color-stop(100%,#79C21E)); /* webkit */
+	cursor: pointer;
+}
+
+/* Below this line, code that used to uploader.php */
+
+.uploadform {
+	position: absolute;
+	left: 50%;
+	width: 980px;
+	margin: 10px 0 10px -490px;
+	padding: 20px 10px 50px 10px;
+	background-color: #FFF;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.fileform {
+	position: relative;
+	left: 50%;
+	width: 600px;
+	margin: 10px 0 10px -300px;
+	padding: 20px 10px 50px 10px;
+	
+	background-color: #FFF;
+	border: 1px solid #F0F0F0;
+}
+
+.uploadform input[type=file], .fileform input[type=file] {
+	background: #FFF;
+}
+
+.catnameline, .itemcontainer, .category_container {
+	position: relative;
+	width: 980px;
+	left: 50%;
+	margin: 10px 0 10px -490px;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	border: 1px solid #D9D9D9;
+}
+
+.catnameline {
+	height: 30px;
+	background: #6B8F94;
+}
+
+.textincat {
+	position: absolute;
+	height: 20px;
+	margin: 5px 0 0 20px;
+	
+	font-size: 16px;
+	color: #FFF;
+	line-height: 18px;
+}
+
+.category_container {
+	height: 125px;
+}
+
+.category_container li {
+	width: 95px;
+	height: 95px;
+	float: left;
+	margin: 10px 0 0 10px;
+	padding: 5px 5px 0 0;
+	border: 1px solid #D9D9D9;
+	
+	background-color: #777;
+	background: -moz-linear-gradient(top, #F4F4F4 0%, #D9D9D9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F4F4F4), color-stop(100%, #D9D9D9)); /* webkit */
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	cursor: pointer;
+	
+	text-align: right;
+}
+
+.category_container li:hover {
+	background-color: #777;
+	background: -moz-linear-gradient(top, #FFF 0%, #D9D9D9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #D9D9D9)); /* webkit */
+}
+
+.itemcontainer, .category_container {
+	background: #FFF;
+}
+
+.itemcontainer ul {
+	padding: 5px 5px 5px 5px;
+}
+
+.itemcontainer li {
+	width: 940px;
+	height: 120px;
+	margin: 10px 0 10px 10px;
+	border: 1px solid #D9D9D9;
+	
+	background-color: #777;
+	background: -moz-linear-gradient(top, #F4F4F4 0%, #D9D9D9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F4F4F4), color-stop(100%, #D9D9D9)); /* webkit */
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	cursor: pointer;
+}
+
+.itemcontainer li:hover {
+	background-color: #777;
+	background: -moz-linear-gradient(top, #FFF 0%, #D9D9D9 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #D9D9D9)); /* webkit */
+}
+
+.itemcontainer img
+{
+	margin: 10px 0 0 10px;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 5px #999;
+}
+
+.itemcontainer li h1, .itemcontainer li h2, .itemcontainer li h3 {
+	position: absolute;
+}
+
+.itemcontainer li h1 {
+	font-size: 20px;
+	margin: -100px 0 0 140px;
+}
+
+.itemcontainer li h2 {
+	font-size: 14px;
+	margin: -70px 0 0 140px;
+}
+
+.itemcontainer li h3 {
+	font-size: 14px;
+	margin: -40px 0 0 140px;
+}
+
+.itemcontainer li p {
+	font-size: 14px;
+	margin: 20px 0 0 20px;
+}
+
+.itemcontainer_panel {
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	margin: -100px 0 0 700px;
+
+	background: #FFF;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	
+	-moz-box-shadow: inset 0px 0px 5px #999;
+	-webkit-box-shadow: inset 0px 0px 5px #999;
+	box-shadow: inset 0px 0px 5px #999;
+}
+
+.itemcontainer_panel a {
+	position: absolute;
+	width: 80px;
+	padding: 10px 10px 10px 10px;
+	margin: 35px 0 0 55px;
+	text-align: center;
+	
+	background: #22C6B5;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 5px #999;
+}
+
+.product_detail {
+	position: absolute;
+	left: 50%;
+	width: 980px;
+	height: 520px;
+	margin: 10px 0 0 -490px;
+	border: 1px solid #D9D9D9;
+	
+	background-color: #FFF;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.product_detail img {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	margin: 10px 0 0 20px;
+	border: 1px solid #D9D9D9;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.product_detail_panel {
+	position: absolute;
+	width: 200px;
+	margin: 220px 0 0 20px;
+	padding-bottom: 20px;
+	border: 1px solid #D9D9D9;
+	background: #C7F25F;
+	display: block;
+	overflow: hidden;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.product_detail_panel p {
+	font-size: 14px;
+	margin: 10px 0 0 10px;
+}
+
+.product_detail_visual_panel {
+	position: absolute;
+	width: 470px;
+	height: 320px;
+	margin: 10px 0 0 240px;
+	border: 1px solid #D9D9D9;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.config_panel {
+	position: absolute;
+	width: 180px;
+	height: 100px;
+	margin: 10px 0 0 730px;
+	
+	border: 1px solid #D9D9D9;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.config_panel li {
+	width: 140px;
+	height: 15px;
+	margin: 10px 0 0 10px;
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	
+	background: #A3B289;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	
+	-moz-box-shadow: 0px 0px 5px #999;
+	-webkit-box-shadow: 0px 0px 5px #999;
+	box-shadow: 0px 0px 5px #999;
+}
+
+.config_panel a {
+	text-decoration: none;
+}
+
+.config_panel_purchase {
+	background: #22C6B5;
+}

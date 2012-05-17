@@ -1,0 +1,34 @@
+/*-------------------------------------------------------------------------------------
+ * Licensed under GNU GPLv2 (c) Hassadee Pimsuwan
+ * ------------------------------------------------------------------------------------
+ * ___ ____  _____  _______ _______  _____ _______   ______  ______   ___  ___
+ * | | | | |/ _ \ \/ ___)__) ___)__)/ _ \ \|  _ \ \ / ___)_)/ ___)_) / \_\/ \ \
+ * | |_| | | (_) |( (_(___( (_(___ | (_) | | | | | | (_(___| (_(___ (        ) )
+ * |  _  | |  _  | \___ \ \\___ \ \|  _  | | | | | |  ___)_)  ___)_) \      / /
+ * | | | | | | | | |___) ) )___) ) ) | | | | |_| | | (_(___| (_(___   \    / /
+ * |_|/|_|/|_|/|_|/(____/_/(____/_/|_|/|_|/|____/_/ \____)_)\____)_)   \__/_/
+ * Hassadee Pimsuwan - @hapztron
+ * ------------------------------------------------------------------------------------
+ */
+
+h1, h2, h3, h4, h5, h6 { color:#333; }
+h1 {
+	font-size: 25px;
+	font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, sans-serif;
+	color: #FFF;
+}
+h2 { font-size: 23px; }
+h3 { font-size: 21px; }
+h4 { font-size: 19px; }
+h5 { font-size: 17px; }
+h6 { font-size: 15px; }
+p, h1, h2, h3, h4, h5, h6, ul {	margin-bottom: 20px; }
+
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+a
+{
+	text-decoration: none; 
+	color: #F4F4F4;
+	text-shadow: 1px 1px 0 #000;
+}

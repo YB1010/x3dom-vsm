@@ -1,0 +1,28 @@
+var FloorObjectData_1 = {
+	"ObjectName" : "Floor",
+	"Transform" :
+	[
+	 { "translation" : },
+	 { "scale" : "1 1 1" },
+	 { "rotation" : "0 1 0 0" }
+	]
+	"Shape" :
+	[
+	 { "shapeName" : "Box"},
+	 { "shapeSize" : "8, 0.1, 4" },
+	 { "solid" : "false" }
+	]
+	"Unity" : "true",
+	"xDimension" : 50,
+	"zDimension" : 50,
+	"xSpacing" : 10,
+	"zSpacing" : 10,
+	"Appearance" :
+	[
+	 { "Material" : ""}
+	]
+	"LOD" :
+	[
+	 { "center" : "0 0 0" },
+	 { "range" : 40 }
+	]
