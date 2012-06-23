@@ -5,7 +5,7 @@
 		<meta name="description" content="Particlewall3d" />
 		<meta name="keywords" content="Particlewall3d"/>
 		<meta itemprop="description" content="Particlewall3d" />
-		<title>VIRTUAL MALL WEB3D</title>
+		<title>VIRTUAL REALITY BOOK STORE</title>
 		
 		<link rel="shortcut icon" href="styles/favicon/favicon.ico" type="image/x-icon"/>
         <link rel="stylesheet" type="text/css" href="styles/x3dom.css" />
@@ -52,19 +52,6 @@
 		<script src="javascripts/glassbox/glassbox.js" type="text/javascript"></script>
 		
 		<script type="text/javascript">
-			function flashnotice_2() {
-				var myBox_2 = new GlassBox();
-				myBox_2.init( 'myBox_2', '820px', '440px', 'hidden', '', true, true );
-				myBox_2.lbo( true, 0.0 ); 
-				myBox_2.appear();
-			}
-			
-			function flashnotice_1() {
-				var Shelf_1 = new GlassBox();
-				Shelf_1.init( 'Shelf_1', '820px', '440px', 'hidden', '', true, true );
-				Shelf_1.lbo( true, 0.0 ); 
-				Shelf_1.appear();
-			}
 			
 			document.onload = function() {
 				/*
@@ -90,7 +77,7 @@
 				var ySize = 0.1;
 				var zSize = 9;
 				var zSize2 = 8;
-				var Range = 100;
+				var Range = 25;
 				for (var loop = 0; loop < 5; loop++) {
 					renderFloor(xPos[loop], yPos, zPos, xSize[loop], ySize, zSize, Range);
 					renderFloor(xPos[loop], yPos, zPos2, xSize[loop], ySize, zSize2, Range);
@@ -101,7 +88,7 @@
 				var windowURL = "scenes/window.x3d";
 				var window_xPos = -21;
 				for (var windowLoop = 0; windowLoop < 42; windowLoop++) {
-					renderInlineLOD(windowId, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 5);
+					renderInlineLOD(windowId, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 50);
 					window_xPos += 1;
 				}
 
@@ -109,8 +96,8 @@
 				var windowId_left = "Windows_Left";
 				var window_xPos = -2;
 				for (var windowLoop = 0; windowLoop < 4; windowLoop++) {
-					renderInlineLOD(windowId_right, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 5);
-					renderInlineLOD(windowId_left, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 5);
+					renderInlineLOD(windowId_right, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 50);
+					renderInlineLOD(windowId_left, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 50);
 					window_xPos += 1;
 				}
 				/* End: Windows */
@@ -127,11 +114,83 @@
 						psx = -12.5;
 						psz += 4;
 					}
-					renderInlineLOD(pid, psx, psy, psz, 0, 1, 0, 0.78539816339745, purl, 5);
+					renderInlineLOD(pid, psx, psy, psz, 0, 1, 0, 0.78539816339745, purl, 50);
 					psx += 8;
 				}
 				/* End: Pillars */
+
+				/* Start: SpotLightsGroup */
+				var ambientIntensity = 0;
+				var attenuation = "1 0 0";
+				var beamWidth = 0.39;
+				var color = "0.698 0.698 0.698";
+				var cutOffAngle = 1.57;
+				var direction = "0 -1 0";
+				var intensity = 1;
+				var location = new Array();
+				location = ["-16 4 -23", "-8 4 -23", "0 4 -23", "8 4 -23", "16 4 -23"];
+				var radius = 20;
+
+				for (var SpotLightLoop = 0; SpotLightLoop < location.length; SpotLightLoop++) {
+					renderSpotLight("SpotLightsGroup", ambientIntensity, attenuation, beamWidth, color, cutOffAngle, direction, intensity, location[SpotLightLoop], radius);
+				}
+				/* End: SpotLightsGroup */
 			}
+			
+			function flashnotice_1()
+			{
+				var Shelf_1 = new GlassBox();
+				Shelf_1.init( 'Shelf_1', '820px', '440px', 'hidden', '', true, true );
+				Shelf_1.lbo( true, 0.0 ); 
+				Shelf_1.appear();
+			}
+
+			function flashnotice_2()
+			{
+				var Shelf_2 = new GlassBox();
+				Shelf_2.init( 'Shelf_1', '820px', '440px', 'hidden', '', true, true );
+				Shelf_2.lbo( true, 0.0 ); 
+				Shelf_2.appear();
+			}
+
+			function modHitPoint(hitPnt)
+	        {
+	            // Show hitPnt value.
+	            console.log("HitPoint = " + hitPnt);
+
+	            var setHitPoint = [hitPnt[0], 0.875, hitPnt[2]];
+	            var newHitPoint = new Array();
+	            newHitPoint = setHitPoint;
+
+	            var setAvatarPoint = [hitPnt[0], 2, hitPnt[2]+7.5];
+	            var newAvatarPoint = new Array();
+	            newAvatarPoint = setAvatarPoint;
+
+	            var setAvatarLightPoint = [hitPnt[0], 1.8, hitPnt[2]];
+	            var newAvatarLightPoint = new Array();
+	            newAvatarLightPoint = setAvatarLightPoint;
+
+	            // Show newHitPoint value.
+	            console.log("newHitPoint = " + newHitPoint);
+	            // Show newAvatarPoint value.
+	            console.log("newAvatarPoint = " + newAvatarPoint);
+	            // Show newAvatarLightPoint value.
+	            console.log("newAvatarLightPoint = " + newAvatarLightPoint);
+
+	            document.getElementById('AvatarPC').setAttribute('set_destination', newHitPoint);
+	            document.getElementById('ViewpointPC').setAttribute('set_destination', newAvatarPoint);
+	            document.getElementById('AvatarLightPC').setAttribute('set_destination', newAvatarLightPoint);
+
+	            /*
+	            document.getElementById('xHitPoint').innerHTML = newHitPoint[0];
+	            document.getElementById('yHitPoint').innerHTML = newHitPoint[1];
+	            document.getElementById('zHitPoint').innerHTML = newHitPoint[2];
+
+	            document.getElementById('xYourHitPoint').innerHTML = hitPnt[0];
+	            document.getElementById('yYourHitPoint').innerHTML = hitPnt[1];
+	            document.getElementById('zYourHitPoint').innerHTML = hitPnt[2];
+	            */
+	        }
 			
 		</script>
 		
@@ -142,39 +201,80 @@
 		
 			<header>
 				<div class="text_header">
-					<h1>CHAMCHUREE SQUARE VIRTUAL MALL</h1>
+					<h1>VIRTUAL REALITY BOOK STORE</h1>
 				</div>
 			</header>
-			
+			<!--
 			<nav>
-
-				<!--
 				<ul>
 					<li><a href="../index.php">BACK</a></li>
 				</ul>
-			-->
 			</nav>
-				
+		-->
 			<section>
 					
 				<X3D id="x3dom-scene">
 					<Scene>
 						
-						<Viewpoint DEF="InsideElevatorView" jump="false"></Viewpoint>
-						<Viewpoint id="cam1" position='0 0 -20' description="Camera 1"></Viewpoint>
-						<Viewpoint id="cam2" position='-1 0 5' description="Camera 2"></Viewpoint>
-						<Viewpoint id="cam3" position='0 2 5' description="Camera 3"></Viewpoint>
-						<Viewpoint id="cam4" position='2 0 5' description="Camera 4"></Viewpoint>
+						<Viewpoint id="ViewpointMarker" jump="false" position="0 1.75 -10"></Viewpoint>						
+						<positionChaser id="ViewpointPC" duration="2" initialDestination="0 0.875 -12" initialValue="0 0.875 -12" ></positionChaser>
+            			<route fromNode="ViewpointPC" fromField='value_changed' toNode='ViewpointMarker' toField='position'></route>
 
-						<Background skyColor="1 1 1"></Background>
-						
-						<!-- Roof -->
-						<Transform translation="0 4.5 -21.5">
+						<Transform DEF="Avatar" translation="0 0.875 0" scale="1 1 1" center="0 0 0">
 							<Shape>
 								<Appearance>
-									<Material diffuseColor="0.4 0.4 0.4" />
+									<Material diffuseColor="0.0 0.8 0.4" specularColor="1 1 1"></Material>
 								</Appearance>
-								<Box size="42 1 17" />
+								<Box size="0.5 1.75 0.5" />
+							</Shape>
+								<!-- <Inline url="models/lugia.x3d"></Inline> -->
+            			</Transform>
+
+            			<PointLight DEF="AvatarLight"
+            				on="TRUE" intensity="1"
+            				ambientIntensity="0.0000"
+            				color="0.698 0.698 0.698"
+							location="0 1.8 -15"
+							attenuation="1.0000 0.0000 0.0000"
+							radius="50"></PointLight>
+
+						<positionChaser id="AvatarLightPC" duration="1.5" initialDestination="0 1.8 -15" initialValue="0 1.8 -15" ></positionChaser>
+            			<route fromNode="AvatarLightPC" fromField="value_changed" toNode="AvatarLight" toField="location"></route>
+
+            			<!-- START: FLOOR 0 -->
+						<Transform onclick="modHitPoint(event.hitPnt);
+                        console.log('X = ' + event.hitPnt[0] + ' Y = ' + event.hitPnt[1] + ' Z = ' + event.hitPnt[2]);" translation="0 -0.05 -28" id="FloorProto"></Transform>
+
+						<positionChaser id="AvatarPC" duration="1.5" initialDestination="0 0.875 -15" initialValue="0 0.875 -15" ></positionChaser>
+            			<route fromNode='AvatarPC' fromField='value_changed' toNode="Avatar" toField="translation"></route>
+						<!-- END: FLOOR 0 -->
+
+						<!--
+						<Viewpoint id="cam2" position='-1 0 5' description="Camera 2"></Viewpoint>
+					-->
+						
+						<!--
+						<Background skyColor="1 1 1"></Background>
+						-->
+
+						<Background groundAngle='1.57079'
+						groundColor='1 0.8 0.6 0.6 0.4 0.2'
+						skyAngle='0.2 1.57079'
+						skyColor='1 1 1'
+						backUrl='"texture/sky/BK.png"'
+						bottomUrl='"texture/sky/DN.png"'
+						frontUrl='"texture/sky/FR.png"'
+						leftUrl='"texture/sky/LF.png"'
+						rightUrl='"texture/sky/RT.png"'
+						topUrl='"texture/sky/UP.png"'></Background>
+
+						<!-- Roof -->
+						<Transform translation="0 3.95 -21.5">
+							<Shape>
+								<Appearance>
+									<Material diffuseColor="0.4 0.4 0.4" specularColor="0 0 0" />
+								</Appearance>
+								<Box size="42 0.1 17" />
 							</Shape>
 						</Transform>
 
@@ -197,230 +297,171 @@
 								<Box size="0.06 4 13" />
 							</Shape>
 						</Transform>
-				
-
-						<!--
-						<background groundAngle='1.57079'
-						groundColor='1 0.8 0.6 0.6 0.4 0.2'
-						skyAngle='0.2 1.57079'
-						skyColor='1 1 0 1 1 1 0.2 0.2 1'
-						backUrl='"texture/sky/BK.png"'
-						bottomUrl='"texture/sky/DN.png"'
-						frontUrl='"texture/sky/FR.png"'
-						leftUrl='"texture/sky/LF.png"' rightUrl='"texture/sky/RT.png"' topUrl='"texture/sky/UP.png"' ></background>
-						
-						<background id="bg0" skyColor='0.9 0.9 0.9' description="Background 2"></background>
-						<background id="bg1" skycolor='0.05 0.12 0.23' description="Background 1"></background>
-						-->
-										
-						<!-- START: FLOOR 0 -->
-						<Transform translation="0 -0.05 -28" id="FloorProto"></Transform>
-						<!-- END: FLOOR 0 -->
 
 						<!-- Light must not over than 8 nodes -->
+						<Group id="SpotLightsGroup"></Group>
 						<!--
 						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-8 2 -21" on="true" radius="10" ></SpotLight>
+							direction="0 -1 0" global="false" intensity="1" location="-16 4 -23" on="true" radius="20" ></SpotLight>
 
 						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-8 2 -25" on="true" radius="10" ></SpotLight>
+							direction="0 -1 0" global="false" intensity="1" location="-8 4 -23" on="true" radius="20" ></SpotLight>
 
 						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-12 2 -21" on="true" radius="10" ></SpotLight>
+							direction="0 -1 0" global="false" intensity="1" location="0 4 -23" on="true" radius="20" ></SpotLight>
 
 						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-12 2 -25" on="true" radius="10" ></SpotLight>
+							direction="0 -1 0" global="false" intensity="1" location="8 4 -23" on="true" radius="20" ></SpotLight>
 
 						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-16 2 -21" on="true" radius="10" ></SpotLight>
-
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-16 2 -25" on="true" radius="10" ></SpotLight>
+							direction="0 -1 0" global="false" intensity="1" location="16 4 -23" on="true" radius="20" ></SpotLight>
 						-->
 
-				<Transform id="Pillars" translation="0 0 -25"></Transform>
-<!--
-				<Transform id="Pillars" translation="0 0 -25">
-					<Group>
-
-						<Transform translation="-12.5 0 0" rotation="0 1 0 0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="-4.5 0 0" rotation="0 1 0 0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="4.5 0 0" rotation="0 1 0 -0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="12.5 0 0" rotation="0 1 0 -0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="-12.5 0 4" rotation="0 1 0 0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="-4.5 0 4" rotation="0 1 0 0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="4.5 0 4" rotation="0 1 0 -0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-						
-
-						<Transform translation="12.5 0 4" rotation="0 1 0 -0.78539816339745">
-							<LOD center="0 0 0" range="20">
-								<Group><Inline url="scenes/pillar.x3d" /></Group>
-								<WorldInfo info='"null node"'/>
-							</LOD>
-						</Transform>
-					</Group>
-				</Transform>
-			-->
+						<Transform id="Pillars" translation="0 0 -25"></Transform>
 						
 						<!-- START: WINDOW GROUPS -->
 						<Transform translation="0.53 2 -29.94" id="Windows_Rear"></Transform>
 						<Transform translation="20.94 2 -27.53" id="Windows_Right" rotation="0 1 0 -1.5707963267949"></Transform>
 						<Transform translation="-20.94 2 -28.41" id="Windows_Left" rotation="0 1 0 1.5707963267949"></Transform>
 						<!-- END: WINDOW GROUPS -->
-						
-						<!--
-						<SpotLight DEF="MySpotLightNode"
-						ambientIntensity="0"
-						attenuation="1 0 0"
-						beamWidth="0.39"
-						color="0.698 0.698 0.698"
-						cutOffAngle="0.78"
-						direction="0 -1 0"
-						global="false"
-						intensity="1"
-						location="-15 15 -15"
-						on="false"
-						radius="1" />
-						-->
-						<!-- // 0 15 -15, 15 15 15 -->
-						
-						<!--		 
-						<PointLight DEF='Omni01' on='true' intensity='0.4000' ambientIntensity='0.0000' color='0.6980 0.6980 0.6980' 
-						location='-15 5 -24.5' attenuation='1.0000 0.0000 0.0000' radius='200.0000' />
-						-->
 
-					<!-- START: SHELF GROUP -->					
+					<!-- START: SHELF GROUP -->
+					<!--
 					<Transform translation="0 0 0">
 						<Group DEF="SHELF_GROUP">
 							<Transform translation="-12 0 -20.5" rotation="0 1 0 0.78539816339745">
 								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url='"scenes/shelf.x3d"'></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
 						</Group>
 					</Transform>
-						
-						<Transform translation="-15.75 0 -24.25" rotation="0 1 0 0.78539816339745">
-							<Group DEF="SHELF_G0">
-								<Transform translation="0 0 0">
-									<LOD center="0 0 0" range="5">
+					
+					<Transform translation="-15.75 0 -24.25" rotation="0 1 0 0.78539816339745">
+						<Group DEF="SHELF_G0">
+							<Transform translation="0 0 0">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
+							</Transform>
 								
-								<Transform translation="0 0 1.3">
-									<LOD center="0 0 0" range="5">
+							<Transform translation="0 0 1.3">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
+							</Transform>
 								
-								<Transform translation="0 0 2.6">
-									<LOD center="0 0 0" range="5">
+							<Transform translation="0 0 2.6">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
-							</Group>
-						</Transform>
-						
-						<Transform translation="-12 0 -24.5" rotation="0 1 0 0.78539816339745">
-							<Group DEF="SHELF_G0">
-								<Transform translation="0 0 0">
-									<LOD center="0 0 0" range="5">
+							</Transform>
+						</Group>
+					</Transform>
+					
+					<Transform translation="-12 0 -24.5" rotation="0 1 0 0.78539816339745">
+						<Group DEF="SHELF_G1">
+							<Transform translation="0 0 0">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
+							</Transform>
 								
-								<Transform translation="0 0 1.3">
-									<LOD center="0 0 0" range="5">
+							<Transform translation="0 0 1.3">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
+							</Transform>
 								
-								<Transform translation="0 0 2.6">
-									<LOD center="0 0 0" range="5">
+							<Transform translation="0 0 2.6">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
+							</Transform>
 								
-								<Transform translation="0 0 3.9">
-									<LOD center="0 0 0" range="5">
+							<Transform translation="0 0 3.9">
+								<LOD center="0 0 0" range="5">
 									<Group>
-										<Inline onclick='flashnotice_1()' url="scenes/shelf.x3d"></Inline>
+										<Inline url="scenes/shelf.x3d"></Inline>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
-								</Transform>
-							</Group>
-						</Transform>				 
-						<!-- END: SHELF GROUP -->
+							</Transform>
+						</Group>
+					</Transform>
+					-->
+					<!--
+					<Transform translation="-9.55 0 -26.05" rotation="0 1 0 0.78539816339745">
+						<Group DEF="SHELF_G2">
+							<Transform translation="0 0 0">
+								<LOD center="0 0 0" range="50">
+									<Group>
+										<Inline url="scenes/shelf.x3d"></Inline>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+								
+							<Transform translation="0 0 1.3">
+								<LOD center="0 0 0" range="50">
+									<Group>
+										<Inline url="scenes/shelf.x3d"></Inline>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+								
+							<Transform translation="0 0 2.6">
+								<LOD center="0 0 0" range="50">
+									<Group>
+										<Inline url="scenes/shelf.x3d"></Inline>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+								
+							<Transform translation="0 0 3.9">
+								<LOD center="0 0 0" range="50">
+									<Group>
+										<Inline url="scenes/shelf.x3d"></Inline>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+
+							<Transform translation="0 0 5.1">
+								<LOD center="0 0 0" range="50">
+									<Group>
+										<Inline url="scenes/shelf.x3d"></Inline>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+						</Group>
+					</Transform>
+				-->
+					<!-- END: SHELF GROUP -->
 
 					</Scene>
 				</X3D>
@@ -435,7 +476,7 @@
 				</div>
 				
 			</section>
-			
+			<!--
 			<aside>
 				<ul>
 					<li id="showNavigationType"></li>
@@ -443,11 +484,11 @@
 				</ul>
 				
 				<ul>
-					<!--<li onclick="setRuntime('examine', 'x3dom-scene')">Examine</li>-->
+					<li onclick="setRuntime('examine', 'x3dom-scene')">Examine</li>
 					<li onclick="setRuntime('walk', 'x3dom-scene')">Walk</li>
-					<!--<li onclick="setRuntime('fly', 'x3dom-scene')">Fly</li>-->
+					<li onclick="setRuntime('fly', 'x3dom-scene')">Fly</li>
 					<li onclick="setRuntime('lookAt', 'x3dom-scene')">Look At</li>
-					<!--<li onclick="setRuntime('game', 'x3dom-scene')">Game</li>-->
+					<li onclick="setRuntime('game', 'x3dom-scene')">Game</li>
 				</ul>
 				
 				<ul>
@@ -455,10 +496,10 @@
 					<li onclick="setRuntime('downSpeed', 'x3dom-scene')">Speed Down</li>
 				</ul>
 			</aside>
-				
+			-->
 			<footer>
 				<ul>
-					<li><a href="http://hapztron.wordpress.com">&copy; 2012 Hassadee Pimsuwan</a></li>
+					<li><a href="http://hassadee.com">&copy; 2012 Hassadee Pimsuwan</a></li>
 				</ul>
 			</footer>
 		</article>

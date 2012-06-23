@@ -1,7 +1,7 @@
 /*
  * Creator: Hassadee Pimsuwan
  * Date.Created: 31 March 2012
- * Date.Modifired: 15 April 2012
+ * Date.Modifired: 24 June 2012
  *
  * objRenderer.js
  *
@@ -34,9 +34,30 @@ function objLOD(xCenter, yCenter, zCenter, Range)
 	return LOD;
 }
 
+function renderSpotLight(ID, ambientIntensity, attenuation, beamWidth, color, cutOffAngle, direction, intensity, location, radius)
+{
+	console.log("Start function: renderSpotLight");
+
+	var SpotLight = document.createElement("SpotLight");
+	SpotLight.setAttribute("ambientIntensity", ambientIntensity);
+	SpotLight.setAttribute("attenuation", attenuation);
+	SpotLight.setAttribute("beamWidth", beamWidth);
+	SpotLight.setAttribute("color", color);
+	SpotLight.setAttribute("cutOffAngle", cutOffAngle);
+	SpotLight.setAttribute("direction", direction);
+	SpotLight.setAttribute("intensity", intensity);
+	SpotLight.setAttribute("location", location);
+	SpotLight.setAttribute("radius", radius);
+
+	var renderSpotLight = document.getElementById(ID);
+	renderSpotLight.appendChild(SpotLight);
+
+	console.log("End function: renderSpotLight");
+}
+
 function renderFloor(x, y, z, xSize, ySize, zSize, Range)
 {
-	console.log("START FUNCTION: renderFloor");
+	console.log("Start function: renderFloor");
 	
 	var transform = objTransform(x, y, z, 1, 1, 1, 0, 1, 0, 0);
 		
@@ -63,7 +84,7 @@ function renderFloor(x, y, z, xSize, ySize, zSize, Range)
 	texture_transform.setAttribute("scale", "8 10");
 	appearance.appendChild(texture_transform);
 	
-	var plate = objBox(xSize, ySize, zSize, "false");
+	var plate = objBox(xSize, ySize, zSize, "true");
 	shape.appendChild(plate);
 	
 	var null_node = document.createElement("WorldInfo");
@@ -73,7 +94,7 @@ function renderFloor(x, y, z, xSize, ySize, zSize, Range)
 	var renderFloor = document.getElementById("FloorProto");
 	renderFloor.appendChild(transform);
 	
-	console.log("END FUNCTION: renderFloor");
+	console.log("End function: renderFloor");
 }
 
 function renderInlineLOD(ID, xPos, yPos, zPos, xRo, yRo, zRo, Degree, URL, Range)

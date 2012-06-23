@@ -21,7 +21,7 @@
 						<Transform translation="0 -1.47 -0.03">
 							<Shape DEF="BEAM">
 								<Appearance DEF="BEAM_APPEARANCE">
-									<Material diffuseColor="0.7 0.7 0.7" specularColor="1 1 1" shininess="0.7" />
+									<Material diffuseColor="0.588 0.588 0.588" specularColor="1 1 1" shininess="0.145" />
 								</Appearance>
 								<Box size="0.94 0.06 0.06" />
 							</Shape>

@@ -100,7 +100,7 @@ function setSpeed(value, id)
 	}
 	
 	console.log(currentSpeed);
-	document.getElementById('showSpeed').innerHTML = currentSpeed;
+	//document.getElementById('showSpeed').innerHTML = currentSpeed;
 }
 
 function getNavigationType(id)
@@ -113,7 +113,7 @@ function getNavigationType(id)
 	console.log(navigationTypeName);
 	console.log(currentViewpoint);
 	
-	document.getElementById('showNavigationType').innerHTML = navigationTypeName;
+	//document.getElementById('showNavigationType').innerHTML = navigationTypeName;
 	setSpeed(0, id);
 }
 
