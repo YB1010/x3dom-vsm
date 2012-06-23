@@ -109,32 +109,17 @@
 				var purl = "scenes/pillar.x3d";
 				var pid = "Pillars";
 
-				for (var loop = 0; loop < 8; loop++) {
+				for (var loop = 0; loop < pamount; loop++) {
 					if (loop == (pamount / 2)) {
 						psx = -12.5;
 						psz += 4;
 					}
 					renderInlineLOD(pid, psx, psy, psz, 0, 1, 0, 0.78539816339745, purl, 50);
-					psx += 8;
+					psx += pamount;
 				}
 				/* End: Pillars */
 
-				/* Start: SpotLightsGroup */
-				var ambientIntensity = 0;
-				var attenuation = "1 0 0";
-				var beamWidth = 0.39;
-				var color = "0.698 0.698 0.698";
-				var cutOffAngle = 1.57;
-				var direction = "0 -1 0";
-				var intensity = 1;
-				var location = new Array();
-				location = ["-16 4 -23", "-8 4 -23", "0 4 -23", "8 4 -23", "16 4 -23"];
-				var radius = 20;
-
-				for (var SpotLightLoop = 0; SpotLightLoop < location.length; SpotLightLoop++) {
-					renderSpotLight("SpotLightsGroup", ambientIntensity, attenuation, beamWidth, color, cutOffAngle, direction, intensity, location[SpotLightLoop], radius);
-				}
-				/* End: SpotLightsGroup */
+				SpotLightsGroup();
 			}
 			
 			function flashnotice_1()
@@ -151,6 +136,24 @@
 				Shelf_2.init( 'Shelf_1', '820px', '440px', 'hidden', '', true, true );
 				Shelf_2.lbo( true, 0.0 ); 
 				Shelf_2.appear();
+			}
+
+			function SpotLightsGroup()
+			{
+				var ambientIntensity = 0;
+				var attenuation = "1 0 0";
+				var beamWidth = 0.39;
+				var color = "0.698 0.698 0.698";
+				var cutOffAngle = 1.57;
+				var direction = "0 -1 0";
+				var intensity = 1;
+				var location = new Array();
+				location = ["-16 4 -23", "-8 4 -23", "0 4 -23", "8 4 -23", "16 4 -23"];
+				var radius = 20;
+
+				for (var SpotLightLoop = 0; SpotLightLoop < location.length; SpotLightLoop++) {
+					renderSpotLight("SpotLightsGroup", ambientIntensity, attenuation, beamWidth, color, cutOffAngle, direction, intensity, location[SpotLightLoop], radius);
+				}
 			}
 
 			function modHitPoint(hitPnt)
@@ -170,26 +173,16 @@
 	            var newAvatarLightPoint = new Array();
 	            newAvatarLightPoint = setAvatarLightPoint;
 
+	            document.getElementById('AvatarPC').setAttribute('set_destination', newHitPoint);
+	            document.getElementById('ViewpointPC').setAttribute('set_destination', newAvatarPoint);
+	            document.getElementById('AvatarLightPC').setAttribute('set_destination', newAvatarLightPoint);
+
 	            // Show newHitPoint value.
 	            console.log("newHitPoint = " + newHitPoint);
 	            // Show newAvatarPoint value.
 	            console.log("newAvatarPoint = " + newAvatarPoint);
 	            // Show newAvatarLightPoint value.
 	            console.log("newAvatarLightPoint = " + newAvatarLightPoint);
-
-	            document.getElementById('AvatarPC').setAttribute('set_destination', newHitPoint);
-	            document.getElementById('ViewpointPC').setAttribute('set_destination', newAvatarPoint);
-	            document.getElementById('AvatarLightPC').setAttribute('set_destination', newAvatarLightPoint);
-
-	            /*
-	            document.getElementById('xHitPoint').innerHTML = newHitPoint[0];
-	            document.getElementById('yHitPoint').innerHTML = newHitPoint[1];
-	            document.getElementById('zHitPoint').innerHTML = newHitPoint[2];
-
-	            document.getElementById('xYourHitPoint').innerHTML = hitPnt[0];
-	            document.getElementById('yYourHitPoint').innerHTML = hitPnt[1];
-	            document.getElementById('zYourHitPoint').innerHTML = hitPnt[2];
-	            */
 	        }
 			
 		</script>
@@ -251,9 +244,6 @@
 
 						<!--
 						<Viewpoint id="cam2" position='-1 0 5' description="Camera 2"></Viewpoint>
-					-->
-						
-						<!--
 						<Background skyColor="1 1 1"></Background>
 						-->
 
@@ -298,24 +288,8 @@
 							</Shape>
 						</Transform>
 
-						<!-- Light must not over than 8 nodes -->
+						<!-- SpotLightsGroup (SpotLight 5 nodes). -->
 						<Group id="SpotLightsGroup"></Group>
-						<!--
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-16 4 -23" on="true" radius="20" ></SpotLight>
-
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="-8 4 -23" on="true" radius="20" ></SpotLight>
-
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="0 4 -23" on="true" radius="20" ></SpotLight>
-
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="8 4 -23" on="true" radius="20" ></SpotLight>
-
-						<SpotLight ambientIntensity="0" attenuation="1 0 0" beamWidth="0.39" color="0.698 0.698 0.698" cutOffAngle="1.57"
-							direction="0 -1 0" global="false" intensity="1" location="16 4 -23" on="true" radius="20" ></SpotLight>
-						-->
 
 						<Transform id="Pillars" translation="0 0 -25"></Transform>
 						
