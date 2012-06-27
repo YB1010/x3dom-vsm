@@ -54,6 +54,7 @@
 		<script type="text/javascript">
 			
 			document.onload = function() {
+
 				/*
 				renderFloor(0, 0, 0, 8, 0.1, 4, 40);
 				renderFloor(-8, 0, 0, 8, 0.1, 4, 40);
@@ -169,13 +170,15 @@
 	            var newAvatarPoint = new Array();
 	            newAvatarPoint = setAvatarPoint;
 
-	            var setAvatarLightPoint = [hitPnt[0], 1.8, hitPnt[2]];
+	            var setAvatarLightPoint = [hitPnt[0], 4, hitPnt[2]];
 	            var newAvatarLightPoint = new Array();
 	            newAvatarLightPoint = setAvatarLightPoint;
 
 	            document.getElementById('AvatarPC').setAttribute('set_destination', newHitPoint);
 	            document.getElementById('ViewpointPC').setAttribute('set_destination', newAvatarPoint);
 	            document.getElementById('AvatarLightPC').setAttribute('set_destination', newAvatarLightPoint);
+
+	            document.getElementById("ViewpointMarker").setAttribute("position", newAvatarPoint);
 
 	            // Show newHitPoint value.
 	            console.log("newHitPoint = " + newHitPoint);
@@ -184,6 +187,87 @@
 	            // Show newAvatarLightPoint value.
 	            console.log("newAvatarLightPoint = " + newAvatarLightPoint);
 	        }
+
+	        var orientationAngle = 0;
+	        var sumClick = 0;
+
+	        function keyPress(press)
+	        {
+	        	if (press == 37) {
+	        		orientationAngle -= 0.01;
+					var setAvatarAngle = [0, 1, 0, orientationAngle];
+	            	var newAvatarAngle = new Array();
+	            	newAvatarAngle = setAvatarAngle;
+
+	            	document.getElementById("ViewpointMarker").setAttribute("orientation", newAvatarAngle);
+
+					console.log("Left : Angle Orientation = " + newAvatarAngle);
+	        	}
+	        	if (press == 39) {
+	        		orientationAngle += 0.01;
+					var setAvatarAngle = [0, 1, 0, orientationAngle];
+	            	var newAvatarAngle = new Array();
+	            	newAvatarAngle = setAvatarAngle;
+
+	            	var gotValue = document.getElementById("ViewpointMarker").getAttribute("position");
+	            	
+	            	var ValueSplit = gotValue.split(",");
+	            	console.log("ValueSplit[0] = " + ValueSplit[0]);
+	            	console.log("ValueSplit[2] = " + ValueSplit[2]);
+
+	            	var x = ValueSplit[2] * Math.sin(10) + ValueSplit[0] * Math.cos(10);
+	            	var z = ValueSplit[2] * Math.cos(10) - ValueSplit[0] * Math.sin(10);
+
+	            	var setAvatarPoint = [x, 2, z];
+		            var newAvatarPoint = new Array();
+		            newAvatarPoint = setAvatarPoint;
+
+	            	document.getElementById("ViewpointMarker").setAttribute("orientation", newAvatarAngle);
+
+	            	document.getElementById('ViewpointPC').setAttribute('set_destination', newAvatarPoint);
+	            	document.getElementById("ViewpointMarker").setAttribute("position", newAvatarPoint);
+
+	            	console.log("newAvatarPoint = " + newAvatarPoint);
+	            	console.log("gotValue = " + gotValue);
+					console.log("Right : Angle Orientation = " + newAvatarAngle);
+				}
+	        }
+
+	        document.onkeydown = function(e)
+	        {
+
+	        	/* Start: Viewpoint */
+				var keynum = 0;
+	        	//var increseAngle = 0;
+				/* End: Viewpoint */
+
+				if(window.event) { keynum = e.keyCode; }  // IE (sucks)
+				else if(e.which) { keynum = e.which; }    // Netscape/Firefox/Opera
+
+				if(keynum == 37) { // left
+				    //Move selection left
+				    keyPress(37);
+				}
+
+				if(keynum == 38) { // up
+				    //Move selection up
+				    console.log("Up");
+				}
+
+				if(keynum == 39) { // right
+				    //Move selection right
+				  	keyPress(39);
+				}
+
+				if(keynum == 40) { // down
+				    //Move selection down
+				    console.log("Down");
+				}
+
+				if(keynum == 13) { // enter
+				    //Act on current selection
+				}
+			}
 			
 		</script>
 		
@@ -208,10 +292,12 @@
 					
 				<X3D id="x3dom-scene">
 					<Scene>
-						
-						<Viewpoint id="ViewpointMarker" jump="false" position="0 1.75 -10"></Viewpoint>						
-						<positionChaser id="ViewpointPC" duration="2" initialDestination="0 0.875 -12" initialValue="0 0.875 -12" ></positionChaser>
-            			<route fromNode="ViewpointPC" fromField='value_changed' toNode='ViewpointMarker' toField='position'></route>
+						<!-- Start: Viewpoint -->
+						<Viewpoint id="ViewpointMarker" jump="false" position="0 1.75 -10" orientation="0 1 0 0"></Viewpoint>
+
+						<positionChaser id="ViewpointPC" duration="2" initialDestination="0 0.875 -12" initialValue="0 0.875 -12"></positionChaser>
+            			<Route fromNode="ViewpointPC" fromField='value_changed' toNode='ViewpointMarker' toField='position'></Route>          			
+            			<!-- End: Viewpoint -->
 
 						<Transform DEF="Avatar" translation="0 0.875 0" scale="1 1 1" center="0 0 0">
 							<Shape>
@@ -227,11 +313,11 @@
             				on="TRUE" intensity="1"
             				ambientIntensity="0.0000"
             				color="0.698 0.698 0.698"
-							location="0 1.8 -15"
+							location="0 4 -15"
 							attenuation="1.0000 0.0000 0.0000"
-							radius="50"></PointLight>
+							radius="100"></PointLight>
 
-						<positionChaser id="AvatarLightPC" duration="1.5" initialDestination="0 1.8 -15" initialValue="0 1.8 -15" ></positionChaser>
+						<positionChaser id="AvatarLightPC" duration="1.5" initialDestination="0 4 -15" initialValue="0 4 -15" ></positionChaser>
             			<route fromNode="AvatarLightPC" fromField="value_changed" toNode="AvatarLight" toField="location"></route>
 
             			<!-- START: FLOOR 0 -->
