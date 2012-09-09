@@ -20,7 +20,7 @@
 					<Transform translation="0 2 0">
 						<Shape>
 							<Appearance>
-								<Material diffuseColor="0.4 0.4 0.4" />
+								<Material diffuseColor="0.3 0.3 0.3" specularColor="0 0 0" />
 							</Appearance>
 							<Box size="1.25 4 1.25" />
 						</Shape>

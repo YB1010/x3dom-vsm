@@ -75,22 +75,32 @@ x3d:hover,
 
 
 .x3dom-statdiv {
-    margin: 0;
-    padding: 0;
-    right: 10px;
-    top: 10px;
     position: absolute;
-    color: #0f0;
-    font-family: Helvetica, sans-serif;
-    line-height:10px;
-    font-size: 10px;
-    width: 75px;
-    height: 70px;
+    right: 15px;
+    top: 100px;
+    margin: 0;
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+
+    background: #333;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+
+    color: #FFF;
+    font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    
     border: 0px;
 }
 
 .x3dom-touch-marker {
-	display:inline;
+    display:inline;
     padding: 5px;
 	border-radius: 10px;
     position: absolute;

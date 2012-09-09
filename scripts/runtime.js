@@ -72,7 +72,7 @@ function setRuntime(typename, id)
 		case "nextView": configure.runtime.nextView(); break;
 		case "prevView": configure.runtime.prevView(); break;
 		case "upSpeed": setSpeed("up", id); break;
-		case "downSpeed": setSpeed("down", id); break
+		case "downSpeed": setSpeed("down", id); break;
 		default: configure.runtime.examine();
 	}
 	getNavigationType(id);
