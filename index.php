@@ -84,7 +84,7 @@
 				
 				/* Start: Windows */
 				var windowId = "Windows_Rear";
-				var windowURL = "scenes/window.x3d";
+				var windowURL = "scenes/window.x3db";
 				var window_xPos = -21;
 				for (var windowLoop = 0; windowLoop < 42; windowLoop++) {
 					renderInlineLOD(windowId, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 25);
@@ -264,16 +264,16 @@
 						<Transform id="Avatar" DEF="Avatar" translation="0 0.875 0" scale="1 1 1" center="0 0 0" rotation="0 1 0 0">
 						-->
 						<Transform id="Avatar" DEF="Avatar" translation="0 0 0" scale="1 1 1" center="0 0 0" rotation="0 1 0 0">
-							<!--
+							
 							<Shape>
 								<Appearance>
 									<Material diffuseColor="0.0 0.8 0.4" specularColor="0 0 0"></Material>
 								</Appearance>
 								<Box size="0.5 1.75 0.5" />
 							</Shape>
-							-->
+							<!--
 							<Inline url="scenes/avatar/sara.x3d"></Inline>
-						
+							-->
             			</Transform>
 
             			<!-- START: FLOOR 0 -->
