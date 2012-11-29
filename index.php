@@ -84,7 +84,7 @@
 				
 				/* Start: Windows */
 				var windowId = "Windows_Rear";
-				var windowURL = "scenes/window.x3db";
+				var windowURL = "scenes/window.x3d";
 				var window_xPos = -21;
 				for (var windowLoop = 0; windowLoop < 42; windowLoop++) {
 					renderInlineLOD(windowId, window_xPos, 0, 0, 0, 1, 0, 0, windowURL, 25);
@@ -340,7 +340,7 @@
 						</Transform>
 
 						<!-- SpotLightsGroup (SpotLight 5 nodes). -->
-						<Group id="SpotLightsGroup"></Group>
+						<!--<Group id="SpotLightsGroup"></Group>-->
 
 						<!-- pillars -->
 						<Transform id="Pillars" translation="0 0 -25"></Transform>
@@ -367,7 +367,7 @@
 					<!-- End: Escalator -->
 
 					<!-- START: SHELF GROUP -->
-					
+					<!--
 					<Transform translation="0 0 0">
 						<Group DEF="SHELF_GROUP">
 							<Transform translation="-12 0 -20.5" rotation="0 1 0 0.78539816339745">
@@ -635,7 +635,7 @@
 							</Transform>
 						</Group>
 					</Transform>
-					
+					-->
 					<!-- END: SHELF GROUP -->
 
 					</Scene>
