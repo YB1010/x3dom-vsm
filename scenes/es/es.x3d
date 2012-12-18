@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' profile='Full' version='3.0' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
+  <Scene>
+    <NavigationInfo avatarSize='0.25 1.75 0.75' headlight='false' type='"EXAMINE" "ANY"'/>
+    <Background DEF='WO_World' groundColor='1 1 1' skyColor='1 1 1'/>
+    <Transform rotation='-1.79189e-14 9.59637e-07 1 3.14159' scale='-1 -1 -1' translation='-41.38 19.7648 -34.0742'>
+      <Transform DEF='_3DA_Escala_TRANSFORM' translation='-3.07658e-06 1.85894e-07 4.02763e-06'>
+        <Group DEF='group_ME_3DA_Escala'>
+          <Shape DEF='SP_0'>
+            <Appearance>
+              <Material DEF='MA_11_-_Default_(su' ambientIntensity='0.333' diffuseColor='0.588 0.588 0.588' shininess='0.0977' specularColor='0.118 0.118 0.118' transparency='0.5'/>
+            </Appearance>
+            <BinaryGeometry DEF='BG_0' vertexCount='1476 2682' primType='"TRIANGLESTRIP" "TRIANGLES"' index='bingeo/BG_0_indexBinary.bin' coord='bingeo/BG_0_coordBinary.bin' normal='bingeo/BG_0_normalBinary.bin' texCoord='bingeo/BG_0_texCoordBinary.bin'/>
+          </Shape>
+          <Shape DEF='SP_4'>
+            <Appearance>
+              <Material DEF='MA_step_metal1_(sub' ambientIntensity='0.333' diffuseColor='0.467 0.467 0.467' shininess='0.0977' specularColor='0.36 0.36 0.36'/>
+            </Appearance>
+            <BinaryGeometry DEF='BG_4' vertexCount='34 1056' primType='"TRIANGLESTRIP" "TRIANGLES"' index='bingeo/BG_4_indexBinary.bin' coord='bingeo/BG_4_coordBinary.bin' normal='bingeo/BG_4_normalBinary.bin' texCoord='bingeo/BG_4_texCoordBinary.bin'/>
+          </Shape>
+          <Shape DEF='SP_3'>
+            <Appearance>
+              <Material DEF='MA_09_-_Default_(su' ambientIntensity='0.333' diffuseColor='0.996 0.957 0.341' shininess='0.0977' specularColor='0.36 0.36 0.36'/>
+            </Appearance>
+            <BinaryGeometry DEF='BG_3' vertexCount='4 24' primType='"TRIANGLESTRIP" "TRIANGLES"' index='bingeo/BG_3_indexBinary.bin' coord='bingeo/BG_3_coordBinary.bin' normal='bingeo/BG_3_normalBinary.bin' texCoord='bingeo/BG_3_texCoordBinary.bin'/>
+          </Shape>
+          <Shape DEF='SP_1'>
+            <Appearance>
+              <Material DEF='MA_step_metal_(sub)' ambientIntensity='0.333' diffuseColor='0.125 0.125 0.125' shininess='0.0977' specularColor='0.36 0.36 0.36'/>
+            </Appearance>
+            <BinaryGeometry DEF='BG_1' vertexCount='12' primType='"TRIANGLES"' index='bingeo/BG_1_indexBinary.bin' coord='bingeo/BG_1_coordBinary.bin' normal='bingeo/BG_1_normalBinary.bin' texCoord='bingeo/BG_1_texCoordBinary.bin'/>
+          </Shape>
+          <Shape DEF='SP_2'>
+            <Appearance>
+              <Material DEF='MA_01_-_Default_(su' ambientIntensity='0.333' diffuseColor='0.00392 0.0118 0.0471' shininess='0.0977' specularColor='0.36 0.36 0.36'/>
+            </Appearance>
+            <BinaryGeometry DEF='BG_2' vertexCount='1717 8721' primType='"TRIANGLESTRIP" "TRIANGLES"' index='bingeo/BG_2_indexBinary.bin' coord='bingeo/BG_2_coordBinary.bin' normal='bingeo/BG_2_normalBinary.bin' texCoord='bingeo/BG_2_texCoordBinary.bin'/>
+          </Shape>
+        </Group>
+      </Transform>
+    </Transform>
+  </Scene>
+</X3D>

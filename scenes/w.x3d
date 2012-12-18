@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' profile='Full' version='3.0' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
+  <Scene>
+    <Group DEF='BEAM_GROUP'>
+      <Transform translation='0 -1.47 -0.03'>
+        <Shape DEF='BEAM'>
+          <Appearance DEF='BEAM_APPEARANCE'>
+            <Material diffuseColor='0.588 0.588 0.588' shininess='0.145' specularColor='1 1 1'/>
+          </Appearance>
+          <Box size='0.94 0.06 0.06'/>
+        </Shape>
+      </Transform>
+      <Transform translation='0 -0.91 -0.03'>
+        <Shape USE='BEAM'/>
+      </Transform>
+      <Transform translation='0 1.47 -0.03'>
+        <Shape USE='BEAM'/>
+      </Transform>
+    </Group>
+    <Group DEF='PILLAR_GROUP'>
+      <Transform translation='-0.5 0 0'>
+        <Shape DEF='PILLAR'>
+          <Appearance USE='BEAM_APPEARANCE'/>
+          <Box size='0.06 4 0.12'/>
+        </Shape>
+      </Transform>
+    </Group>
+    <Group DEF='MIRROR_GROUP'>
+      <Transform translation='0 -1.75 -0.05'>
+        <Shape DEF='MIRROR-S'>
+          <Appearance DEF='MIRROR_APPEARANCE'>
+            <Material diffuseColor='1 1 1' transparency='0.9'/>
+          </Appearance>
+          <Box size='0.94 0.5 0.02'/>
+        </Shape>
+      </Transform>
+      <Transform translation='0 -1.19 -0.05'>
+        <Shape USE='MIRROR-S'/>
+      </Transform>
+      <Transform translation='0 1.75 -0.05'>
+        <Shape USE='MIRROR-S'/>
+      </Transform>
+      <Transform translation='0 0.28 -0.05'>
+        <Shape DEF='MIRROR-L'>
+          <Appearance USE='MIRROR_APPEARANCE'/>
+          <Box size='0.94 2.32 0.02'/>
+        </Shape>
+      </Transform>
+    </Group>
+  </Scene>
+</X3D>
