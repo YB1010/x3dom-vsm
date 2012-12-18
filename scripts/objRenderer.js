@@ -116,3 +116,69 @@ function renderInlineLOD(ID, xPos, yPos, zPos, xRo, yRo, zRo, Degree, URL, Range
 	var renderInlineLOD = document.getElementById(ID);
 	renderInlineLOD.appendChild(LOD);
 }
+
+
+objTrapezoid = function()
+{
+	var x, y, z,direction, xdr, xdl, is_solid = true, creaseAngle = 0;
+
+	genAppearance(diffuseColor, specularColor, transparency);
+		
+		$solid = "false";
+
+	if(direction > 0) {
+		xdr = (x / 2) + direction;
+		xdl = -(x / 2) + direction;
+	} else {
+		xdr = (x / 2) - Math.abs(direction);
+		xdl = -(x / 2) - Math.abs(direction);
+	}
+
+	x /= 2;
+	y /= 2;
+	z /= 2;
+	
+
+	if(direction > 0) {
+		coord_point = 
+		xdr	+" "+	y	+" "+	-(z)+","+
+		x	+" "+	-(y)+" "+	-(z)+","+
+		-(x)+" "+	-(y)+" "+	-(z)+","+
+		xdl	+" "+	y	+" "+	-(z)+","+
+		xdr	+" "+	y	+" "+	z	+","+
+		x	+" "+	-(y)+" "+	z	+","+
+		-(x)+" "+	-(y)+" "+	z	+","+
+		xdl	+" "+	y	+" "+	z;
+	} else {
+		coord_point = 
+		xdr	+" "+	y	+" "+	-(z)+","+
+		x	+" "+	-(y)+" "+	-(z)+","+
+		-(x)+" "+	-(y)+" "+	-(z)+","+
+		xdl	+" "+	y	+" "+	-(z)+","+
+		xdr	+" "+	y	+" "+	z	+","+
+		x	+" "+	-(y)+" "+	z	+","+
+		-(x)+" "+	-(y)+" "+	z	+","+
+		xdl	+" "+	y	+" "+	z;
+	}
+
+	var shape = document.createElement("Shape");
+	obj_group.appendChild(shape);
+
+	var appearance = document.createElement('Appearance');
+	shape.appendChild(appearance);
+
+	var ifs = document.createElement('IndexedFaceSet');
+	ifs.setAttribute('solid', is_solid);
+	ifs.setAttribute('creaseAngle', creaseAngle);
+	ifs.setAttribute('coordIndex', '0 1 2 3 -1, 4 7 6 5 -1, 0 4 5 1 -1, 1 5 6 2 -1, 2 6 7 3 -1, 4 0 3 7 -1');
+
+	shape.appendChild(ifs);
+
+	var coord = document.createElement('Coordinate');
+	coord.setAttribute('point', coord_point);
+
+	ifs.appendChild(coord);
+}
+
+
+
