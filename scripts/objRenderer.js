@@ -118,13 +118,11 @@ function renderInlineLOD(ID, xPos, yPos, zPos, xRo, yRo, zRo, Degree, URL, Range
 }
 
 
-objTrapezoid = function()
+objTrapezoid = function(x, y, z, direction)
 {
-	var x, y, z,direction, xdr, xdl, is_solid = true, creaseAngle = 0;
+	var xdr, xdl, is_solid = true, creaseAngle = 0;
 
-	genAppearance(diffuseColor, specularColor, transparency);
-		
-		$solid = "false";
+	//genAppearance(diffuseColor, specularColor, transparency);
 
 	if(direction > 0) {
 		xdr = (x / 2) + direction;
@@ -140,25 +138,23 @@ objTrapezoid = function()
 	
 
 	if(direction > 0) {
-		coord_point = 
-		xdr	+" "+	y	+" "+	-(z)+","+
-		x	+" "+	-(y)+" "+	-(z)+","+
-		-(x)+" "+	-(y)+" "+	-(z)+","+
-		xdl	+" "+	y	+" "+	-(z)+","+
-		xdr	+" "+	y	+" "+	z	+","+
-		x	+" "+	-(y)+" "+	z	+","+
-		-(x)+" "+	-(y)+" "+	z	+","+
-		xdl	+" "+	y	+" "+	z;
+		coord_point = xdr	+" "+	y	+" "+	-(z)+","+
+						x	+" "+	-(y)+" "+	-(z)+","+
+						-(x)+" "+	-(y)+" "+	-(z)+","+
+						xdl	+" "+	y	+" "+	-(z)+","+
+						xdr	+" "+	y	+" "+	z	+","+
+						x	+" "+	-(y)+" "+	z	+","+
+						-(x)+" "+	-(y)+" "+	z	+","+
+						xdl	+" "+	y	+" "+	z;
 	} else {
-		coord_point = 
-		xdr	+" "+	y	+" "+	-(z)+","+
-		x	+" "+	-(y)+" "+	-(z)+","+
-		-(x)+" "+	-(y)+" "+	-(z)+","+
-		xdl	+" "+	y	+" "+	-(z)+","+
-		xdr	+" "+	y	+" "+	z	+","+
-		x	+" "+	-(y)+" "+	z	+","+
-		-(x)+" "+	-(y)+" "+	z	+","+
-		xdl	+" "+	y	+" "+	z;
+		coord_point = xdr	+" "+	y	+" "+	-(z)+","+
+						x	+" "+	-(y)+" "+	-(z)+","+
+						-(x)+" "+	-(y)+" "+	-(z)+","+
+						xdl	+" "+	y	+" "+	-(z)+","+
+						xdr	+" "+	y	+" "+	z	+","+
+						x	+" "+	-(y)+" "+	z	+","+
+						-(x)+" "+	-(y)+" "+	z	+","+
+						xdl	+" "+	y	+" "+	z;
 	}
 
 	var shape = document.createElement("Shape");
@@ -180,5 +176,21 @@ objTrapezoid = function()
 	ifs.appendChild(coord);
 }
 
-
+var genRotation = function (conf, degree)
+{
+	var rot, di, de;
+	switch(conf) {
+		case 'z':	di = '0 0 1 '; break;
+		case 'y':	di = '0 1 0 '; break;
+		case 'yz':	di = '0 1 1 '; break;
+		case 'x':	di = '1 0 0 '; break;
+		case 'xz':	di = '1 0 1 '; break;
+		case 'xy':	di = '1 1 0 '; break;
+		case 'xyz': di = '1 1 1 '; break;
+		default: di = "1 1 1";
+	}
+	de = (Math.PI / 180) * degree;
+	rot = di.concat(de);
+	return rot;
+}
 
