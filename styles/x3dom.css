@@ -16,7 +16,7 @@ X3D, x3d {
   cursor:pointer;
   margin:0;
   padding: 0;
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
 }
 
 object {

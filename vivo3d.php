@@ -1,12 +1,12 @@
 <?php
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genTransform($position, $conf, $degree)
 	{
 		$rotation = genRotation($conf, $degree);
 		$transform = "<Transform translation=\"" . $position . "\" rotation=\"" . $rotation . "\">";
 		return $transform;
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genRotation($conf, $degree)
 	{
 		switch($conf) {
@@ -21,18 +21,18 @@
 		$rot .= " " . number_format($degree * ( pi() / 180 ), 6, '.', '');
 		return $rot;
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */	
+/* ------------------------------------------------------------------------------------------------------------------------------- */	
 	function genAppearance($diffuseColor, $specularColor, $transparency)
 	{
 		$diffuseColor = genColor($diffuseColor);
 		$specularColor = genColor($specularColor);
 		$material = "
 		<Appearance>
-		<Material diffuseColor=\"" . $diffuseColor . "\" specularColor=\"" . $specularColor . "\" transparency=\"" . $transparency . "\" />
+		<Material diffuseColor=\"".$diffuseColor."\" specularColor=\"".$specularColor."\" transparency=\"".$transparency."\" />
 		</Appearance>";
 		return $material;
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genColor($colorHex)
 	{
 		$r = substr($colorHex, 1, 2);
@@ -44,7 +44,7 @@
 		$colorDec = $r . " " . $g . " " . $b;
 		return $colorDec;
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genOctagonPillar($position, $conf, $degree, $diffuseColor, $specularColor, $transparency, $width, $height, $creaseAngle)
 	{
 		echo genTransform($position, $conf, $degree);
@@ -75,7 +75,13 @@
 				$startY++;
 				$startZ++;
 			}
-			echo $FirstX . " " . $FirstY . " " . $FirstZ . " " . $endLine . "," . $SecX . " " . $SecY . " " . $SecZ . " " . $endLine . ",";
+
+			echo $FirstX." ".$FirstY." ".$FirstZ." ".$endLine.",".$SecX." ".$SecY." ".$SecZ." ".$endLine;
+
+			if ($coordIndex < 7) {
+				echo ",";
+			}
+			
 		}
 		echo "\">";
 		
@@ -101,14 +107,18 @@
 			-($width - $minus)	." ".	$ground	." ".	-($width)			.",".
 			-($width)			." ".	$ground	." ".	-($width - $minus)	.",".
 			-($width)			." ".	$ground	." ".	($width - $minus)	.",".
-			-($width - $minus)	." ".	$ground	." ".	$width				.",";
+			-($width - $minus)	." ".	$ground	." ".	$width;
+
+			if ($pointloop < 1) {
+				echo ',';
+			}
 		}
 		echo "\" />";
 		echo "</IndexedFaceSet>";
 		echo "</Shape>";
 		echo "</Transform>";
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genCube($position, $conf, $degree, $diffuseColor, $specularColor, $transparency, $x, $y, $z, $creaseAngle)
 	{
 		echo genTransform($position, $conf, $degree);
@@ -137,7 +147,10 @@
 		echo "</Shape>";
 		echo "</Transform>";
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genTrapezoid($position, $conf, $degree, $diffuseColor, $specularColor, $transparency, $direction, $x, $y, $z, $creaseAngle)
 	{
 		echo genTransform($position, $conf, $degree);
@@ -186,7 +199,7 @@
 		echo "</Shape>";
 		echo "</Transform>";
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 	function genTrapezoid2($position, $conf, $degree, $diffuseColor, $specularColor, $transparency, $direction, $x, $y, $z, $creaseAngle)
 	{
 		echo genTransform($position, $conf, $degree);
@@ -235,5 +248,5 @@
 		echo "</Shape>";
 		echo "</Transform>";
 	}
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
 ?>
