@@ -272,7 +272,7 @@ input[type=submit] {
 
 .x3dom-canvas {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	border: none;
 	cursor: pointer;
 }
@@ -285,4 +285,8 @@ input[type=submit] {
 .breadcrumb {
 	margin: 0;
 	padding: 8px 0;
+}
+
+.container-fluid {
+	padding-top: 80px;
 }
