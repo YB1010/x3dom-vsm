@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<NavigationInfo headlight="true"
+		                visibilityLimit="0.0"
+		                type='"EXAMINE", "ANY"'
+		                avatarSize="0.25, 1.75, 0.75"
+		                />
+		<Background DEF="WO_World"
+		            groundColor="0.051 0.051 0.051"
+		            skyColor="0.051 0.051 0.051"
+		            />
+		<Transform DEF="Grid_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000"
+		           >
+			<Transform DEF="Grid_ifs_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000"
+			           rotation="1.000000 0.000000 0.000000 0.000000"
+			           >
+				<Group DEF="group_ME_Grid">
+					<Shape>
+						<Appearance>
+							<Material diffuseColor="1 1 1" specularColor="1 1 1" />
+						</Appearance>
+						
+						<IndexedFaceSet solid="false"
+						                coordIndex="
+						                0 1 2 18 -1
+
+						                12 17 15 14 -1
+
+						                13 14 9 10 -1
+						                19 16 15 20 -1
+						                20 15 14 4 -1
+						                4 5 6 8 -1
+						                8 4 20 15 -1
+
+						                7 11 9 8 -1
+
+						                18 17 16 19 -1
+						                2 5 6 7 -1
+						                10 11 12 13 -1
+
+						                20 21 3 4 -1
+						                2 3 4 5 -1
+						                18 21 20 19 -1
+
+						                15 16 17 -1
+						                12 13 14 -1
+
+						                6 7 8 -1
+						                9 10 11 -1
+						                ">
+							<Coordinate DEF="coords_ME_Grid"
+							            point="
+							            0.0 0.0 0.0
+							            51.2 0.0 0.0
+							            51.2 0.0 9.6
+							            51.2 0.0 19.2
+							            51.2 0.1 19.2
+							            51.2 0.1 9.6
+							            48 0.1 9.6
+							            48 0.0 9.6
+							            48 0.1 12.8
+							            46.4 0.1 12.8
+							            46.4 0.1 9.6
+							            46.4 0.0 9.6
+							            3.2 0.0 9.6
+							            3.2 0.1 9.6
+							            3.2 0.1 12.8
+							            1.6 0.1 12.8
+							            1.6 0.1 9.6
+							            1.6 0.0 9.6
+							            0.0 0.0 9.6
+							            0.0 0.1 9.6
+							            0.0 0.1 19.2
+							            0.0 0.0 19.2
+							            " />		
+						</IndexedFaceSet>
+
+					</Shape>
+				</Group>
+			</Transform>
+		</Transform>
+	</Scene>
+</X3D>
+
