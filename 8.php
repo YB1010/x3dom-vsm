@@ -11,7 +11,7 @@
 		<title>VIVO3D Framework -- EXAMPLE</title>
 		
 		<link rel="shortcut icon" href="styles/favicon/favicon.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="styles/x3dom.css" />
+		<link rel="stylesheet" type="text/css" href="scripts/x3dom-1.5/x3dom.css" />
 		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
 		<!--
 		<link rel="stylesheet" type="text/css" href="styles/text.css" />
@@ -23,7 +23,7 @@
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
 	
-		<script type='text/javascript' src='./scripts/x3dom.js'></script>
+		<script type='text/javascript' src='scripts/x3dom-1.5/x3dom-full.js'></script>
 		<script type="text/javascript" src="scripts/nav_runtime.js"></script>
 	</head>
 	<body>
@@ -176,7 +176,7 @@
 						<div class='container'>
 							<ul class='nav'>
 								<li>
-									<a href="http://hapztron.wordpress.com">&copy; 2012 Hassadee Pimsuwan</a>
+									<a href="http://hapztron.wordpress.com">&copy; 2012-2013 Hassadee Pimsuwan</a>
 								</li>
 							</ul>
 						</div>
