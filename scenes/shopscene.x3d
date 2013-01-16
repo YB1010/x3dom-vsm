@@ -6,6 +6,7 @@
 		                visibilityLimit="0.0"
 		                type='"EXAMINE", "ANY"'
 		                avatarSize="0.25, 1.75, 0.75" />
+
 		<Background groundColor="1 1 1" skyColor="1 1 1" />
 
 
@@ -27,12 +28,29 @@
 
 		<!-- Windows / Front / Transform 0 2 0.06 -->
 		<Transform translation="0 2 0.06">
-			<Inline url="windows_group.x3d" />
+			<Inline DEF="Windows" url="windows_group.x3d" />
 		</Transform>
 
-		<!-- Windows / Rear / Transform 0 2.1 19.06 -->
-		<Transform translation="0 2.1 19.06">
-			<Inline url="windows_group.x3d" />
+
+		<!-- Windows / Rear / Transform 0 2.1 19.14 -->
+		<Transform translation="-10 2.1 19.14">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0 2.1 19.14">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="10 2.1 19.14">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="20 2.1 19.14">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="30 2.1 19.14">
+			<Inline USE="Windows" />
 		</Transform>
 
 
