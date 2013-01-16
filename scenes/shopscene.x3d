@@ -53,6 +53,11 @@
 			<Inline USE="Windows" />
 		</Transform>
 
+		<!-- Windows / Right / Transform 0.06 2.1 -1.9 -->
+		<Transform translation="0.06 2.1 -1.9" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
 
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
 		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
