@@ -76,19 +76,19 @@
 			<Inline USE="Windows" />
 		</Transform>
 
-		<Transform translation="0.09 2.1 19.14">
+		<Transform translation="1.09 2.1 19.14">
 			<Inline USE="Windows" />
 		</Transform>
 
-		<Transform translation="10.09 2.1 19.14">
+		<Transform translation="12.09 2.1 19.14">
 			<Inline USE="Windows" />
 		</Transform>
 
-		<Transform translation="20.09 2.1 19.14">
+		<Transform translation="23.09 2.1 19.14">
 			<Inline USE="Windows" />
 		</Transform>
 
-		<Transform translation="30.09 2.1 19.14">
+		<Transform translation="34.09 2.1 19.14">
 			<Inline USE="Windows" />
 		</Transform>
 
@@ -96,9 +96,15 @@
 		<Transform translation="0.06 2.1 -1.9" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
+		<Transform translation="0.06 2.1 -12.9" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
 
 		<!-- Windows / Left / Transform 0.06 2.1 -1.9 -->
 		<Transform translation="51.06 2.1 -1.83" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+		<Transform translation="51.06 2.1 -12.83" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
 
