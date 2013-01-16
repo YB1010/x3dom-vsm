@@ -37,10 +37,10 @@
 						8 9 10 -1">
 						<Coordinate point="
 							0.0 0.0 0.0 
-							51.2 0.0 0.0 
-							51.2 0.0 9.6 
-							51.2 0.1 19.2 
-							51.2 0.1 9.6 
+							51 0.0 0.0 
+							51 0.0 9.6 
+							51 0.1 19.2 
+							51 0.1 9.6 
 							48.0 0.1 9.6 
 							48.0 0.0 9.6 
 							48.0 0.1 12.8 
@@ -77,24 +77,35 @@
 						0.0 0.0 9.6 
 						0.0 0.1 9.6
 
-						51.2 0.0 0.0
-						51.2 0.1 0.0
-						51.2 0.0 9.6
-						51.2 0.1 9.6" />
+						51 0.0 0.0
+						51 0.1 0.0
+						51 0.0 9.6
+						51 0.1 9.6" />
 				</IndexedFaceSet>
 			</Shape>
 		</Transform>
 
 		<!-- Windows / Front / Transform 0 2 0.06 -->
+		<!--
 		<Transform translation="0 2 0.06">
 			<Inline DEF="Windows" url="windows_group.x3d" />
 		</Transform>
+		-->
 
 		<!-- New Windows / Rear / Transform 0 2.1 19.14 -->
-		<Transform translation="0.6 2.1 19.14">
-			<Inline DEF="Window" url="w.x3d" />
+		<Transform translation="0.5 2.1 19.14">
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline DEF="Window" url="w.x3d" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
-
+<!--
+		<Transform translation="1.5 2.1 19.14">
+			<LOD USE="Window_LOD"></LOD>
+		</Transform>
+-->
 		<!-- Windows / Rear / Transform 0 2.1 19.14 -->
 		<!--
 		<Transform translation="-9.91 2.1 19.14">
@@ -119,55 +130,101 @@
 		-->
 
 		<!-- Windows / Right / Transform 0.06 2.1 -1.9 -->
+		<!--
 		<Transform translation="0.06 2.1 -1.9" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
+		
 		<Transform translation="0.06 2.1 -12.9" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
+		-->
 
 		<!-- Windows / Left / Transform 0.06 2.1 -1.9 -->
-		<Transform translation="51.06 2.1 -1.83" rotation="0 1 0 -1.5707963267949">
+		<!--
+		<Transform translation="50.86 2.1 -1.83" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
-		<Transform translation="51.06 2.1 -12.83" rotation="0 1 0 -1.5707963267949">
+		
+		<Transform translation="50.86 2.1 -12.83" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
+		-->
 
 
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
 		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
-			<Inline DEF="Pillar" url="pillar.x3d" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline DEF="Pillar" url="pillar.x3d" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="20 0.1 12.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="30 0.1 12.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="40 0.1 12.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 
 		<!-- Pillars / Second Row / Transform X 0.1 16.5 -->
 		<Transform translation="10 0.1 16.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="20 0.1 16.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="30 0.1 16.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 		<Transform translation="40 0.1 16.5" rotation="0 1 0 0.78539816339745">
-			<Inline USE="Pillar" />
+			<LOD center="0 0 0" range="20">
+				<Group>
+					<Inline USE="Pillar" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
 		</Transform>
 
 	</Scene>
