@@ -1,16 +1,14 @@
-<?php
-	require "vivo3d.php"
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>VIVO3D Framework -- EXAMPLE</title>
+		<title>Chulabook Virtual Store</title>
 		
+		<!-- 
 		<link rel="shortcut icon" href="styles/favicon/favicon.ico" type="image/x-icon"/>
+		-->
 		<link rel="stylesheet" type="text/css" href="scripts/x3dom-1.5/x3dom.css" />
 		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
 		<!--
