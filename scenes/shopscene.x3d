@@ -7,7 +7,6 @@
 		                type='"EXAMINE", "ANY"'
 		                avatarSize="0.25, 1.75, 0.75" />
 
-
 		<Background groundAngle='1.57079'
 						groundColor='1 0.8 0.6 0.6 0.4 0.2'
 						skyAngle='0.2 1.57079'
@@ -26,7 +25,13 @@
 			<Group DEF="group_Floor">
 				<Shape>
 					<Appearance>
-						<Material DEF="Floor_APPEARANCE" diffuseColor="1 1 1" specularColor="1 1 1" shininess='0.145' />
+						<!-- <Material DEF="Floor_APPEARANCE" diffuseColor="1 1 1" specularColor="1 1 1" shininess='0.145' /> -->
+						<ImageTexture DEF='FloorImage' url='../texture/Wood-floor.jpg' repeatS='true' repeatT='true' />
+						<TextureTransform DEF='Floor_TextureTransform'
+							center='0 0'
+							translation='0 0'
+							rotation='0'
+							scale='50 19' containerField='textureTransform'/>
 					</Appearance>
 					<IndexedFaceSet solid="false" coordIndex="
 						0 1 2 17 -1 
