@@ -3,7 +3,7 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<Scene>
 		<!-- New Windows / Rear / Transform 0 2.1 19.14 -->
-		<Transform translation="0.12 0.1 10.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 9.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline DEF="Window" url="w_opt.x3d" />
@@ -12,7 +12,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 11.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 10.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -21,7 +21,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 12.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 11.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -30,7 +30,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 13.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 12.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -39,7 +39,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 14.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 13.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -48,7 +48,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 15.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 14.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -57,7 +57,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 16.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 15.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -66,7 +66,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 17.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 16.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
@@ -75,7 +75,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="0.12 0.1 18.08" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="0.12 0.1 17.88" rotation="0 1 0 -1.5707963267949">
 			<LOD center="0 0 0" range="30">
 				<Group>
 					<Inline USE="Window" />
