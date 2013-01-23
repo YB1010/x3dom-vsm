@@ -15,7 +15,7 @@
 	<Scene>
 		<Transform translation="0 0 0">
 			<Group DEF="PILLAR">
-				<Collision DEF="PILLAR_COLLISION" enabled= "true" bboxCenter="0 0 0">
+				<Collision DEF="PILLAR_COLLISION" enabled="true" bboxCenter="0 0 0">
 
 					<Transform translation="0 2 0">
 						<Shape>

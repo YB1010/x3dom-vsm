@@ -4,7 +4,7 @@
 	<head>
 		<meta content="up-light.x3d" name="title" />
 		<meta content="Up-Light, Chamchuree Square Virtual Mall, Copyright [2012] By Hassadee Pimsuwan" name="creator" />
-		<meta content="http://hapztron.wordpress.com" name="reference" />
+		<meta content="http://hassadee.com" name="reference" />
 		<meta content="1 August 2012" name="created" />
 		<meta content="3 August 2012" name="modified" />
 		<meta content="Up Light node" name="description" />
@@ -18,7 +18,7 @@
 				<Appearance DEF="BLACK">
 					<Material diffuseColor="0 0 0" specularColor="0.1 0.1 0.1" />
 				</Appearance>
-				<Rectangle2D size="1.04 0.1" />
+				<Rectangle2D solid='false' size="1.04 0.1" />
 			</Shape>
 		</Transform>
 
@@ -32,7 +32,7 @@
 				<Appearance DEF="WHITE">
 					<Material diffuseColor="1 1 1" specularColor="1 1 1" transparency="0.9" shininess="0.145" />
 				</Appearance>
-				<Rectangle2D size="0.15 0.05" />
+				<Rectangle2D solid='false' size="0.15 0.05" />
 			</Shape>
 		</Transform>
 
@@ -53,7 +53,7 @@
 		<Transform translation="-0.5195 0 0">
 			<Shape DEF="LR-WALL">
 				<Appearance USE="BLACK"></Appearance>
-					<Box size="0.001 0.1 0.15" />
+					<Box solid='false' size="0.001 0.1 0.15" />
 			</Shape>
 		</Transform>
 
@@ -63,7 +63,7 @@
 		<Transform translation="0 0.055 0">
 			<Shape DEF="ROOF-TOP">
 				<Appearance USE="BLACK"></Appearance>
-				<Box size="1.04 0.01 0.15" />
+				<Box solid='false' size="1.04 0.01 0.15" />
 			</Shape>
 		</Transform>
 
@@ -71,7 +71,7 @@
 		<Transform translation="-0.4 0.555 0">
 			<Shape DEF="COUPLE-PILLARS">
 				<Appearance USE="BLACK"></Appearance>
-				<Box size="0.025 1 0.025" />
+				<Box solid='false' size="0.025 1 0.025" />
 			</Shape>
 		</Transform>
 

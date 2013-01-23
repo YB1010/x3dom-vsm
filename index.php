@@ -82,13 +82,16 @@
 					</div>
 					-->
 
-					<x3d id='x3dom-scene' showStat='true'>
-						<scene>
-			
-							<inline url="scenes/shopscene.x3d" />
+					<X3D id='x3dom-scene' showStat='true'>
+						<Scene>
+							<Transform translation='10 0.875 2'>
+								<Inline onclick="alert('Check Out!')" url="scenes/avatars/seller.x3d" />
+							</Transform>
 
-						</scene>
-					</x3d>
+							<Inline url="scenes/shopscene.x3d" />
+
+						</Scene>
+					</X3D>
 			
 				</section>
 
