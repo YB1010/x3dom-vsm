@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<!-- New Windows / Rear / Transform 0 2.1 19.14 -->
+		<Transform translation="5 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline DEF="WindowBig" url="wb.x3d" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="10 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="15 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="20 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="25 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="30 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="35 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="40 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="45 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+
+		<Transform translation="50 0 0.12" rotation="0 1 0 3.141592653589793">
+			<LOD center="0 0 0" range="30">
+				<Group>
+					<Inline USE="WindowBig" />
+				</Group>
+				<WorldInfo info='"null node"'/>
+			</LOD>
+		</Transform>
+	</Scene>
+</X3D>
+
