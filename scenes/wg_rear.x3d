@@ -452,15 +452,6 @@
 				<WorldInfo info='"null node"'/>
 			</LOD>
 		</Transform>
-
-		<Transform translation="50 0.1 18.88">
-			<LOD center="0 0 0" range="30">
-				<Group>
-					<Inline USE="Window" />
-				</Group>
-				<WorldInfo info='"null node"'/>
-			</LOD>
-		</Transform>
 	</Scene>
 </X3D>
 
