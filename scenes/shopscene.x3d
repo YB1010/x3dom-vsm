@@ -129,44 +129,8 @@
 		</Transform>
 
 		<!-- Windows / Front / Transform 0 2 0 -->
-		<Transform translation="5 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline DEF="Window_FRONT" url="wb.x3d" />
-		</Transform>
-
-		<Transform translation="10 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="15 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="20 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="25 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="30 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="35 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="40 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="45 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
-		</Transform>
-
-		<Transform translation="50 0 0.12" rotation="0 1 0 3.141592653589793">
-			<Inline USE="Window_FRONT" />
+		<Transform translation="0 0 0">
+			<Inline url="wg_front.x3d" />
 		</Transform>
 
 		<!-- Windows / Rear / Transform 0 2.1 19.14 -->
