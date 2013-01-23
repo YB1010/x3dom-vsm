@@ -96,25 +96,51 @@
 		<Transform translation="0 0 0">
 			<Inline url="wrg.x3d" />
 		</Transform>
-		
-		<!-- Windows / Right / Transform 0.06 2.1 -1.9 -->
-		<!--
-		<Transform translation="0.06 2.1 -1.9" rotation="0 1 0 -1.5707963267949">
+
+		<!-- Windows / Right / Transform 0.12 0.1 x.08 -->
+		<Transform translation="0.12 0.1 10.08" rotation="0 1 0 -1.5707963267949">
+			<Inline DEF="Windows" url="w_opt.x3d" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 11.08" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
-		
-		<Transform translation="0.06 2.1 -12.9" rotation="0 1 0 -1.5707963267949">
+
+		<Transform translation="0.12 0.1 12.08" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
-		-->
+
+		<Transform translation="0.12 0.1 13.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 14.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 15.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 16.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 17.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
+
+		<Transform translation="0.12 0.1 18.08" rotation="0 1 0 -1.5707963267949">
+			<Inline USE="Windows" />
+		</Transform>
 
 		<!-- Windows / Left / Transform 0.06 2.1 -1.9 -->
 		<!--
-		<Transform translation="50.86 2.1 -1.83" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="50.86 0.1 -1.83" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
 		
-		<Transform translation="50.86 2.1 -12.83" rotation="0 1 0 -1.5707963267949">
+		<Transform translation="50.86 0.1 -12.83" rotation="0 1 0 -1.5707963267949">
 			<Inline USE="Windows" />
 		</Transform>
 		-->
