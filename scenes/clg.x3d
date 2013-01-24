@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+
+		<!-- 1 -->
+		<Transform translation='3 3.1 0'>
+			<Group DEF='CeilingLights_1_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="CeilingLight_URL" url="light_opt.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+
+		<!-- 2 -->
+		<Transform translation='6 3.1 0'>
+			<Group DEF='CeilingLights_2_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 3 -->
+		<Transform translation='12 3.1 0'>
+			<Group DEF='CeilingLights_3_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+
+		<!-- 4 -->
+		<Transform translation='15 3.1 0'>
+			<Group DEF='CeilingLights_4_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 5 -->
+		<Transform translation='18 3.1 0'>
+			<Group DEF='CeilingLights_5_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 6 -->
+		<Transform translation='21 3.1 0'>
+			<Group DEF='CeilingLights_6_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 7 -->
+		<Transform translation='24 3.1 0'>
+			<Group DEF='CeilingLights_7_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 8 -->
+		<Transform translation='27 3.1 0'>
+			<Group DEF='CeilingLights_8_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+
+		<!-- 9 -->
+		<Transform translation='33 3.1 0'>
+			<Group DEF='CeilingLights_9_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 10 -->
+		<Transform translation='36 3.1 0'>
+			<Group DEF='CeilingLights_10_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+
+		<!-- 11 -->
+		<Transform translation='42 3.1 0'>
+			<Group DEF='CeilingLights_11_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<!-- 12 -->
+		<Transform translation='45 3.1 0'>
+			<Group DEF='CeilingLights_12_GROUP'>
+				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline USE="CeilingLight_URL" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+	</Scene>
+</X3D>
+
