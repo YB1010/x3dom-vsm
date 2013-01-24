@@ -41,19 +41,16 @@
 						<input type='text' class='search-query span2' placeholder='Search'>
 					</form>
 				</nav>
-				<!--
+				
 				<nav class='container'>
 					<ul class="breadcrumb">
 						<li>
 							<a href="#">Home</a> <span class="divider">/</span>
 						</li>
-						<li>
-							<a href="#">Library</a> <span class="divider">/</span>
-						</li>
-						<li class="active">Test case</li>
+						<li class="active">Virtual Mall</li>
 					</ul>
 				</nav>
-				-->
+				
 			</div>
 		</header>
 
@@ -63,24 +60,6 @@
 			<div class='row-fluid'>
 		
 				<section class='span10'>
-					
-					<!--
-					<div class='navbar'>
-						<div class='navbar-inner'>
-							<div class='container'>
-								<ul class="breadcrumb">
-									<li>
-										<a href="#">Home</a> <span class="divider">/</span>
-									</li>
-									<li>
-										<a href="#">Library</a> <span class="divider">/</span>
-									</li>
-									<li class="active">Data</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					-->
 
 					<X3D id='x3dom-scene' showStat='true'>
 						<Scene>
