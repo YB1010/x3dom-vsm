@@ -157,6 +157,12 @@
 		</Transform>
 
 
+		<!-- Ceiling Lights -->
+		<Transform translation="0 0 0">
+			<Inline url="clg.x3d" />
+		</Transform>
+
+
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
 		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="40">
@@ -229,17 +235,6 @@
 					<Inline USE="Pillar" />
 				</Group>
 				<WorldInfo info='"null node"'/>
-			</LOD>
-		</Transform>
-		
-
-		<!-- Lights -->
-		<Transform translation='10 3.1 4'>
-			<LOD center='0 0 0' range='40'>
-				<Group>
-					<Inline url='up-light.x3d' />
-				</Group>
-				<WorldInfo info='"null node' />
 			</LOD>
 		</Transform>
 
