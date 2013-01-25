@@ -91,7 +91,7 @@
 						<div class='container'>
 							<ul class='nav'>
 								<li>
-									<a href="http://hassadee.com">&copy; 2012-2013 Chulabook Virtual Store</a>
+									<a href="http://hassadee.com">&copy; 2013 Chulabook Virtual Store</a>
 								</li>
 							</ul>
 						</div>
