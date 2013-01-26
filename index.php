@@ -64,7 +64,12 @@
 
 					<X3D id='x3dom-scene' showStat='true'>
 						<Scene>
-							<Transform translation='10 0.875 2'>
+
+							<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
+								<Inline onclick="alert('Check Out!')" url="scenes/avatars/seller.x3d" />
+							</Transform>
+
+							<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
 								<Inline onclick="alert('Check Out!')" url="scenes/avatars/seller.x3d" />
 							</Transform>
 
