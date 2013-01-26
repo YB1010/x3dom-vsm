@@ -162,6 +162,11 @@
 			<Inline url="clg.x3d" />
 		</Transform>
 
+		<!-- Checkout Desk -->
+		<Transform translation="17 0 1.2">
+			<Inline url="checkout_desk.x3d" />
+		</Transform>
+
 
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
 		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
