@@ -1,1248 +1,162 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
-<X3D profile="Immersive" version="3.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
-	<head>
-		<meta content="shelf.x3d" name="title" />
-		<meta content="Shelf, Chamchuree Square Virtual Mall, Copyright [2012] By Hassadee Pimsuwan" name="creator" />
-		<meta content="http://hapztron.wordpress.com" name="reference" />
-		<meta content="28 February 2012" name="created" />
-		<meta content="5 June 2012" name="modified" />
-		<meta content="Definition and use of a Shelf node type." name="description" />
-		<meta content="/scenes/shelf.x3d" name="identifier" />
-		<meta content="Xcode 4.1" name="generator" />
-		<meta content="GNU GPLv2" name="license" />
-	</head>
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<Scene>
-		<!-- START: BORDER -->
-		<Transform translation="0 0 0.025">		
-			<Group DEF="BORDER">
-				<Transform translation="0 0.0025 0">
-					<Shape>
-						<Appearance DEF="top-button_plate_appearance">
-							<Material diffuseColor="1 1 1" />
-						</Appearance>
-						<Box DEF="TB_PLATE" size="0.6 0.005 0.05" />
-					</Shape>
-				</Transform>
-			
-				<Transform translation="0 1.3475 0">
-					<Shape>
-						<Appearance USE="top-button_plate_appearance"></Appearance>
-						<Box USE="TB_PLATE" />
-					</Shape>
-				</Transform>
-				<!-- RIGHT -->
-				<Transform translation="0.2975 0.675 0">
-					<Shape>
-						<Appearance USE="top-button_plate_appearance"></Appearance>
-						<Box DEF="RL_PLATE" size="0.005 1.34 0.05" />
-					</Shape>
-				</Transform>
-				<!-- LEFT -->
-				<Transform translation="-0.2975 0.675 0">
-					<Shape>
-						<Appearance USE="top-button_plate_appearance"></Appearance>
-						<Box USE="RL_PLATE" />
-					</Shape>
-				</Transform>
-			</Group>
-		</Transform>
-		
-		<Transform translation="0 0 1.275">
-			<Group USE="BORDER"></Group>
-		</Transform>
-		<!-- END: BORDER -->
-		
-		<Transform translation="0 0.16 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box DEF="plate" size="0.6 0.02 1.2" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0 0.39 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box USE="plate" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0 0.62 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box USE="plate" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0 0.85 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box USE="plate" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0 1.08 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box USE="plate" />
-			</Shape>
-		</Transform>
-		
-		<!-- START: CLOSE_PLATE -->
-		<!-- OBJ: 1 -->
-		<Transform translation="0 0.645 0.025">
-			<Group DEF="CLOSE_PLATE_GROUP">
+		<Transform DEF="Shelf_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000">
+			<Group DEF="Shelf_GROUP">
 				<Shape>
-					<Appearance DEF="CLOSE_PLATE_APPEARANCE">
-						<ImageTexture repeatS="false" repeatT="true" url='"../texture/wood_pre.png"' ></ImageTexture>
-						<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 20" ></TextureTransform>
-						<Material diffuseColor="0.35294 0.23921 0.12156" />
+					<Appearance DEF='White_APPEARANCE'>
+						<Material diffuseColor="1 1 1" specularColor="1 1 1" />
 					</Appearance>
-					<Box DEF="CLOSE_PLATE" size="0.59 1.28 0.05" />
+					
+					<IndexedFaceSet solid='false' coordIndex='
+						0 3 4 7 -1
+						1 2 5 6 -1
+						2 9 14 5 -1
+						3 8 15 4 -1
+						9 10 13 14 -1
+						10 11 12 13 -1
+						8 11 12 15 -1
+						'>
+						<Coordinate point='
+							0 0 0
+							0.6 0 0
+							0.6 0.15 0
+							0 0.15 0
+							0 0.15 1.2
+							0.6 0.15 1.2
+							0.6 0 1.2
+							0 0 1.2
+							0.29 0.15 0
+							0.31 0.15 0
+							0.31 1.3 0
+							0.29 1.3 0
+							0.29 1.3 1.2
+							0.31 1.3 1.2
+							0.31 0.15 1.2
+							0.29 0.15 1.2
+							' />		
+					</IndexedFaceSet>
 				</Shape>
+
+				<Transform translation='0 0 0'>
+					<Group DEF='ShelfFloor_GROUP'>
+						<Transform translation='0.31 0.4 0'>
+							<Shape DEF='ShelfFloor'>
+								<Appearance USE='White_APPEARANCE'></Appearance>
+								
+								<IndexedFaceSet solid='false' coordIndex='
+									2 3 4 5 -1
+									1 2 5 6 -1
+									0 3 4 7 -1
+									'>
+									<Coordinate point='
+										0 0 0
+										0 0.02 0
+										0.29 0.02 0
+										0.29 0 0
+										0.29 0 1.2
+										0.29 0.02 1.2
+										0 0.02 1.2
+										0 0 1.2
+										' />		
+								</IndexedFaceSet>
+							</Shape>
+						</Transform>
+
+						<Transform translation='0.31 0.65 0'>
+							<Shape USE='ShelfFloor'></Shape>
+						</Transform>
+
+						<Transform translation='0.31 0.9 0'>
+							<Shape USE='ShelfFloor'></Shape>
+						</Transform>
+
+						<Transform translation='0.31 1.15 0'>
+							<Shape USE='ShelfFloor'></Shape>
+						</Transform>
+					</Group>
+				</Transform>
+
+				<Transform translation='0.6 0 1.2' rotation='0 1 0 3.141592653589793'>
+					<Group USE='ShelfFloor_GROUP'></Group>
+				</Transform>
+
+				<Transform translation='0 0 -0.05'>
+					<Group DEF='OCShelf_GROUP'>
+						<Shape DEF='OCShelf'>
+							<Appearance USE='White_APPEARANCE'></Appearance>
+							
+							<IndexedFaceSet solid='false' coordIndex='
+								0 1 2 3 -1
+								1 2 12 13 -1
+								1 6 14 13 -1
+								5 6 14 15 -1
+								2 5 15 12 -1
+								10 11 12 13 -1
+								9 10 13 14 -1
+								8 9 14 15 -1
+								8 11 12 15 -1
+								0 3 11 10 -1
+								3 4 8 11 -1
+								4 7 9 8 -1
+								0 7 9 10 -1
+								'>
+								<Coordinate point='
+									0 0 0
+									0.6 0 0
+									0.58 0.02 0
+									0.02 0.02 0
+									0.02 0.02 0.05
+									0.58 0.02 0.05
+									0.6 0 0.05
+									0 0 0.05
+									0.02 1.38 0.05
+									0 1.4 0.05
+									0 1.4 0
+									0.02 1.38 0
+									0.58 1.38 0
+									0.6 1.4 0
+									0.6 1.4 0.05
+									0.58 1.38 0.05
+									' />		
+							</IndexedFaceSet>
+						</Shape>
+
+						<Shape DEF='OCShelfWall'>
+							<Appearance DEF='Wood_APPEARANCE'>
+								<Material diffuseColor="0.6 0.6 0.6" specularColor="0.6 0.6 0.6" />
+							</Appearance>
+							
+							<IndexedFaceSet solid='false' coordIndex='
+								0 1 6 5 -1
+								4 5 6 7 -1
+								2 3 4 7 -1
+								'>
+								<Coordinate point='
+									0.02 0.02 0
+									0.58 0.02 0
+									0.58 0.02 0.05
+									0.02 0.02 0.05
+									0.02 1.3 0.05
+									0.02 1.3 0
+									0.58 1.3 0
+									0.58 1.3 0.05
+									' />		
+							</IndexedFaceSet>
+						</Shape>
+					</Group>
+				</Transform>
+
+				<Transform translation='0.6 0 1.25' rotation='0 1 0 3.141592653589793'>
+					<Group USE='OCShelf_GROUP'></Group>
+				</Transform>
+
+
 			</Group>
 		</Transform>
-		
-		<!-- OBJ: 2 -->
-		<Transform translation="0 0.645 1.275">
-			<Group USE="CLOSE_PLATE_GROUP"></Group>
-		</Transform>
-		<!-- END: CLOSE_PLATE -->
-		
-		<!-- START: BUTTOM OBJECT -->
-		<Transform translation="0 0.075 0.65">
-			<Shape>
-				<Appearance DEF="CLOSE_PLATE_APPEARANCE">
-					<Material diffuseColor="0.2 0.2 0.2" />
-				</Appearance>
-				<Box DEF="BUTTOM_OBJECT" size="0.6 0.15 1.2" />
-			</Shape>
-		</Transform>
-		<!-- END: BUTTOM OBJECT -->
-		
-		<!-- START: MIDDLE_PLATE -->
-		<Transform translation="0 0.725 0.65">
-			<Shape>
-				<Appearance USE="top-button_plate_appearance"></Appearance>
-				<Box DEF="MIDDLE_PLATE" size="0.02 1.11 1.2" />
-			</Shape>
-		</Transform>
-		<!-- END: MIDDLE_PLATE -->
-		
-		<!-- START: BOOK -->
-		<Transform translation="0.15 1.20 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040689.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<!--<Box DEF="BOOK_SIZE" size="0.2 0.25 0.02" solid="true" />-->
-				<Rectangle2D DEF="BOOK_SIZE" size="0.2 0.25" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040665.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162000676.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119029606.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162002502.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167119168.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040894.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342160.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169022428.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789740325291.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="0.15 1.20 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<!-- FLOOR: 2 -->
-		<Transform translation="0.15 0.96 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167119182.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342276.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342474.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342511.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342535.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167396057.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169011224.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169028079.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789740327158.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789747648690.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.96 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749742297.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<!-- FLOOR: 3 -->
-		<Transform translation="0.15 0.73 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749630.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749937.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742122096.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742126353.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789743327025.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749223529.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749386859.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749517.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749965368.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749993880.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.73 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071214674.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		
-		<!-- FLOOR: 4 -->
-		<Transform translation="0.15 0.50 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071219204.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071251372.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071437110.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780072125122.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780131227231.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780131659452.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780446679572.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780619267674.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780764543616.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780789725004.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.50 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9781418859565.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		
-		<!-- FLOOR: 5 -->
-		<Transform translation="0.15 0.27 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9781423905110.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119001824.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742129118.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="0.15 0.27 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		<!-- END BOOK 1 -->
-		<Transform translation="-0.15 1.20 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040689.gif""' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-
-		<Transform translation="-0.15 1.20 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040665.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162000676.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119029606.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162002502.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167119168.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786162040894.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342160.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169022428.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance DEF="top-button_plate_appearance">
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789740325291.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<Transform translation="-0.15 1.20 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<!-- FLOOR: 2 -->
-		<Transform translation="-0.15 0.96 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167119182.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342276.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342474.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342511.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167342535.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786167396057.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169011224.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786169028079.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789740327158.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789747648690.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.96 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749742297.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		<!-- FLOOR: 3 -->
-		<Transform translation="-0.15 0.73 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749630.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749937.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742122096.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742126353.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789743327025.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749223529.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749386859.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749749517.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749965368.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789749993880.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.73 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071214674.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		
-		<!-- FLOOR: 4 -->
-		<Transform translation="-0.15 0.50 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071219204.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071251372.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780071437110.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780072125122.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780131227231.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780131659452.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780446679572.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780619267674.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780764543616.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9780789725004.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.50 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9781418859565.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
-		
-		<!-- FLOOR: 5 -->
-		<Transform translation="-0.15 0.27 0.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9781423905110.gif"' ></ImageTexture>
-					<TextureTransform DEF="BOOK_COVER_TEXTURETRANSFER" scale="1 1" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.25" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119001824.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.35" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9789742129118.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.45" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.55" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.65" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.75" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.85" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 0.95" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 1.05" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-
-		<Transform translation="-0.15 0.27 1.15" rotation="0 1 0 0.78539816339745">
-			<Shape>
-				<Appearance>
-					<ImageTexture repeatS="false" repeatT="false" url='"../texture/9786119028036.gif"' ></ImageTexture>
-					<TextureTransform USE="BOOK_COVER_TEXTURETRANSFER" ></TextureTransform>
-				</Appearance>
-				<Rectangle2D USE="BOOK_SIZE" />
-			</Shape>
-		</Transform>
-		
 	</Scene>
 </X3D>
+
