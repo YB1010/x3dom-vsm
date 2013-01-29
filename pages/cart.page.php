@@ -13,7 +13,7 @@
 			$sumprice += ($value['qty'] * $value['price']) - ($value['qty'] * $value['discount']);
 		} // End foreach.
 		
-		if ($_POST['q'] != '') {
+		if (@$_POST['q'] != '') {
 			?>
 				<div class="alert alert-success">
 					<h4>สินค้าที่ค้นหามีจำนวน <?php echo $cnt; ?> รายการ</h4>
@@ -33,9 +33,9 @@
 					<!-- <img style="width: 70px; height: 70px;" src="./images/products/<?php echo $value['ID']; ?>.jpg"> -->
 					<span><?php echo $value['name'] ?></span><br><br>
 					<div>
-						<span class="label label-info">
-							จำนวน (<?php echo number_format($value['price'], 2, '.', ',') . " x " . $value['qty']; ?>) เล่ม 
-							<?php echo $value['discount'] != 0? 'มีส่วนลด (' . number_format($value['discount'], 2, '.', ',') . " x " . $value['qty'] . ') บาท ': ' '; ?>
+						<span class="label label-info" style="width: 100%">
+							จำนวน (<?php echo number_format($value['price'], 2, '.', ',') . " x " . $value['qty']; ?>) เล่ม <br>
+							<?php echo $value['discount'] != 0? 'มีส่วนลด (' . number_format($value['discount'], 2, '.', ',') . " x " . $value['qty'] . ') บาท <br>': ' '; ?>
 							รวมเป็นเงินจำนวน <?php echo number_format(($value['qty'] * $value['price']) - ($value['qty'] * $value['discount']), 2, '.', ','); ?> บาท
 						</span>
 					</div>
