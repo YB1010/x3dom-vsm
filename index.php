@@ -2,10 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<script type='text/javascript'>
+			window.location.href = "scene.php";
+		</script>
 	</head>
-	<body>
-	</body>
 </html>
-<script type='text/javascript'>
-	window.location.href = "home.php";
-</script>
