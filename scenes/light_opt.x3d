@@ -9,7 +9,7 @@
 				<Group DEF='CeilingLight_GROUP'>
 					<Shape>
 						<Appearance>
-							<Material diffuseColor='0.3 0.3 0.3' shininess='0.145' specularColor='0 0 0' />
+							<Material diffuseColor='0.3 0.3 0.3' shininess='0' specularColor='0 0 0' />
 						</Appearance>
 						
 						<IndexedFaceSet solid='false' coordIndex='
