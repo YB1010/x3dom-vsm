@@ -8,7 +8,12 @@
 			<Group DEF="CheckoutDesk_GROUP">
 				<Shape>
 					<Appearance>
-						<Material diffuseColor="1 1 1" specularColor="1 1 1" />
+						<ImageTexture DEF='CheckoutDesk_IMAGE' url='textures/wood-crop.jpg' repeatS='true' repeatT='true' />
+						<TextureTransform DEF='CheckoutDesk_TextureTransform'
+							center='0 0'
+							translation='0 0'
+							rotation='0'
+							scale='2 2' containerField='textureTransform'/>
 					</Appearance>
 					
 					<IndexedFaceSet solid='false' coordIndex='

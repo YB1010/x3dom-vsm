@@ -17,9 +17,6 @@
 		-->
 
 		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
-		<script src="./js/jquery-1.8.2.min.js"></script>
-		<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
-		<script type='text/javascript' src='./js/javascript.js'></script>
 		
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
@@ -81,9 +78,14 @@
 						<Scene>
 
 							<NavigationInfo headlight="true"
-		                		visibilityLimit="0.0"
+		                		visibilityLimit="20"
 				                type='"WALK"'
 				                avatarSize="0.25, 1.75, 0.75"></NavigationInfo>
+
+				             <Viewpoint id='ViewpointMarker' 
+				             	jump='false'
+				             	position='25, 1.75, 5'
+				             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
 
 				            <Collision enabled="true">
 								<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
@@ -203,7 +205,7 @@
 							-->
 							<!-- End: Models -->
 
-							<Collision enabled="true">
+							<Collision enabled="true">	
 								<Inline url="scenes/shopscene.x3d" />
 							</Collision>
 
@@ -244,44 +246,37 @@
 			</div>
 		</div>
 
-		<!-- Modal -->
-		<div id="products" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">รายการสินค้า</h3>
-				<div class="input-append">
-					<input type="text" id="p_search">
-					<button type="button" class="btn" onClick="productslist($('#pcid').val(), $('#p_search').val())">Search</button>
-				</div>
-			</div>
-			
-			<div class="modal-body">
-			</div>
-
-			<div class="modal-footer">
-				<button class="btn" data-dismiss="modal" aria-hidden="true">กลับหน้าหลัก</button>
-			</div>
-		</div>
-
-		<!-- Modal -->
-		<div id="cart" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">สินค้าในรถเข็น</h3>
-				<div class="input-append">
-					<input type="text" id="c_search">
-					<button type="button" class="btn" onClick="cartlist($('#c_search').val())">Search</button>
-				</div>
-			</div>
-			
-			<div class="modal-body">
-			</div>
-
-			<div class="modal-footer">
-				<button class="btn" data-dismiss="modal" aria-hidden="true">ปิด</button>
-				<a href="home.php?p=checkout" class="btn btn-primary">สั่งซื้อ</a>
-			</div>
-		</div>
-
+		<?php include './pages/modal.page.php'; ?>
 	</body>
+
+	<script src="./js/jquery-1.8.2.min.js"></script>
+	<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='./js/javascript.js'></script>
+	<script type="text/javascript" src="scripts/keyevents.js"></script>
+
+	<script type='text/javascript'>
+		document.onkeydown = function(e)
+        {
+			var keynum = 0;
+
+			if(window.event) { keynum = e.keyCode; }
+			else if(e.which) { keynum = e.which; }
+
+			if(keynum == 37) { // left
+			    keyPress(37);
+			}
+
+			if(keynum == 38) { // up
+			    keyPress(38);
+			}
+
+			if(keynum == 39) { // right
+			  	keyPress(39);
+			}
+
+			if(keynum == 40) { // down
+			    keyPress(40);
+			}
+		}
+	</script>
 </html>

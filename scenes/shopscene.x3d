@@ -2,8 +2,9 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<Scene>
+		<!--
 		<Viewpoint orientation='0 1 0 3.141592653589793' position='25 1.75 5' />
-
+		-->
 		<NavigationInfo headlight="true"
 		                visibilityLimit="0.0"
 		                type='"WALK"'
@@ -249,10 +250,8 @@
 			direction='0 -1 0'
 			intensity='1'
 			radius='20'
-			location='12 12 10'
-			></SpotLight>
+			location='12 12 10'></SpotLight>
 
-<!--
 		<SpotLight ambientIntensity='0'
 			attenuation='1 0 0'
 			beamWidth='0.39'
@@ -261,19 +260,7 @@
 			direction='0 -1 0'
 			intensity='1'
 			radius='20'
-			location='25 15 10'
-			></SpotLight>
--->
-		<SpotLight ambientIntensity='0'
-			attenuation='1 0 0'
-			beamWidth='0.39'
-			color='0.698 0.698 0.698'
-			cutOffAngle='1.57'
-			direction='0 -1 0'
-			intensity='1'
-			radius='20'
-			location='38 12 10'
-			></SpotLight>
+			location='38 12 10'></SpotLight>
 
 	</Scene>
 </X3D>

@@ -8,8 +8,8 @@
 			           scale="1.000000 1.000000 1.000000">
 				<Group DEF="Shelf_GROUP">
 					<Shape>
-						<Appearance DEF='White_APPEARANCE'>
-							<Material diffuseColor="1 1 1" specularColor="1 1 1" />
+						<Appearance DEF='Shelf_APPEARANCE'>
+							<Material diffuseColor='0.8 0.8 0.8' specularColor='0.8 0.8 0.8' shininess='1' />
 						</Appearance>
 						
 						<IndexedFaceSet solid='false' coordIndex='
@@ -46,7 +46,7 @@
 						<Group DEF='ShelfFloor_GROUP'>
 							<Transform translation='0.31 0.4 0'>
 								<Shape DEF='ShelfFloor'>
-									<Appearance USE='White_APPEARANCE'></Appearance>
+									<Appearance USE='Shelf_APPEARANCE'></Appearance>
 									
 									<IndexedFaceSet solid='false' coordIndex='
 										2 3 4 5 -1
@@ -88,7 +88,7 @@
 					<Transform translation='0 0 -0.05'>
 						<Group DEF='OCShelf_GROUP'>
 							<Shape DEF='OCShelf'>
-								<Appearance USE='White_APPEARANCE'></Appearance>
+								<Appearance USE='Shelf_APPEARANCE'></Appearance>
 								
 								<IndexedFaceSet solid='false' coordIndex='
 									0 1 2 3 -1
@@ -128,7 +128,12 @@
 
 							<Shape DEF='OCShelfWall'>
 								<Appearance DEF='Wood_APPEARANCE'>
-									<Material diffuseColor="0.3 0.3 0.3" specularColor="0.3 0.3 0.3" shininess='1' />
+									<ImageTexture DEF='OCShelfWall_IMAGE' url='textures/wood_maple.jpg' repeatS='true' repeatT='true' />
+									<TextureTransform DEF='OCShelfWall_TextureTransform'
+										center='0 0'
+										translation='0 0'
+										rotation='0'
+										scale='1 1' containerField='textureTransform'/>
 								</Appearance>
 								
 								<IndexedFaceSet solid='false' coordIndex='

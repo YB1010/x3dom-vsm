@@ -16,7 +16,7 @@ function productslist(v_pcid, v_search)
 } // End function.
 
 /**
-	This function is shoe product detail.
+	This function is show product detail.
 */
 function productsdetail(v_pid, v_pcid)
 {
@@ -29,6 +29,9 @@ function productsdetail(v_pid, v_pcid)
 	});
 } // End function.
 
+/**
+	This function is show cart list.
+*/
 function cartlist(v_search)
 {
 	$('div#cart').modal('show');
@@ -38,6 +41,12 @@ function cartlist(v_search)
 		q: v_search
 	}, function(data) {
 		$('#cart > div.modal-body').html(data);
+
+		if (data.indexOf("ไม่มีสินค้า") >= 0) {
+			$('#orderbtn').hide();
+		}else {
+			$('#orderbtn').show();
+		} // End if.
 	});
 } // End function.
 
@@ -71,7 +80,10 @@ $(document).ready(function() {
 			cindex: btn.attr('data-cindex'),
 		}, function(data) {
 			var arr = data.split(':-:');
-			if (arr[0] == 0) $('#sumprice').removeClass().addClass('alert');
+			if (arr[0] == 0) {
+				$('#sumprice').removeClass().addClass('alert');
+				$('#orderbtn').hide();
+			} // End if.
 			$('#qty').text(arr[0]);
 			$('#sumprice > h4').text(arr[1]);
 		});
