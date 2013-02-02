@@ -3,7 +3,6 @@
 */
 function productslist(v_pcid, v_search)
 {
-	console.log(v_search);
 	$('#products').modal('show');
 	$('#p_search').val('');
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
@@ -28,7 +27,6 @@ function productsdetail(v_pid, v_pcid)
 		$('#products div.modal-body').hide().html(data).fadeIn();
 	});
 } // End function.
-
 /**
 	This function is show cart list.
 */

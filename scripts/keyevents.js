@@ -87,9 +87,14 @@ function keyPress(press)
 	/* Up */
 	if (press == 38) {
 		var set_zPosition = Number(viewpointPositionSplited[2]);
-		set_zPosition += 0.1;
+		var set_xPosition = Number(viewpointPositionSplited[0]);
 
-	    var setViewpointPosition = [viewpointPositionSplited[0], y, set_zPosition];
+		set_zPosition -= 0.2 * Math.cos(oDegree); // Calaulate is to find zPosition.
+		set_xPosition -= 0.2 * Math.sin(oDegree); // Calculate is to find xPosition.
+
+		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
+
+	    var setViewpointPosition = [set_xPosition, y, set_zPosition];
 		var viewpointPosition = new Array();
 		viewpointPosition = setViewpointPosition;
 
@@ -100,9 +105,14 @@ function keyPress(press)
 	/* Down */
 	if (press == 40) {
 		var set_zPosition = Number(viewpointPositionSplited[2]);
-		set_zPosition -= 0.1;
+		var set_xPosition = Number(viewpointPositionSplited[0]);
 
-	    var setViewpointPosition = [viewpointPositionSplited[0], y, set_zPosition];
+		set_zPosition += 0.2 * Math.cos(oDegree); // Calaulate is to find zPosition.
+		set_xPosition += 0.2 * Math.sin(oDegree); // Calculate is to find xPosition.
+
+		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
+
+	    var setViewpointPosition = [set_xPosition, y, set_zPosition];
 		var viewpointPosition = new Array();
 		viewpointPosition = setViewpointPosition;
 
