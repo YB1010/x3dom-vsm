@@ -26,6 +26,14 @@
 					<small class="span7"><?php echo $rows['Discount'] . ' บาท '; ?></small>
 				</div>
 			<?php } ?>
+
+			<div class="caption">
+				<div class="input-append">
+					<input class="span10 inputQty" type="number" value="1">
+					<span class="small add-on">เล่ม</span>
+				</div>
+				<a href="#" class="btn btn-block btn-primary" data-loading-text="กำลังโหลดขอมูล..." proc="addtocart" data-pid="<?php echo $rows['ProductID']; ?>">หยิบลงตะกร้า</a>
+			</div>
 		</div>
 		<div class="span8">
 			<div class="row-fluid">
