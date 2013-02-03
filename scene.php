@@ -79,7 +79,7 @@
 
 							<NavigationInfo headlight="true"
 		                		visibilityLimit="20"
-				                type='"WALK"'
+				                type='"lookAround"'
 				                avatarSize="0.25, 1.75, 0.75"></NavigationInfo>
 
 				             <Viewpoint id='ViewpointMarker' 
