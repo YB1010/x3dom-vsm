@@ -1,14 +1,15 @@
 /**
 	This function is show products list.
 */
-function productslist(v_pcid, v_search)
+function productslist(v_pcid, v_search, v_page)
 {
 	$('#products').modal('show');
 	$('#p_search').val('');
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
 	$.get('./ajax.php?p=products&t=page', {
 		pcid: v_pcid,
-		q: v_search
+		q: v_search,
+		page: v_page
 	}, function(data) {
 		$('#products div.modal-body').hide().html(data).fadeIn();
 	});
@@ -47,6 +48,18 @@ function cartlist(v_search)
 		} // End if.
 	});
 } // End function.
+
+/**
+	This function is alert date in modal ID lightbox (It's about alert msg or someting like that.).
+*/
+function alertLightbox(filepath)
+{
+	$('div#lightbox').modal('show');
+	$('#lightbox').html('Loading.....');
+	$.post('./pages/' + filepath + '.page.php', function(data) {
+		$('#lightbox').html(data);
+	});
+}
 
 $(document).ready(function() {
 	/**
@@ -92,7 +105,7 @@ $(document).ready(function() {
 	*/
 	$('#hp-search, #p_search').live('keydown', function(e) {
 		if (e.keyCode == 13) {
-			productslist(null, $(this).val());
+			productslist(null, $(this).val(), 1);
 		} // End if.
 	}); // End processes.
 

@@ -3,7 +3,7 @@
 	$result = mysql_query($query);
 	while ($rows = mysql_fetch_array($result)) {
 ?>
-	<ul class="breadcrumb">
+	<ul class="breadcrumb" style="padding-left: 10px;">
 		<li>
 			<a href="javascript: productslist('<?php echo $_GET['pcid'] == ''? "":$_GET['pcid']; ?>', <?php echo $_GET['pcid'] == ''? "$('#hp-search').val()":"''"; ?>)">
 				<?php echo $_GET['pcid'] == ''? "ผลการค้นหา":$rows['ProductCategoryName']; ?>
@@ -14,7 +14,7 @@
 	</ul><br>
 	<div class="row-fluid">
 		<div class="span4">
-			<img src="./images/products/<?php echo $rows['ProductID']; ?>.jpg">
+			<img src="./images/products/<?php echo $rows['ProductID']; ?>.jpg" style="width: 130px; height: 200px;">
 
 			<div class="row-fluid">
 				<small class="span4">ราคา</small>

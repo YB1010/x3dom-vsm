@@ -53,8 +53,13 @@
 					<form class='navbar-search pull-right' onSubmit="javascript: return false">
 						<input type='text' class='search-query span2' id="hp-search" placeholder='Search'>
 					</form>
+					<ul class="nav pull-rifht">
+						<li>
+							<a href="javascript: alertLightbox('help')">Help</a>
+						</li>
+					</ul>
 				</nav>
-				
+				<!--
 				<nav class='container'>
 					<ul class="breadcrumb">
 						<li>
@@ -63,7 +68,7 @@
 						<li class="active">Virtual Mall</li>
 					</ul>
 				</nav>
-				
+				-->
 			</div>
 		</header>
 
@@ -72,7 +77,7 @@
 
 			<div class='row-fluid'>
 		
-				<section class='span9'>
+				<section class='span12'>
 
 					<X3D id='x3dom-scene' showStat='true'>
 						<Scene>
@@ -113,7 +118,7 @@
 								<Transform translation="7 0 14" rotation='0 1 0 -0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('1', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -124,7 +129,7 @@
 								<Transform translation="13 0 14" rotation='0 1 0 -0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('2', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('2', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -135,7 +140,7 @@
 								<Transform translation="15 0 14" rotation='0 1 0 -0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('3', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('3', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -146,7 +151,7 @@
 								<Transform translation="17 0 14" rotation='0 1 0 -0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('4', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('4', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -157,7 +162,7 @@
 								<Transform translation="33 0 14" rotation='0 1 0 0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('5', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('5', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -168,7 +173,7 @@
 								<Transform translation="35 0 14" rotation='0 1 0 0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('6', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -179,7 +184,7 @@
 								<Transform translation="37 0 14" rotation='0 1 0 0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('7', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -190,7 +195,7 @@
 								<Transform translation="43 0 14" rotation='0 1 0 0.78539816339745'>
 									<LOD center="0 0 0" range="15">
 										<Group>
-											<Inline onClick="productslist('8', '')" url='scenes/shelf.x3d' />
+											<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
 										</Group>
 										<WorldInfo info='"null node"'/>
 									</LOD>
@@ -214,7 +219,7 @@
 			
 				</section>
 
-				<aside class='span3'>
+				<aside class='span'>
 					<div class='sidebar-nav'>
 						<p>
 							Press 'g' for game mode, use cursor keys to move (with 'w' back to walk mode).

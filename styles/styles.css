@@ -288,20 +288,208 @@ input[type=submit] {
 }
 
 .container-fluid {
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 
 /* ----------------------------------------------------------------------------------------------------------------------------
 == shelf
 ---------------------------------------------------------------------------------------------------------------------------- */
-#shelf {
-	padding: 0 20px;
-	margin: 0 5px;
-}
+
 #shelf > li {
-	width: 90px; margin: 3px;
+	width: 82px;
+	margin: -120px 0 10px 0;
 }
 #shelf > li img {
-	width: 90px; height: 90px;
+	width: 82px; height: 130px;
+}
+
+/*
+ * Credit: http://codepen.io/jtholloran/details/KyvHb#pen-details-tab
+ */
+
+#shelf {
+	display: block;
+	position: relative;
+	width: 80%;
+	height: 20px;
+	margin: 130px auto 20px;
+	padding: 0px 20px;
+	background-color: #d1d8de;
+	/* Old browsers */
+
+	background-image: -moz-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
+	/*FF3.6+ */
+
+	background-image: -webkit-gradient(90deg, left top, right bottom, color-stop(0%, #d1d8de), color-stop(100%, #eff1f3));
+	/*Chrome,Safari4+ */
+
+	background-image: -webkit-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
+	/*Chrome10+,Safari5.1+ */
+
+	background-image: -o-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
+	/* Opera 11.10+ */
+
+	background-image: -ms-linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
+	/*IE10+ */
+
+	background-image: linear-gradient(90deg, #d1d8de 0%, #eff1f3 100%);
+	/* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff1f3', endColorstr='#d1d8de', GradientType='0' );
+	/* IE6-9 */
+
+	-webkit-box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
+	-moz-box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
+	box-shadow: 0 2px 2px #708698, 0 4px 0 #abb8c3, 0 20px 30px -8px #000000, transparent 0 0 0, transparent 0 0 0, transparent 0 0 0;
+}
+.bookend_left {
+	display: block;
+	position: absolute;
+	left: -25px;
+	top: -18px;
+	width: 36px;
+	height: 36px;
+	background-color: #ffffff;
+	-webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+.bookend_left:before {
+	position: absolute;
+	top: 31px;
+	left: 17px;
+	width: 20px;
+	height: 10px;
+	background-color: #ffffff;
+	content: "";
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+}
+.bookend_right {
+	display: block;
+	position: absolute;
+	right: -25px;
+	top: -18px;
+	width: 36px;
+	height: 36px;
+	background-color: #ffffff;
+	-webkit-transform: rotate(-35deg);
+	-moz-transform: rotate(-35deg);
+	-ms-transform: rotate(-35deg);
+	-o-transform: rotate(-35deg);
+}
+.bookend_right:before {
+	position: absolute;
+	top: 31px;
+	right: 17px;
+	width: 20px;
+	height: 10px;
+	background-color: #ffffff;
+	content: "";
+	-webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+}
+.shelf .reflection {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 1px;
+	width: 99.8%;
+	height: 1px;
+	background-color: #ffffff;
+	/* Old browsers */
+
+	background-image: -moz-linear-gradient(0deg, #ffffff 0%, rgba(0, 0, 0, 0) 35%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+	/*FF3.6+ */
+
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #ffffff), color-stop(35%, rgba(0, 0, 0, 0)), color-stop(65%, rgba(255, 255, 255, 0.8)), color-stop(100%, rgba(0, 0, 0, 0)));
+	/*Chrome,Safari4+ */
+
+	background-image: -webkit-linear-gradient(0deg, #ffffff 0%, rgba(0, 0, 0, 0) 35%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+	/* Chrome10+,Safari5.1+ */
+
+	background-image: -o-linear-gradient(0deg, #ffffff 0%, rgba(0, 0, 0, 0) 35%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+	/* Opera 11.10+ */
+
+	background-image: -ms-linear-gradient(0deg, #ffffff 0%, rgba(0, 0, 0, 0) 35%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+	/*IE10+ */
+
+	background-image: linear-gradient(0deg, #ffffff 0%, rgba(0, 0, 0, 0) 35%, rgba(255, 255, 255, 0.8) 65%, rgba(0, 0, 0, 0) 100%);
+	/* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(0, 0, 0, 0)', endColorstr='#ffffff', GradientType='0' );
+	/* IE6-9 */
+}
+
+#shelf:last-chlid {
+	margin-bottom: 60px;
+}
+
+/* Fallback styles */
+.book {
+	display: inline-block;
+	box-shadow: 5px 5px 20px #333;
+	margin: 0;
+}
+
+.book img { vertical-align: middle; cursor: pointer; }
+
+/*
+ *  In order for this to work, you must use Modernizer
+ *  to detect 3D transform browser support. This will add
+ *  a "csstransforms3d" class to the HTML element.
+ *
+ *  Visit http://modernizr.com/ for installation instructions
+ */
+
+.csstransforms3d  .books {
+	-moz-perspective: 100px;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+.csstransforms3d  .book {
+	position: relative;
+	-moz-perspective: 100px;
+	-moz-transform: rotateY(-3deg);
+	-webkit-transform: perspective(100) rotateY(-3deg);
+	outline: 1px solid transparent; /* Helps smooth jagged edges in Firefox */
+	box-shadow: none;
+	margin: 0;
+}
+
+.csstransforms3d  .book img {
+	position: relative;
+	max-width: 100%;
+}
+
+.csstransforms3d  .book:before,
+.csstransforms3d  .book:after {
+	position: absolute;
+	top: 2%;
+	height: 96%;
+	content: ' ';
+	z-index: -1;
+}
+
+.csstransforms3d  .book:before {
+	width: 100%;
+	left: 7.5%;
+	background-color: #5a2d18;
+	box-shadow: 3px 3px 10px #333;
+}
+
+.csstransforms3d  .book:after {
+	width: 5%;
+	left: 100%;
+	background-color: #EFEFEF;
+	box-shadow: inset 0px 0px 5px #aaa;
+	-moz-transform: rotateY(20deg);
+	-webkit-transform: perspective(100) rotateY(20deg);
 }
