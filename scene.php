@@ -80,11 +80,11 @@
 							<NavigationInfo headlight="true"
 		                		visibilityLimit="20"
 				                type='"lookAround"'
-				                avatarSize="0.25, 1.75, 0.75"></NavigationInfo>
+				                avatarSize="0.25, 1.5, 0.75"></NavigationInfo>
 
 				             <Viewpoint id='ViewpointMarker' 
 				             	jump='false'
-				             	position='25, 1.75, 5'
+				             	position='25, 1.5, 5'
 				             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
 
 				            <Collision enabled="true">

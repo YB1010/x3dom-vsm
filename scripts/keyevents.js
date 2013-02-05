@@ -1,6 +1,4 @@
 var oDegree = -3.141592653589793;
-var sumClick = 0;
-var y = 1.75;
 
 function keyPress(press)
 {
@@ -12,6 +10,8 @@ function keyPress(press)
 	var oViewpointPosition = document.getElementById("ViewpointMarker").getAttribute("orientation");
 	var oPositionSplited = oViewpointPosition.split(",");
 	console.log("oViewpointPosition = " + oViewpointPosition + " , avatarPositionSplited = " + oPositionSplited);
+
+	var y = viewpointPositionSplited[1];
 
 	/* Get present avatar translation values */
 	//var avatarPosition = document.getElementById("Avatar").getAttribute("translation");

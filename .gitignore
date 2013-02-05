@@ -198,3 +198,4 @@ scenes/__*
 x3dom-vsm.sublime-workspace
 
 x3dom-vsm.sublime-project
+scripts/__keyevents.js
