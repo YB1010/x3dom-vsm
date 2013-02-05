@@ -59,180 +59,158 @@
 						</li>
 					</ul>
 				</nav>
-				<!--
-				<nav class='container'>
-					<ul class="breadcrumb">
-						<li>
-							<a href="#">Home</a> <span class="divider">/</span>
-						</li>
-						<li class="active">Virtual Mall</li>
-					</ul>
-				</nav>
-				-->
 			</div>
 		</header>
 
+		<X3D id='x3dom-scene' showStat='true'>
+			<Scene>
 
-		<div class='container-fluid'>
+				<NavigationInfo headlight="true"
+            		visibilityLimit="20"
+	                type='"lookAround"'
+	                avatarSize="0.25, 1.5, 0.75"></NavigationInfo>
 
-			<div class='row-fluid'>
-		
-				<section class='span12'>
+	             <Viewpoint id='ViewpointMarker' 
+	             	jump='false'
+	             	position='25, 1.5, 5'
+	             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
 
-					<X3D id='x3dom-scene' showStat='true'>
-						<Scene>
+	            <Collision enabled="true">
+					<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<NavigationInfo headlight="true"
-		                		visibilityLimit="20"
-				                type='"lookAround"'
-				                avatarSize="0.25, 1.5, 0.75"></NavigationInfo>
+				<Collision enabled="true">
+					<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
+				
+				<Collision enabled="true">
+					<Transform translation="7 0 14" rotation='0 1 0 -0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-				             <Viewpoint id='ViewpointMarker' 
-				             	jump='false'
-				             	position='25, 1.5, 5'
-				             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
+				<Collision enabled="true">
+					<Transform translation="13 0 14" rotation='0 1 0 -0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('2', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-				            <Collision enabled="true">
-								<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="15 0 14" rotation='0 1 0 -0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('3', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
-							
-							<Collision enabled="true">
-								<Transform translation="7 0 14" rotation='0 1 0 -0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="17 0 14" rotation='0 1 0 -0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('4', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="13 0 14" rotation='0 1 0 -0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('2', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="33 0 14" rotation='0 1 0 0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('5', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="15 0 14" rotation='0 1 0 -0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('3', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="35 0 14" rotation='0 1 0 0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="17 0 14" rotation='0 1 0 -0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('4', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="37 0 14" rotation='0 1 0 0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="33 0 14" rotation='0 1 0 0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('5', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">
+					<Transform translation="43 0 14" rotation='0 1 0 0.78539816339745'>
+						<LOD center="0 0 0" range="15">
+							<Group>
+								<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
+							</Group>
+							<WorldInfo info='"null node"'/>
+						</LOD>
+					</Transform>
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="35 0 14" rotation='0 1 0 0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<!-- Start: Models -->
+				<!--
+				<Transform translation='25 0 14' scale='0.0013 0.0013 0.0013' rotation='0 1 0 -0.78539816339745'>
+					<Inline url='scenes/models/Mus.x3d' />
+				</Transform>
+				-->
+				<!-- End: Models -->
 
-							<Collision enabled="true">
-								<Transform translation="37 0 14" rotation='0 1 0 0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+				<Collision enabled="true">	
+					<Inline url="scenes/shopscene.x3d" />
+				</Collision>
 
-							<Collision enabled="true">
-								<Transform translation="43 0 14" rotation='0 1 0 0.78539816339745'>
-									<LOD center="0 0 0" range="15">
-										<Group>
-											<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
-										</Group>
-										<WorldInfo info='"null node"'/>
-									</LOD>
-								</Transform>
-							</Collision>
+			</Scene>
+		</X3D>
 
-							<!-- Start: Models -->
-							<!--
-							<Transform translation='25 0 14' scale='0.0013 0.0013 0.0013' rotation='0 1 0 -0.78539816339745'>
-								<Inline url='scenes/models/Mus.x3d' />
-							</Transform>
-							-->
-							<!-- End: Models -->
-
-							<Collision enabled="true">	
-								<Inline url="scenes/shopscene.x3d" />
-							</Collision>
-
-						</Scene>
-					</X3D>
-			
-				</section>
-
-				<footer class='navbar navbar-fixed-bottom'>
-					<div class='navbar-inner'>
-						<div class='container'>
-							<ul class='nav'>
-								<li>
-									<a href="http://hassadee.com">&copy; 2013 AUPPA GROUP</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</footer>
-
+		<footer class='navbar navbar-fixed-bottom'>
+			<div class='navbar-inner'>
+				<div class='container'>
+					<ul class='nav'>
+						<li>
+							<a href="http://hassadee.com">&copy; 2013 AUPPA GROUP</a>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</footer>
 
 		<?php include './pages/modal.page.php'; ?>
 	</body>
