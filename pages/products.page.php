@@ -45,7 +45,7 @@
 			$maxp = ceil($row['tcnt'] / 10);
 	?>
 
-		<div class="pagination pagination-centered" style="margin-top: 50px;">
+		<div class="pagination pagination-centered">
 			<ul>
 				<li <?php echo $_GET['page'] == 1? "class='disabled'" : ""; ?>>
 					<a href="<?php echo $_GET['page'] != 1? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', 1)":"#"; ?>">|&lt;</a>

@@ -298,10 +298,12 @@ input[type=submit] {
 
 .modal-body {
 	min-height: 280px;
+	max-height: 440px;
 }
 
 .pagination {
-	margin: 0;
+	clear: both;
+	margin: 40px 0 0 0;
 }
 
 
@@ -327,7 +329,7 @@ input[type=submit] {
 	width: 80%;
 	height: 20px;
 	margin: 130px auto 20px;
-	padding: 0px 20px;
+	padding: 5px 20px;
 	background-color: #d1d8de;
 	/* Old browsers */
 

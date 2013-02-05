@@ -3,10 +3,12 @@
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 		<h3 id="myModalLabel">รายการสินค้า</h3>
+		
 		<div class="input-append">
 			<input type="text" id="p_search">
 			<button type="button" class="btn" onClick="productslist($('#pcid').val(), $('#p_search').val(), 1)">Search</button>
 		</div>
+		
 	</div>
 	
 	<div class="modal-body">
