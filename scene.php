@@ -219,29 +219,12 @@
 			
 				</section>
 
-				<aside class='span'>
-					<div class='sidebar-nav'>
-						<p>
-							Press 'g' for game mode, use cursor keys to move (with 'w' back to walk mode).
-						</p>
-						<b>Navigation:</b>
-						<ul>
-							<li>
-								Walk forward: Left Click/Drag
-							</li>
-							<li>
-								Walk backward: Right Click/Drag or Alt + Left Click
-							</li>
-						</ul>
-					</div>
-				</aside>
-			
 				<footer class='navbar navbar-fixed-bottom'>
 					<div class='navbar-inner'>
 						<div class='container'>
 							<ul class='nav'>
 								<li>
-									<a href="http://hassadee.com">&copy; 2013 Chulabook Virtual Store</a>
+									<a href="http://hassadee.com">&copy; 2013 AUPPA GROUP</a>
 								</li>
 							</ul>
 						</div>

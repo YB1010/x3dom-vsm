@@ -171,7 +171,7 @@
 		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="40">
 				<Group>
-					<Inline DEF="Pillar" url="pillar.x3d" />
+					<Inline DEF="Pillar" url="pillar_opt.x3d" />
 				</Group>
 				<WorldInfo info='"null node"'/>
 			</LOD>
