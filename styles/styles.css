@@ -306,6 +306,10 @@ input[type=submit] {
 	margin: 40px 0 0 0;
 }
 
+#myModalLabel div.input-append.pull-right {
+	margin-right: 50px;
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------------------------
 == shelf
