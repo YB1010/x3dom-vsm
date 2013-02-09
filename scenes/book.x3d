@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<Transform DEF="Book_TRANSFORM"
+		           translation="0.000000 0.000000 0.000000"
+		           scale="1.000000 1.000000 1.000000">
+			<Group DEF="Book_GROUP">
+				<Shape>
+					<Appearance>
+						<ImageTexture DEF='Book_IMAGE' url='textures/wood-crop.jpg' repeatS='true' repeatT='true' />
+						<TextureTransform DEF='Book_TextureTransform'
+							center='0 0'
+							translation='0 0'
+							rotation='0'
+							scale='2 2' containerField='textureTransform'/>
+					</Appearance>
+					
+					<IndexedFaceSet solid='false' creaseAngle='1.57' coordIndex='
+						1 2 5 6 -1
+						0 1 2 3 -1
+						4 5 6 7 -1
+						2 3 4 5 -1
+						0 1 6 7 -1
+						0 3 4 7 -1'>
+						<Coordinate point='
+							0 0 0
+							0.04 0 0
+							0.04 0 0.2
+							0 0 0.2
+							0 0.25 0.2
+							0.04 0.25 0.2
+							0.04 0.25 0
+							0 0.25 0' />	
+					</IndexedFaceSet>
+				</Shape>
+			</Group>
+		</Transform>
+	</Scene>
+</X3D>
+
