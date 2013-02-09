@@ -36,7 +36,11 @@
 					<Transform translation='-0.05 0.1 -0.05'>
 						<Shape DEF="XB_SHAPE">
 							<Appearance>
-								<Material diffuseColor='1.00 0.964 0.815' specularColor='0 0 0' emissiveColor='0 0 0' shininess='1' />
+								<Material ambientIntensity='0.2'
+									diffuseColor='1.00 0.964 0.815' 
+									emissiveColor='0 0 0'
+									shininess='1'
+									specularColor='0 0 0' />
 							</Appearance>
 							<IndexedFaceSet solid='false' coordIndex='
 								0 1 3 2 -1
