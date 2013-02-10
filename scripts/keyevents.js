@@ -1,4 +1,5 @@
 var oDegree = -3.141592653589793;
+var walkStep = 0.25;
 
 function keyPress(press)
 {
@@ -20,7 +21,7 @@ function keyPress(press)
 	//console.log("avatarPosition = " + avatarPosition + " , avatarPositionSplited = " + avatarPositionSplited);
 
 	/* Set setDegree value */
-	var setDegree = Math.PI/180; /* 1 degree */
+	var setDegree = Math.PI/90; /* PI/180 = 1 degree, PI/90 = 2 degree */
 
 	/* Left */
 	if (press == 37) {
@@ -89,8 +90,8 @@ function keyPress(press)
 		var set_zPosition = Number(viewpointPositionSplited[2]);
 		var set_xPosition = Number(viewpointPositionSplited[0]);
 
-		set_zPosition -= 0.2 * Math.cos(oDegree); // Calaulate is to find zPosition.
-		set_xPosition -= 0.2 * Math.sin(oDegree); // Calculate is to find xPosition.
+		set_zPosition -= walkStep * Math.cos(oDegree); // Calaulate is to find zPosition.
+		set_xPosition -= walkStep * Math.sin(oDegree); // Calculate is to find xPosition.
 
 		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
 
@@ -107,8 +108,8 @@ function keyPress(press)
 		var set_zPosition = Number(viewpointPositionSplited[2]);
 		var set_xPosition = Number(viewpointPositionSplited[0]);
 
-		set_zPosition += 0.2 * Math.cos(oDegree); // Calaulate is to find zPosition.
-		set_xPosition += 0.2 * Math.sin(oDegree); // Calculate is to find xPosition.
+		set_zPosition += walkStep * Math.cos(oDegree); // Calaulate is to find zPosition.
+		set_xPosition += walkStep * Math.sin(oDegree); // Calculate is to find xPosition.
 
 		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
 
