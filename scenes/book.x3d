@@ -35,17 +35,18 @@
 
 				<Transform DEF="FrontPage_TRANSFORM"
 		           translation="0.000000 0.000000 0.000000"
-		           scale="1.000000 1.000000 1.000000">
+		           scale="1.000000 1.000000 1.000000"
+		           rotation="0 1 0 0">
 					<Shape>
 						<Appearance>
 							<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/A002.jpg' repeatS='false' repeatT='false' />
 							<TextureTransform DEF='Book_TextureTransform'
 								center='0 0'
-								translation='0 0'
-								rotation='0'
+								translation='0 -0.8'
+								rotation='1.5707963267949'
 								scale='1 1' containerField='textureTransform'/>
 						</Appearance>
-						<IndexedFaceSet solid='false' creaseAngle='1.57' coordIndex='0 1 2 3 1 -1'>
+						<IndexedFaceSet solid='false' coordIndex='0 1 2 3 -1'>
 							<Coordinate point='
 								0.04 0 0
 								0.04 0 0.2
