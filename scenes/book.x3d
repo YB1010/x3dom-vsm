@@ -11,7 +11,7 @@
 						<Material ambientIntensity='0.2' diffuseColor='1 1 1' specularColor='1 1 1' />
 					</Appearance>
 					
-					<IndexedFaceSet solid='false' creaseAngle='1.57' 
+					<IndexedFaceSet solid='false' creaseAngle='0' 
 						coordIndex='
 						4 5 6 7 -1
 						2 3 4 5 -1
