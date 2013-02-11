@@ -199,3 +199,11 @@ x3dom-vsm.sublime-workspace
 
 x3dom-vsm.sublime-project
 scripts/__keyevents.js
+
+texture/sky/__BK.png
+
+texture/sky/__RT.png
+
+texture/sky/__LF.png
+
+texture/sky/__FR.png
