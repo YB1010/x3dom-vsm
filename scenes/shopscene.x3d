@@ -7,16 +7,16 @@
 		                type='"WALK"'
 		                avatarSize="0.25, 1.75, 0.75" />
 
-		<Background groundAngle='1.57079'
-						groundColor='1 0.8 0.6 0.6 0.4 0.2'
-						skyAngle='0.2 1.57079'
-						skyColor='1 1 1'
-						backUrl='"../texture/sky/B.jpg"'
-						bottomUrl='"../texture/sky/DN.png"'
-						frontUrl='"../texture/sky/F.jpg"'
-						leftUrl='"../texture/sky/LF.png"'
-						rightUrl='"../texture/sky/RT.png"'
-						topUrl='"../texture/sky/UP.png"'></Background>
+		<Background groundAngle='1.57079' 
+					groundColor='1 0.8 0.6 0.6 0.4 0.2'
+					skyAngle='0.2 1.57079'
+					skyColor='1 1 1'
+					backUrl='"../texture/sky/B.png"'
+					bottomUrl='"../texture/sky/DN.png"'
+					frontUrl='"../texture/sky/F.png"'
+					leftUrl='"../texture/sky/L.png"'
+					rightUrl='"../texture/sky/R.png"'
+					topUrl='"../texture/sky/UP.png"'></Background>
 
 		<!-- Floor -->
 		<Collision enabled="false">
@@ -69,7 +69,7 @@
 								1.6 0.0 9.6 
 								0.0 0.0 9.6 
 								0.0 0.1 9.6 
-								0.0 0.1 19" />		
+								0.0 0.1 19" />
 						</IndexedFaceSet>
 					</Shape>
 				</Group>
@@ -87,7 +87,6 @@
 				</IndexedFaceSet>
 			</Shape>
 		</Transform>
-
 
 		<!-- Gab -->
 		<Transform DEF="Gab_TRANSFORM" translation="0.000000 0.000000 0.000000" scale="1.000000 1.000000 1.000000">
@@ -126,8 +125,8 @@
 						50 4.1 0
 
 						0 0.1 0
-						0 0.1 9.88 
-						0 4.1 9.88 
+						0 0.1 19 
+						0 4.1 19 
 						0 4.1 0" />
 				</IndexedFaceSet>
 			</Shape>
@@ -143,12 +142,6 @@
 			<Inline url="wg_rear.x3d" />
 		</Transform>
 
-		<!-- Windows / Right / Transform 0.12 0.1 x.08 -->
-		<Transform translation="0 0 0">
-			<Inline url="wg_right.x3d" />
-		</Transform>
-
-
 		<!-- Ceiling Lights -->
 		<Transform translation="0 0 0">
 			<Inline url="clg.x3d" />
@@ -161,7 +154,7 @@
 
 
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
-		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="8.5 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline DEF="Pillar" url="pillar_opt.x3d" />
@@ -170,7 +163,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="20 0.1 12.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="18.5 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
@@ -199,7 +192,7 @@
 
 
 		<!-- Pillars / Second Row / Transform X 0.1 16.5 -->
-		<Transform translation="10 0.1 16.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="8.5 0.1 16.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
@@ -208,7 +201,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="20 0.1 16.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="18.5 0.1 16.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
