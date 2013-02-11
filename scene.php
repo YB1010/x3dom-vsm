@@ -7,9 +7,7 @@
 
 		<title>Chulabook Virtual Store</title>
 		
-		<!-- 
-		<link rel="shortcut icon" href="styles/favicon/favicon.ico" type="image/x-icon"/>
-		-->
+		<link rel="shortcut icon" href="styles/favicon/fav.ico" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="scripts/x3dom-1.5/x3dom.css" />
 		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
 		<!--
@@ -55,7 +53,7 @@
 					</form>
 					<ul class="nav pull-rifht">
 						<li>
-							<a href="javascript: alertLightbox('help')">Help</a>
+							<a href="javascript: alertLightbox('help')">ช่วยเหลือ</a>
 						</li>
 					</ul>
 				</nav>
