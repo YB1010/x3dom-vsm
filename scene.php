@@ -75,38 +75,42 @@
 	             	position='25, 1.5, 5'
 	             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
 
-	            <Collision enabled="true">
-					<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
-						<LOD center="0 0 0" range="15">
-							<Group>
-								<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
-							</Group>
-							<WorldInfo info='"null node"'/>
-						</LOD>
-					</Transform>
-				</Collision>
 
-				<Collision enabled="true">
-					<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
-						<LOD center="0 0 0" range="15">
-							<Group>
-								<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
-							</Group>
-							<WorldInfo info='"null node"'/>
-						</LOD>
-					</Transform>
-				</Collision>
+				<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onclick="cartlist('')" url="scenes/avatars/seller.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
 				
-				<Collision enabled="true">
-					<Transform translation="7 0 14" rotation='0 1 0 -0.78539816339745'>
-						<LOD center="0 0 0" range="15">
-							<Group>
-								<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
-							</Group>
-							<WorldInfo info='"null node"'/>
-						</LOD>
-					</Transform>
-				</Collision>
+				<!-- Shelf -->
+				<Transform translation="7 0 14" rotation='0 1 0 -0.78539816339745'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="7 0 16" rotation='0 1 0 -0.78539816339745'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onClick="productslist('1', '', 1)" url='scenes/shelf.x3d' />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
 
 				<Collision enabled="true">
 					<Transform translation="13 0 14" rotation='0 1 0 -0.78539816339745'>
