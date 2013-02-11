@@ -11,9 +11,9 @@
 						groundColor='1 0.8 0.6 0.6 0.4 0.2'
 						skyAngle='0.2 1.57079'
 						skyColor='1 1 1'
-						backUrl='"../texture/sky/BK.png"'
+						backUrl='"../texture/sky/B.jpg"'
 						bottomUrl='"../texture/sky/DN.png"'
-						frontUrl='"../texture/sky/FR.png"'
+						frontUrl='"../texture/sky/F.jpg"'
 						leftUrl='"../texture/sky/LF.png"'
 						rightUrl='"../texture/sky/RT.png"'
 						topUrl='"../texture/sky/UP.png"'></Background>
@@ -112,23 +112,20 @@
 			</Shape>
 		</Transform>
 
-		<!-- Left Wall -->
+		<!-- LEFT AND RIGHT WALLS -->
 		<Transform DEF="LeftWall_TRANSFORM" translation="0.000000 0.000000 0.000000" scale="1.000000 1.000000 1.000000">
 			<Shape>
 				<Appearance USE='Wall_APPEARANCE'></Appearance>
-				<IndexedFaceSet solid="false" coordIndex="0 1 2 3 -1">
-					<Coordinate point="50 0.1 0 50 0.1 19 50 4.1 19 50 4.1 0" />
-				</IndexedFaceSet>
-			</Shape>
-		</Transform>
-
-		<!-- Right Wall -->
-		<Transform DEF="RightWall_TRANSFORM" translation="0.000000 0.000000 0.000000" scale="1.000000 1.000000 1.000000">
-			<Shape>
-				<Appearance USE='Wall_APPEARANCE'></Appearance>
-				<IndexedFaceSet solid="false" coordIndex="0 1 2 3 -1">
+				<IndexedFaceSet solid="false" coordIndex="
+					0 1 2 3 -1
+					4 5 6 7 -1">
 					<Coordinate point="
-						0 0.1 0 
+						50 0.1 0 
+						50 0.1 19 
+						50 4.1 19 
+						50 4.1 0
+
+						0 0.1 0
 						0 0.1 9.88 
 						0 4.1 9.88 
 						0 4.1 0" />
