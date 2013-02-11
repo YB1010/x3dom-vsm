@@ -16,13 +16,13 @@ body
 	font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 14px;
 	overflow: hidden;
-	background: #FFF;
+	background: #fff;
 }
 
 #container
 {
 	width: 100%;
-	background: #FFF;
+	background: #fff;
 	margin: 0 auto 0 auto;
 }
 
