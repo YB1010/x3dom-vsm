@@ -51,11 +51,13 @@
 					<form class='navbar-search pull-right' onSubmit="javascript: return false">
 						<input type='text' class='search-query span2' id="hp-search" placeholder='ค้นหา'>
 					</form>
+					<!--
 					<ul class="nav pull-rifht">
 						<li>
 							<a href="javascript: alertLightbox('help')">ช่วยเหลือ</a>
 						</li>
 					</ul>
+					-->
 				</nav>
 			</div>
 		</header>
