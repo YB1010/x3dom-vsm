@@ -93,6 +93,28 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
+
+							<!-- Security guy -->
+							<Transform translation='30 0.875 2.2' rotation='0 1 0 -2.0943951023932'>
+								<LOD center="0 0 0" range="15">
+									<Group>
+										<Inline url="scenes/avatars/security.x3d" />
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+
+							<!-- Boy -->
+							<!--
+							<Transform translation='27 0.975 10' rotation='0 1 0 -2.87979326579065'>
+								<LOD center="0 0 0" range="15">
+									<Group>
+										<Inline url="scenes/avatars/boy.x3d" />
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+							-->
 							
 							<!-- Shelf -->
 							<!-- Set all shelves y to 0.1 -->
@@ -294,7 +316,7 @@
 								</Transform>
 
 								<!-- C7 -->
-								<Transform translation="41 0 13" rotation="0 1 0 0.78539816339745">
+								<Transform translation="41.25 0 13.25" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
