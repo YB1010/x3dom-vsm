@@ -154,7 +154,7 @@
 
 
 		<!-- Pillars / First Row / Transform X 0.1 12.5-->
-		<Transform translation="8.5 0.1 12.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="10 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline DEF="Pillar" url="pillar_opt.x3d" />
@@ -163,7 +163,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="18.5 0.1 12.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="20 0.1 12.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
@@ -192,7 +192,7 @@
 
 
 		<!-- Pillars / Second Row / Transform X 0.1 16.5 -->
-		<Transform translation="8.5 0.1 16.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="10 0.1 16.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
@@ -201,7 +201,7 @@
 			</LOD>
 		</Transform>
 
-		<Transform translation="18.5 0.1 16.5" rotation="0 1 0 0.78539816339745">
+		<Transform translation="20 0.1 16.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Pillar" />
