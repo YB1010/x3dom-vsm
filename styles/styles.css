@@ -265,6 +265,9 @@ input[type=submit] {
 {
 	position: absolute;
 	width: 100%;
+	width:    -moz-calc(100% - 300px);
+	width: -webkit-calc(100% - 300px);
+	width:         calc(100% - 300px);
 	height:    -moz-calc(100% - 40px);
 	height: -webkit-calc(100% - 40px);
 	height:         calc(100% - 40px);
