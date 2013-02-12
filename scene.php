@@ -232,7 +232,7 @@
 								</Transform>
 
 								<!-- C4 -->
-								<Transform translation="31.5 0 13" rotation="0 1 0 0.78539816339745">
+								<Transform translation="31.25 0 13.25" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
@@ -349,17 +349,32 @@
 
 		<aside class="help-sidebar rt">
 			<section class="help-container">
-				<h1>ช่วยเหลือ</h1>
-				<h2>การควบคุม</h2>
+				<h1>การควบคุม</h1>
 				<ul>
-					<li>เดินหน้า</li>
-					<li>หันซ้าย</li>
-					<li>หันขวา</li>
-					<li>ถอยหลัง</li>
-					<li>หมุน</li>
+					<li>
+						<img src="styles/images/top.png" />
+						เดินหน้า
+					</li>
+					<li>
+						<img src="styles/images/left.png" />
+						หันซ้าย
+					</li>
+					<li>
+						<img src="styles/images/right.png" />
+						หันขวา
+					</li>
+					<li>
+						<img src="styles/images/down.png" />
+						ถอยหลัง
+					</li>
+					<li>
+						<img src="styles/images/left_click.png" />
+						หมุน
+					</li>
 				</ul>
-				<h1>ติดต่อ</h1>
-				<p>วันและเวลาเปิด-ปิดร้าน</p>
+				<h1>บริการและติดต่อ</h1>
+				<p>เวลาเปิดบริการ<br>จันทร์ - ศุกร์ เวลา 11.00 - 20.00 น.<br>เสาร์ - อาทิตย์ เวลา 10.30 - 20.00 น.</p>
+				<p>ติดต่อสอบถามข้อมูล สั่งซื้อหนังสือ ได้ที่<br>Call Center 0-2255-4433</p>
 			</section>
 		</aside>
 
