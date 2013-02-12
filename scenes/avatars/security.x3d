@@ -6,15 +6,6 @@
 		<meta name="generator" content="Blender 2.64 (sub 0)" />
 	</head>
 	<Scene>
-		<NavigationInfo headlight="true"
-		                visibilityLimit="0.0"
-		                type='"EXAMINE", "ANY"'
-		                avatarSize="0.25, 1.75, 0.75"
-		                />
-		<Background DEF="WO_World"
-		            groundColor="1 1 1"
-		            skyColor="1 1 1"
-		            />
 		<Transform DEF="white_TRANSFORM"
 		           translation="0.000000 0.000000 0.000000"
 		           scale="1.000000 1.000000 1.000000"
@@ -245,19 +236,6 @@
 					</Shape>
 				</Group>
 			</Transform>
-		</Transform>
-		<Transform DEF="Lamp_TRANSFORM"
-		           translation="-4.076245 5.903862 1.005454"
-		           scale="1.000000 1.000000 1.000000"
-		           rotation="-0.498085 -0.762016 -0.413815 1.513875"
-		           >
-			<PointLight DEF="LA_Lamp"
-			            ambientIntensity="0.0000"
-			            color="1.0000 1.0000 1.0000"
-			            intensity="0.5714"
-			            radius="30.0000" 
-			            location="-0.0000 -0.0000 0.0000"
-			            />
 		</Transform>
 	</Scene>
 </X3D>
