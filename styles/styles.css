@@ -41,6 +41,11 @@ body
     == SIDEBAR [HELP]
 ---------------------------------------------------------------------------------------------------------------------------- */
 
+.help-sidebar h1 {
+	font-size: 1.8em;
+	font-weight: 300;
+}
+
 .help-sidebar {
 	background: #f4f4f4;
 	display: block;
@@ -50,8 +55,13 @@ body
 }
 
 .help-container {
-	border: 1px solid #000;
+	border: 1px solid #ddd;
 	margin: 10px;
+}
+
+.help-container li {
+	background: #fff;
+	margin: 2px 5px;
 }
 
 	/* ----------------------------------------------------------------------------------------------------------------------------
