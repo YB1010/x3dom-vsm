@@ -60,11 +60,6 @@
 			</div>
 		</header>
 
-		<!--
-		<div class='container-fluid'>
-			<div class='row-fluid'>
-				<div class='span10'>
-		-->
 					<X3D id='x3dom-scene' showStat='true'>
 						<Scene>
 
@@ -77,6 +72,8 @@
 				             	jump='false'
 				             	position='25, 1.5, 5'
 				             	orientation='0, 1, 0, -3.141592653589793'></Viewpoint>
+
+			             	<Inline url="scenes/shopscene.x3d"></Inline>
 
 
 							<Transform translation='21 0.875 2.2' rotation='0 1 0 -1.5707963267949'>
@@ -325,21 +322,10 @@
 								</Transform>
 							</Transform>
 
-							<Inline url="scenes/shopscene.x3d" />
-
 						</Scene>
 					</X3D>
 
 				</div>
-
-				<!--
-				<aside class='span2'>
-					<span>Span 2</span>
-				</aside>
-
-			</div>
-		</div>
-		-->
 
 		<footer class='navbar navbar-fixed-bottom'>
 			<div class='navbar-inner'>
