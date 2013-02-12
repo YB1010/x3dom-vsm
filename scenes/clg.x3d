@@ -301,6 +301,7 @@
 		</Transform>
 
 		<!-- 6 -->
+		<!--
 		<Transform translation='21 3.1 0'>
 			<Group DEF='CeilingLights_6_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -358,6 +359,7 @@
 				</Transform>
 			</Group>
 		</Transform>
+		-->
 
 		<!-- 7 -->
 		<Transform translation='24 3.1 0'>
