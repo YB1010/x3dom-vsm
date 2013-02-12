@@ -2,10 +2,6 @@
 <!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<Scene>
-		<NavigationInfo headlight="true"
-		                visibilityLimit="0.0"
-		                type='"WALK"'
-		                avatarSize="0.25, 1.75, 0.75" />
 
 		<Background groundAngle='1.57079' 
 					groundColor='1 0.8 0.6 0.6 0.4 0.2'
