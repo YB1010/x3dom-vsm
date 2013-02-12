@@ -4,7 +4,7 @@
 	<Scene>
 		<!-- New Windows / Rear / Transform 0 2.1 19.14 -->
 		<Transform translation="0 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline DEF="Window" url="w_opt.x3d" />
 				</Group>
@@ -13,7 +13,7 @@
 		</Transform>
 
 		<Transform translation="1 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -22,7 +22,7 @@
 		</Transform>
 
 		<Transform translation="2 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -31,7 +31,7 @@
 		</Transform>
 
 		<Transform translation="3 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -40,7 +40,7 @@
 		</Transform>
 
 		<Transform translation="4 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -49,7 +49,7 @@
 		</Transform>
 
 		<Transform translation="5 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -58,7 +58,7 @@
 		</Transform>
 
 		<Transform translation="6 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -67,7 +67,7 @@
 		</Transform>
 
 		<Transform translation="7 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -76,7 +76,7 @@
 		</Transform>
 
 		<Transform translation="8 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -85,7 +85,7 @@
 		</Transform>
 
 		<Transform translation="9 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -94,7 +94,7 @@
 		</Transform>
 
 		<Transform translation="10 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -103,7 +103,7 @@
 		</Transform>
 
 		<Transform translation="11 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -112,7 +112,7 @@
 		</Transform>
 
 		<Transform translation="12 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -121,7 +121,7 @@
 		</Transform>
 
 		<Transform translation="13 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -130,7 +130,7 @@
 		</Transform>
 
 		<Transform translation="14 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -139,7 +139,7 @@
 		</Transform>
 
 		<Transform translation="15 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -148,7 +148,7 @@
 		</Transform>
 
 		<Transform translation="16 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -157,7 +157,7 @@
 		</Transform>
 
 		<Transform translation="17 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -166,7 +166,7 @@
 		</Transform>
 
 		<Transform translation="18 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -175,7 +175,7 @@
 		</Transform>
 
 		<Transform translation="19 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -184,7 +184,7 @@
 		</Transform>
 
 		<Transform translation="20 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -193,7 +193,7 @@
 		</Transform>
 
 		<Transform translation="21 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -202,7 +202,7 @@
 		</Transform>
 
 		<Transform translation="22 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -211,7 +211,7 @@
 		</Transform>
 
 		<Transform translation="23 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -220,7 +220,7 @@
 		</Transform>
 
 		<Transform translation="24 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -229,7 +229,7 @@
 		</Transform>
 
 		<Transform translation="25 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -238,7 +238,7 @@
 		</Transform>
 
 		<Transform translation="26 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -247,7 +247,7 @@
 		</Transform>
 
 		<Transform translation="27 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -256,7 +256,7 @@
 		</Transform>
 
 		<Transform translation="28 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -265,7 +265,7 @@
 		</Transform>
 
 		<Transform translation="29 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -274,7 +274,7 @@
 		</Transform>
 
 		<Transform translation="30 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -283,7 +283,7 @@
 		</Transform>
 
 		<Transform translation="31 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -292,7 +292,7 @@
 		</Transform>
 
 		<Transform translation="32 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -301,7 +301,7 @@
 		</Transform>
 
 		<Transform translation="33 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -310,7 +310,7 @@
 		</Transform>
 
 		<Transform translation="34 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -319,7 +319,7 @@
 		</Transform>
 
 		<Transform translation="35 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -328,7 +328,7 @@
 		</Transform>
 
 		<Transform translation="36 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -337,7 +337,7 @@
 		</Transform>
 
 		<Transform translation="37 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -346,7 +346,7 @@
 		</Transform>
 
 		<Transform translation="38 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -355,7 +355,7 @@
 		</Transform>
 
 		<Transform translation="39 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -364,7 +364,7 @@
 		</Transform>
 
 		<Transform translation="40 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -373,7 +373,7 @@
 		</Transform>
 
 		<Transform translation="41 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -382,7 +382,7 @@
 		</Transform>
 
 		<Transform translation="42 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -391,7 +391,7 @@
 		</Transform>
 
 		<Transform translation="43 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -400,7 +400,7 @@
 		</Transform>
 
 		<Transform translation="44 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -409,7 +409,7 @@
 		</Transform>
 
 		<Transform translation="45 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -418,7 +418,7 @@
 		</Transform>
 
 		<Transform translation="46 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -427,7 +427,7 @@
 		</Transform>
 
 		<Transform translation="47 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -436,7 +436,7 @@
 		</Transform>
 
 		<Transform translation="48 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
@@ -445,7 +445,7 @@
 		</Transform>
 
 		<Transform translation="49 0.1 18.88">
-			<LOD center="0 0 0" range="30">
+			<LOD center="0 0 0" range="20">
 				<Group>
 					<Inline USE="Window" />
 				</Group>
