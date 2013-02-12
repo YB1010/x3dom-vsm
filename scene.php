@@ -213,7 +213,7 @@
 								</Transform>
 
 								<!-- C4 -->
-								<Transform translation="30 0 13" rotation="0 1 0 0.78539816339745">
+								<Transform translation="31.5 0 13" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
@@ -240,7 +240,9 @@
 									</Transform>
 								</Transform>
 
-									<Transform translation="35 0 14" rotation='0 1 0 0.78539816339745'>
+								<!-- C5 -->
+								<Transform translation="34 0 13" rotation="0 1 0 0.78539816339745">
+									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
 												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
@@ -248,8 +250,27 @@
 											<WorldInfo info='"null node"'/>
 										</LOD>
 									</Transform>
+									<Transform translation="0 0 1.3">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+									<Transform translation="0 0 2.6">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+								</Transform>
 
-									<Transform translation="37 0 14" rotation='0 1 0 0.78539816339745'>
+								<!-- C6 -->
+								<Transform translation="37 0 13" rotation="0 1 0 0.78539816339745">
+									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
 												<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
@@ -257,8 +278,27 @@
 											<WorldInfo info='"null node"'/>
 										</LOD>
 									</Transform>
+									<Transform translation="0 0 1.3">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+									<Transform translation="0 0 2.6">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('7', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+								</Transform>
 
-									<Transform translation="43 0 14" rotation='0 1 0 0.78539816339745'>
+								<!-- C7 -->
+								<Transform translation="41.5 0 13" rotation="0 1 0 0.78539816339745">
+									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
 												<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
@@ -266,6 +306,23 @@
 											<WorldInfo info='"null node"'/>
 										</LOD>
 									</Transform>
+									<Transform translation="0 0 1.3">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+									<Transform translation="0 0 2.6">
+										<LOD center="0 0 0" range="10">
+											<Group>
+												<Inline onClick="productslist('8', '', 1)" url='scenes/shelf.x3d' />
+											</Group>
+											<WorldInfo info='"null node"'/>
+										</LOD>
+									</Transform>
+								</Transform>
 							</Transform>
 
 							<Inline url="scenes/shopscene.x3d" />
