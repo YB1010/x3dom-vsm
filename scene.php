@@ -294,7 +294,7 @@
 								</Transform>
 
 								<!-- C7 -->
-								<Transform translation="41.5 0 13" rotation="0 1 0 0.78539816339745">
+								<Transform translation="41 0 13" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
 										<LOD center="0 0 0" range="10">
 											<Group>
@@ -325,7 +325,21 @@
 						</Scene>
 					</X3D>
 
-				</div>
+		<aside class="help-sidebar rt">
+			<section class="help-container">
+				<h1>ช่วยเหลือ</h1>
+				<h2>การควบคุม</h2>
+				<ul>
+					<li>เดินหน้า</li>
+					<li>หันซ้าย</li>
+					<li>หันขวา</li>
+					<li>ถอยหลัง</li>
+					<li>หมุน</li>
+				</ul>
+				<h1>ติดต่อ</h1>
+				<p>วันและเวลาเปิด-ปิดร้าน</p>
+			</section>
+		</aside>
 
 		<footer class='navbar navbar-fixed-bottom'>
 			<div class='navbar-inner'>
