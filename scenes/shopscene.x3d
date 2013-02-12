@@ -224,6 +224,7 @@
 			</LOD>
 		</Transform>
 
+<!--
 		<SpotLight ambientIntensity='0'
 			attenuation='1 0 0'
 			beamWidth='0.39'
@@ -233,6 +234,15 @@
 			intensity='1'
 			radius='50'
 			location='25 20 10'></SpotLight>
+-->
+
+			<PointLight
+	            ambientIntensity="0.0000"
+	            color="1 1 1"
+	            intensity="0.5714"
+	            radius="50.0000" 
+	            location="25 20 10"></PointLight>
+
 
 	</Scene>
 </X3D>
