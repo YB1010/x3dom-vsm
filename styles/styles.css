@@ -43,8 +43,6 @@ body
 
 .help-sidebar {
 	background: #f4f4f4;
-	background-image: url('images/bg-sidebar.gif');
-	background-repeat: repeat;
 	display: block;
 	margin: 40px auto 0 0px;
 	width: 300px;
