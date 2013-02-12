@@ -13,10 +13,11 @@
 
 body
 {
+	background: #fff;
+	overflow: hidden;
+
 	font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 14px;
-	overflow: hidden;
-	background: #fff;
 }
 
 #container
@@ -24,6 +25,35 @@ body
 	width: 100%;
 	background: #fff;
 	margin: 0 auto 0 auto;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+    == GLOBAL
+---------------------------------------------------------------------------------------------------------------------------- */
+
+.rt {
+	float: right;
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------
+    == SIDEBAR [HELP]
+---------------------------------------------------------------------------------------------------------------------------- */
+
+.help-sidebar {
+	background: #f4f4f4;
+	background-image: url('images/bg-sidebar.gif');
+	background-repeat: repeat;
+	display: block;
+	margin: 40px auto 0 0px;
+	width: 300px;
+	height: 100%;
+}
+
+.help-container {
+	border: 1px solid #000;
+	margin: 10px;
 }
 
 	/* ----------------------------------------------------------------------------------------------------------------------------
@@ -263,7 +293,10 @@ input[type=submit] {
 
 #x3dom-scene
 {
+	display: block;
+	float: left;
 	position: absolute;
+		left: 0;
 	width: 100%;
 	width:    -moz-calc(100% - 300px);
 	width: -webkit-calc(100% - 300px);
@@ -277,12 +310,13 @@ input[type=submit] {
 }
 
 .x3dom-canvas {
+	border: none;
+	cursor: pointer;
+	display: block;
 	width: 100%;
 	height:    -moz-calc(100% - 40px);
 	height: -webkit-calc(100% - 40px);
 	height:         calc(100% - 40px);
-	border: none;
-	cursor: pointer;
 }
 
 
@@ -315,7 +349,7 @@ input[type=submit] {
 
 
 /* ----------------------------------------------------------------------------------------------------------------------------
-== shelf
+== SHELF
 ---------------------------------------------------------------------------------------------------------------------------- */
 
 #shelf > li {
