@@ -6,11 +6,11 @@ function keyPress(press)
 	/* Get present viewpoint position values */
 	var viewpointPosition = document.getElementById("ViewpointMarker").getAttribute("position");
 	var viewpointPositionSplited = viewpointPosition.split(","); /* Split array value from viewpoint position attribute */
-	console.log("viewpointPosition = " + viewpointPosition + ", viewpointPositionSplited = " + viewpointPositionSplited);
+	//console.log("viewpointPosition = " + viewpointPosition + ", viewpointPositionSplited = " + viewpointPositionSplited);
 
 	var oViewpointPosition = document.getElementById("ViewpointMarker").getAttribute("orientation");
 	var oPositionSplited = oViewpointPosition.split(",");
-	console.log("oViewpointPosition = " + oViewpointPosition + " , avatarPositionSplited = " + oPositionSplited);
+	//console.log("oViewpointPosition = " + oViewpointPosition + " , avatarPositionSplited = " + oPositionSplited);
 
 	var y = viewpointPositionSplited[1];
 
@@ -35,7 +35,7 @@ function keyPress(press)
 	    //document.getElementById("Avatar").setAttribute("rotation", viewpointOrientation);
 
 
-		console.log("Left : Angle Orientation = " + viewpointOrientation);
+		//console.log("Left : Angle Orientation = " + viewpointOrientation);
 	}
 
 	/* Right */
