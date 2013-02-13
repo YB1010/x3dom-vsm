@@ -11,9 +11,7 @@
 		<!-- Bootstrap -->
 		<link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-		<?php
-			include './connect.php';
-		?>
+		<?php include './connect.php'; ?>
 	</head>
 	<body>
 		<?php include './pages/header.page.php'; ?>
