@@ -108,7 +108,7 @@
 		</Transform>
 
 		<!-- LEFT AND RIGHT WALLS -->
-		<Transform DEF="LeftWall_TRANSFORM" translation="0.000000 0.000000 0.000000" scale="1.000000 1.000000 1.000000">
+		<Transform DEF="LeftWall_TRANSFORM" translation="0 0 0" scale="1 1 1">
 			<Shape>
 				<Appearance USE='Wall_APPEARANCE'></Appearance>
 				<IndexedFaceSet solid="false" coordIndex="
