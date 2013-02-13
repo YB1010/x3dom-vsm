@@ -3,7 +3,9 @@
 		<h4>ไม่มีสินค้าอยู่ในรายการ</h4>
 	</div>
 <?php } else {
-		
+		?>
+		<p class="text-info">สวัสดีค่ะ ถ้าสินค้าถูกต้อง กดยืนยันได้เลยค่ะ</p>
+		<?php
 		$cnt = $sumprice = 0;
 		
 		// Check amount products when search product in cart.
