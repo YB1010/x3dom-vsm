@@ -24,7 +24,7 @@
 				<Transform DEF="CabinetMirror_TRANSFORM" translation="0 0.51 0" scale="1 1 1">
 					<Shape>
 						<Appearance>
-							<ImageTexture url="textures/nexus-boot-screens.jpg" repeatS="true" repeatT="true" />
+							<ImageTexture url="textures/mobile-tablet.jpg" repeatS="true" repeatT="true" />
 							<TextureTransform DEF='ItemCabinet_TextureTransform' scale='6 3' containerField='textureTransform'/>
 						</Appearance>
 						<IndexedFaceSet solid='false' coordIndex="0 1 2 3 -1">
