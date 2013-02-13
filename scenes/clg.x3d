@@ -301,67 +301,6 @@
 		</Transform>
 
 		<!-- 6 -->
-		<!--
-		<Transform translation='21 3.1 0'>
-			<Group DEF='CeilingLights_6_GROUP'>
-				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<Transform translation="0 0 16" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<Transform translation="0 0 14.5" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<Transform translation="0 0 13" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<Transform translation="0 0 11.5" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<Transform translation="0 0 10" rotation="0 1 0 1.5707963267949">
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline USE="CeilingLight_URL" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-			</Group>
-		</Transform>
-		-->
-
-		<!-- 7 -->
 		<Transform translation='24 3.1 0'>
 			<Group DEF='CeilingLights_7_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -420,7 +359,7 @@
 			</Group>
 		</Transform>
 
-		<!-- 8 -->
+		<!-- 7 -->
 		<Transform translation='27 3.1 0'>
 			<Group DEF='CeilingLights_8_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -480,7 +419,7 @@
 		</Transform>
 
 
-		<!-- 9 -->
+		<!-- 8 -->
 		<Transform translation='33 3.1 0'>
 			<Group DEF='CeilingLights_9_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -539,7 +478,7 @@
 			</Group>
 		</Transform>
 
-		<!-- 10 -->
+		<!-- 9 -->
 		<Transform translation='36 3.1 0'>
 			<Group DEF='CeilingLights_10_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -599,7 +538,7 @@
 		</Transform>
 
 
-		<!-- 11 -->
+		<!-- 10 -->
 		<Transform translation='42 3.1 0'>
 			<Group DEF='CeilingLights_11_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
@@ -658,7 +597,7 @@
 			</Group>
 		</Transform>
 
-		<!-- 12 -->
+		<!-- 11 -->
 		<Transform translation='45 3.1 0'>
 			<Group DEF='CeilingLights_12_GROUP'>
 				<Transform translation="0 0 17.5" rotation="0 1 0 1.5707963267949">
