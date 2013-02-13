@@ -3,9 +3,8 @@
 <X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
 	<Scene>
 		<Transform DEF='CeilingLight_TRANSFORM'
-		           translation='0.000000 0.000000 0.000000'
-		           scale='1.000000 1.000000 1.000000'>
-		    <Collision DEF="CeilingLight_COLLISION" enabled= "true" bboxCenter="0 0 0">
+		           translation='0 0 0'
+		           scale='1 1 1'>
 				<Group DEF='CeilingLight_GROUP'>
 					<Shape>
 						<Appearance>
@@ -160,7 +159,6 @@
 						</IndexedFaceSet>
 					</Shape>
 				</Group>
-			</Collision>
 		</Transform>
 	</Scene>
 </X3D>
