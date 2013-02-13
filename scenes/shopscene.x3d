@@ -224,6 +224,82 @@
 			</LOD>
 		</Transform>
 
+		<!-- Cabenet Group -->
+		<Transform translation="5 0 5" rotation="0 1 0 0">
+			<Group DEF="Cabinet-Right_GROUP">
+				<Transform translation="0 0 0" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="4 0 1" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="0 0 -3" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation='2 0.875 -1' rotation='0 1 0 -0.78539816339745'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onclick="cartlist('')" url="avatars/seller.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
+		<Transform translation="40 0 2.5" rotation="0 1 0 -3.141592653589793">
+			<Group DEF="Cabin-Left_GROUP">
+				<Transform translation="0 0 0" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="4 0 1" rotation="0 1 0 1.5707963267949">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="0 0 -3" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+
+				<Transform translation='2 0.875 -1' rotation='0 1 0 0.78539816339745'>
+					<LOD center="0 0 0" range="15">
+						<Group>
+							<Inline onclick="cartlist('')" url="avatars/seller.x3d" />
+						</Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
 <!--
 		<SpotLight ambientIntensity='0'
 			attenuation='1 0 0'
