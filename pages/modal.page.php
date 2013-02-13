@@ -7,7 +7,7 @@
 
 			<div class="input-append pull-right">
 				<input type="text" id="p_search">
-				<button type="button" class="btn" onClick="productslist($('#pcid').val(), $('#p_search').val(), 1)">Search</button>
+				<button type="button" class="btn" onClick="productslist($('#pcid').val(), $('#p_search').val(), 1)">ค้นหา</button>
 			</div>
 		</h3>
 	</div>
@@ -29,7 +29,7 @@
 
 			<div class="input-append pull-right">
 				<input type="text" id="c_search">
-				<button type="button" class="btn" onClick="cartlist($('#c_search').val())">Search</button>
+				<button type="button" class="btn" onClick="cartlist($('#c_search').val())">ค้นหา</button>
 			</div>
 		</h3>
 	</div>
