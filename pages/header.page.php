@@ -1,7 +1,7 @@
 <header class="navbar navbar-inverse navbar-static-top">
 	<nav class="navbar-inner">
 		<div class="container ">
-			<a class="brand" href="home.php">Virtual Exhibition</a>
+			<a class="brand" href="home.php">Chulabook Virtual Store</a>
 			<ul class="nav">
 				<li class="active">
 					<a href="home.php">หน้าแรก</a>
