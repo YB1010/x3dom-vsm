@@ -249,25 +249,48 @@
 			<Group DEF="Cabinet-Right_GROUP">
 				<Transform translation="0 0 0" rotation="0 1 0 0">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
+						<Group DEF="Cabinet_GROUP">
+							<Shape DEF="Cover_SHAPE">
+								<Appearance>
+									<ImageTexture DEF='Cabinet_IMAGE' url='textures/wood-crop.jpg' repeatS='true' repeatT='true' />
+									<TextureTransform DEF='Cabinet_TextureTransform' scale='2 2' containerField='textureTransform'/>
+								</Appearance>		
+								<IndexedFaceSet DEF="Cover_INDEXEDFACESET" solid='false' coordIndex='0 1 6 5 -1 1 2 7 6 -1 2 3 4 7 -1 0 3 4 5 -1 4 5 6 7 -1'>
+									<Coordinate point='0 0 0, 4 0 0, 4 0 1, 0 0 1, 0 0.5 1, 0 0.5 0, 4 0.5 0, 4 0.5 1' />
+								</IndexedFaceSet>
+							</Shape>
+							<Transform DEF="CabinetMirror_TRANSFORM" translation="0 0.5 0" scale="1 1 1">
+								<Shape>
+									<Appearance>
+										<Material ambientIntensity='0.2' diffuseColor='1 1 1' specularColor='1 1 1' shininess='0' transparency='0.9' />
+									</Appearance>
+									<IndexedFaceSet USE="Cover_INDEXEDFACESET"></IndexedFaceSet>
+								</Shape>
+							</Transform>
+							<Transform DEF="CabinetMirror_TRANSFORM" translation="0 0.51 0" scale="1 1 1">
+								<Shape>
+									<Appearance>
+										<ImageTexture url="textures/mobile-tablet.jpg" repeatS="true" repeatT="true" />
+										<TextureTransform DEF='ItemCabinet_TextureTransform' scale='6 3' containerField='textureTransform'/>
+									</Appearance>
+									<IndexedFaceSet solid='false' coordIndex="0 1 2 3 -1">
+										<Coordinate point="0 0 0, 4 0 0, 4 0 1, 0 0 1" />
+									</IndexedFaceSet>
+								</Shape>
+							</Transform>
 						</Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
 				<Transform translation="4 0 1" rotation="0 1 0 1.5707963267949">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
-						</Group>
+						<Group USE="Cabinet_GROUP"></Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
 				<Transform translation="0 0 -3" rotation="0 1 0 0">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
-						</Group>
+						<Group USE="Cabinet_GROUP"></Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
@@ -287,25 +310,19 @@
 			<Group DEF="Cabin-Left_GROUP">
 				<Transform translation="0 0 0" rotation="0 1 0 0">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
-						</Group>
+						<Group USE="Cabinet_GROUP"></Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
 				<Transform translation="4 0 1" rotation="0 1 0 1.5707963267949">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
-						</Group>
+						<Group USE="Cabinet_GROUP"></Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
 				<Transform translation="0 0 -3" rotation="0 1 0 0">
 					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline DEF="Cabinet" url="cabinet.x3d" />
-						</Group>
+						<Group USE="Cabinet_GROUP"></Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
@@ -320,25 +337,9 @@
 				</Transform>
 			</Group>
 		</Transform>
-<!--
-		<SpotLight ambientIntensity='0'
-			attenuation='1 0 0'
-			beamWidth='0.39'
-			color='0.698 0.698 0.698'
-			cutOffAngle='1.57'
-			direction='0 -1 0'
-			intensity='1'
-			radius='50'
-			location='25 20 10'></SpotLight>
--->
 
-			<PointLight
-	            ambientIntensity="0.0000"
-	            color="1 1 1"
-	            intensity="0.5714"
-	            radius="50.0000" 
-	            location="25 20 10"></PointLight>
-
+		<!-- Light -->
+		<PointLight ambientIntensity="0" color="1 1 1" intensity="0.5714" radius="50" location="25 20 10"></PointLight>
 
 	</Scene>
 </X3D>
