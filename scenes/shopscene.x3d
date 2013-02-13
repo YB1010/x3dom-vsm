@@ -214,7 +214,6 @@
 			</LOD>
 		</Transform>
 
-
 		<!-- Pillars / Second Row / Transform X 0.1 16.5 -->
 		<Transform translation="10 0.1 16.5" rotation="0 1 0 0.78539816339745">
 			<LOD center="0 0 0" range="15">
@@ -339,7 +338,7 @@
 		</Transform>
 
 		<!-- Light -->
-		<PointLight ambientIntensity="0" color="1 1 1" intensity="0.5714" radius="50" location="25 20 10"></PointLight>
+		<PointLight ambientIntensity="0" color="1 1 1" intensity="0.8" radius="50" location="25 20 10"></PointLight>
 
 	</Scene>
 </X3D>
