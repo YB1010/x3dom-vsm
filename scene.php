@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="chrome=1" />
 		<meta http-equiv='Content-Type' content='text/html;charset=utf-8'></meta>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +21,7 @@
 
 	
 		<script type='text/javascript' src='scripts/x3dom-1.5/x3dom-full.js'></script>
-		<script type="text/javascript" src="scripts/nav_runtime.js"></script>
+		<!-- <script type="text/javascript" src="scripts/nav_runtime.js"></script> -->
 	</head>
 	<body>
 
