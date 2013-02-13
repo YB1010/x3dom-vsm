@@ -337,7 +337,84 @@
 			</Group>
 		</Transform>
 
-		<!-- Light -->
+		<!-- SIGNS -->
+		<Transform translation="12 2.15 12" rotation="0 1 0 2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-gensci.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet DEF="Sign_IndexedFaceSet" solid='false' coordIndex="0 1 2 3 -1">
+					<Coordinate point="0 0 0, 2 0 0, 2 1 0, 0 1 0" />
+				</IndexedFaceSet>
+			</Shape>
+		</Transform>
+		
+		<Transform translation="16 2.15 12" rotation="0 1 0 2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-literature.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="19 2.15 12" rotation="0 1 0 2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-lang.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="22 2.15 12" rotation="0 1 0 2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-novel.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="31 2.15 11" rotation="0 1 0 -2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-religion.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="34 2.15 11" rotation="0 1 0 -2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-biz.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="37 2.15 11" rotation="0 1 0 -2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-sci.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+		<Transform translation="40 2.15 11" rotation="0 1 0 -2.35619449019235">
+			<Shape>
+				<Appearance>
+					<ImageTexture url="textures/sign-com.png" repeatS="false" repeatT="false" />
+					<TextureTransform scale='1 1' containerField='textureTransform'/>
+				</Appearance>
+				<IndexedFaceSet USE="Sign_IndexedFaceSet"></IndexedFaceSet>
+			</Shape>
+		</Transform>
+
+		<!-- LIGHT -->
 		<PointLight ambientIntensity="0" color="1 1 1" intensity="0.8" radius="50" location="25 20 10"></PointLight>
 
 	</Scene>
