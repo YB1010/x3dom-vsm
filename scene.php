@@ -14,14 +14,11 @@
 		<!--
 		<link rel="stylesheet" type="text/css" href="styles/text.css" />
 		-->
-
 		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
-		
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
 
 	
 		<script type='text/javascript' src='scripts/x3dom-1.5/x3dom-full.js'></script>
-		<!-- <script type="text/javascript" src="scripts/nav_runtime.js"></script> -->
 	</head>
 	<body>
 
@@ -52,13 +49,6 @@
 					<form class='navbar-search pull-right' onSubmit="javascript: return false">
 						<input type='text' class='search-query span2' id="hp-search" placeholder='ค้นหา'>
 					</form>
-					<!--
-					<ul class="nav pull-rifht">
-						<li>
-							<a href="javascript: alertLightbox('help')">ช่วยเหลือ</a>
-						</li>
-					</ul>
-					-->
 				</nav>
 			</div>
 		</header>
@@ -106,18 +96,6 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
-
-							<!-- Boy -->
-							<!--
-							<Transform translation='27 0.975 10' rotation='0 1 0 -2.87979326579065'>
-								<LOD center="0 0 0" range="15">
-									<Group>
-										<Inline url="scenes/avatars/boy.x3d" />
-									</Group>
-									<WorldInfo info='"null node"'/>
-								</LOD>
-							</Transform>
-							-->
 							
 							<!-- Shelf -->
 							<!-- Set all shelves y to 0.1 -->
@@ -404,24 +382,26 @@
 	<script type='text/javascript'>
 		document.onkeydown = function(e)
         {
-			var keynum = 0;
-
-			if(window.event) { keynum = e.keyCode; }
-			else if(e.which) { keynum = e.which; }
-
-			if(keynum == 37) { // left
-			    keyPress(37);
+			if(window.event) {
+				keynum = e.keyCode;
+			} else if(e.which) {
+				keynum = e.which;
 			}
 
-			if(keynum == 38) { // up
-			    keyPress(38);
+			// left
+			if(keynum == 37) { 
+				keyPress(37);
 			}
-
-			if(keynum == 39) { // right
-			  	keyPress(39);
+			// up
+			if(keynum == 38) { 
+				keyPress(38);
 			}
-
-			if(keynum == 40) { // down
+			// right
+			if(keynum == 39) { 
+				keyPress(39);
+			}
+			// down
+			if(keynum == 40) {
 			    keyPress(40);
 			}
 		}
