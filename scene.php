@@ -333,28 +333,30 @@
 				<ul>
 					<li>
 						<img src="styles/images/top.png" />
-						เดินหน้า
+						<span class="text-info">เดินหน้า</span>
 					</li>
 					<li>
 						<img src="styles/images/left.png" />
-						หันซ้าย
+						<span class="text-info">หันซ้าย</span>
 					</li>
 					<li>
 						<img src="styles/images/right.png" />
-						หันขวา
+						<span class="text-info">หันขวา</span>
 					</li>
 					<li>
 						<img src="styles/images/down.png" />
-						ถอยหลัง
+						<span class="text-info">ถอยหลัง</span>
 					</li>
 					<li>
 						<img src="styles/images/left_click.png" />
-						หมุน
+						<span class="text-info">คลิ๊กซ้ายค้างไว้แล้วหมุน</span>
 					</li>
 				</ul>
 				<h1>บริการและติดต่อ</h1>
+				<p>ศูนย์หนังสือแห่งจุฬาลงกรณ์มหาวิทยาลัย</p>
+				<p>สาขาจัตุรัสจามจุรี<br>อาคารจามจุรีสแควร์ ชั้น 4 ติดสถานีรถไฟฟ้า ใต้ดินสามย่าน ถ.พระราม 4</p>
+				<p>โทร.0-2160-5301 แฟ็กซ์ 0-2160-5304</p>
 				<p>เวลาเปิดบริการ<br>จันทร์ - ศุกร์ เวลา 11.00 - 20.00 น.<br>เสาร์ - อาทิตย์ เวลา 10.30 - 20.00 น.</p>
-				<p>ติดต่อสอบถามข้อมูล สั่งซื้อหนังสือ ได้ที่<br>Call Center 0-2255-4433</p>
 			</section>
 		</aside>
 
