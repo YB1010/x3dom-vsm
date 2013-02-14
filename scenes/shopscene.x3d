@@ -337,6 +337,23 @@
 			</Group>
 		</Transform>
 
+		<Transform translation="23.5 0.1 17" rotation="0 1 0 0">
+			<Group DEF="Cabin-Center_GROUP">
+				<Transform translation="0 0 0" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group USE="Cabinet_GROUP"></Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+				<Transform translation="0 0 -3" rotation="0 1 0 0">
+					<LOD center="0 0 0" range="15">
+						<Group USE="Cabinet_GROUP"></Group>
+						<WorldInfo info='"null node"'/>
+					</LOD>
+				</Transform>
+			</Group>
+		</Transform>
+
 		<!-- SIGNS -->
 		<Transform translation="12 2.15 12" rotation="0 1 0 2.35619449019235">
 			<Shape>
