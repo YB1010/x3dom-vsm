@@ -65,10 +65,13 @@ $(document).ready(function() {
 	/**
 		This processes is add product to cart.
 	*/
+	var checkAdd = 0;
 	$("[proc=addtocart]").live('click', function() {
 		var btn = $(this);
 		if (btn.prev().children('input.inputQty').val() == '0' 
-			|| btn.prev().children('input.inputQty').val() == '') return;
+			|| btn.prev().children('input.inputQty').val() == ''
+			|| checkAdd == 1) return;
+		checkAdd = 1;
 		btn.button('loading');
 		$.post('./ajax.php?p=addtocart&t=proc', {
 			pid: btn.attr('data-pid'),
@@ -77,6 +80,7 @@ $(document).ready(function() {
 			btn.html('หยิบใส่เรียบร้อย');
 			setTimeout(function() {
 				btn.button('reset');
+				checkAdd = 0;
 			}, 1000);
 			$('#qty').text(data);
 		});
