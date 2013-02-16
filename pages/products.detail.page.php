@@ -32,7 +32,7 @@
 					<input class="span10 inputQty" type="number" value="1">
 					<span class="small add-on">เล่ม</span>
 				</div>
-				<a href="#" class="btn btn-block btn-primary" data-loading-text="กำลังโหลดขอมูล..." proc="addtocart" data-pid="<?php echo $rows['ProductID']; ?>">หยิบลงตะกร้า</a>
+				<a href="#" class="btn btn-block btn-primary" data-loading-text="กำลังโหลดขอมูล..." proc="addtocart" data-pid="<?php echo $rows['ProductID']; ?>" data-name="<?php echo $rows['ProductName']; ?>" data-author="<?php echo $rows['Author']; ?>" data-price="<?php echo $rows['Price']; ?>" data-discount="<?php echo $rows['Discount']; ?>">หยิบลงตะกร้า</a>
 			</div>
 		</div>
 		<div class="span8">

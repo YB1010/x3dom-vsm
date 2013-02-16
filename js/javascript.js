@@ -75,6 +75,10 @@ $(document).ready(function() {
 		btn.button('loading');
 		$.post('./ajax.php?p=addtocart&t=proc', {
 			pid: btn.attr('data-pid'),
+			pname: btn.attr('data-name'),
+			pauthor: btn.attr('data-author'),
+			pprice: btn.attr('data-price'),
+			pdiscount: btn.attr('data-discount'),
 			qty: btn.prev().children('input.inputQty').val()
 		}, function(data) {
 			btn.html('หยิบใส่เรียบร้อย');
