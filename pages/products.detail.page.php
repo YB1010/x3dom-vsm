@@ -25,18 +25,33 @@
 						</div>
 						
 						<div class="bk-page">
-							<div class="bk-content bk-content-current">
-								<p>Red snapper Kafue pike fangtooth humums slipmouth, salmon cutlassfish; swallower European perch mola mola sunfish, threadfin bream. Billfish hog sucker trout-perch lenok orbicular velvetfish. Delta smelt striped bass, medusafish dragon goby starry flounder cuchia round whitefish northern anchovy spadefish merluccid hake cat shark Black pickerel. Pacific cod.</p>
-							</div>
-							<div class="bk-content">
-								<p>Whale catfish leatherjacket deep sea anglerfish grenadier sawfish pompano dolphinfish carp large-eye bream, squeaker amago. Sandroller; rough scad, tiger shovelnose catfish snubnose parasitic eel? Black bass soldierfish duckbill--Rattail Atlantic saury Blind shark California halibut; false trevally warty angler!</p>
-							</div>
-							<div class="bk-content">
-								<p>Trahira giant wels cutlassfish snapper koi blackchin mummichog mustard eel rock bass whiff murray cod. Bigmouth buffalo ling cod giant wels, sauger pink salmon. Clingfish luderick treefish flatfish Cherubfish oldwife Indian mul gizzard shad hagfish zebra danio. Butterfly ray lizardfish ponyfish muskellunge Long-finned sand diver mullet swordfish limia ghost carp filefish.</p>
-							</div>
-							<div class="bk-content">
-								<img src="http://www.sup.org/html/book_pages/0804758611/Introduction_pages/page-1.png">
-							</div>
+							<?php
+								$query = "SELECT ImageFile FROM vx_page WHERE ProductID = " . $rows['ProductID'] . " ORDER BY PageIndex, PageID";
+								$result = mysql_query($query);
+								if (mysql_num_rows($result) == 0) {
+									?>
+										<div class="bk-content bk-content-current">
+											<p>
+												<h4>Page not found.</h4>	
+											</p>
+										</div>
+									<?php
+								} else {
+									$page = mysql_fetch_array($result)
+									?>
+										<div class="bk-content bk-content-current">
+											<img src="./images/pages/<?php echo $page['ImageFile']; ?>">
+										</div>
+									<?php
+									while ($page = mysql_fetch_array($result)) {
+										?>
+											<div class="bk-content">
+												<img src="./images/pages/<?php echo $page['ImageFile']; ?>">
+											</div>
+										<?php
+									}
+								}
+							?>
 						</div>
 
 						<div class="bk-back"></div>

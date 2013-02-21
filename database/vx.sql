@@ -8,6 +8,15 @@ CREATE TABLE `vx_admin`
 INSERT INTO `vx_admin` VALUES
 ('admin', MD5('1q2w3e4r'));
 
+CREATE TABLE `vx_page`
+(
+  `PageID` int(11) NOT NULL AUTO_INCREMENT,
+  `ProductID` int(11) NOT NULL,
+  `ImageFile` varchar(50) NOT NULL,
+  `PageIndex` int(11) DEFAULT NULL,
+  PRIMARY KEY (`PageID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
 CREATE TABLE `vx_product`
 (
 	`ProductID` varchar(10) NOT NULL,
