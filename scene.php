@@ -16,7 +16,7 @@
 		-->
 		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
 		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
-
+		<link rel="stylesheet" type="text/css" href="./styles/component.css">
 	
 		<script type='text/javascript' src='scripts/x3dom-1.5/x3dom-full.js'></script>
 	</head>
@@ -379,6 +379,9 @@
 	<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
 	<script type='text/javascript' src='./js/javascript.js'></script>
 	<script type="text/javascript" src="scripts/keyevents.js"></script>
+
+	<script src="./js/modernizr.custom.js"></script>
+	
 
 	<script type='text/javascript'>
 		document.onkeydown = function(e)
