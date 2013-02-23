@@ -68,9 +68,19 @@ $(document).ready(function() {
 	var checkAdd = 0;
 	$("[proc=addtocart]").live('click', function() {
 		var btn = $(this);
-		if (btn.prev().children('input.inputQty').val() == '0' 
-			|| btn.prev().children('input.inputQty').val() == ''
-			|| checkAdd == 1) return;
+		if (checkAdd == 1) return;
+		if (parseInt(btn.prev().children('input.inputQty').val()) <= 0
+			|| btn.prev().children('input.inputQty').val() == '') {
+
+			btn.html('ตรวจสอบจำนวนที่ใส่');
+			setTimeout(function() {
+				btn.html('หยิบใส่ตะกร้า');
+				checkAdd = 0;
+			}, 1000);
+
+			return;
+		}
+		
 		checkAdd = 1;
 		btn.button('loading');
 		$.post('./ajax.php?p=addtocart&t=proc', {
