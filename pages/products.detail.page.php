@@ -26,7 +26,7 @@
 					
 					<div class="bk-page">
 						<?php
-							$query = "SELECT ImageFile FROM vx_page WHERE ProductID = " . $rows['ProductID'] . " ORDER BY PageIndex, PageID";
+							$query = "SELECT ImageFile FROM vx_page WHERE ProductID = '" . $rows['ProductID'] . "' ORDER BY PageIndex, PageID";
 							$result = mysql_query($query);
 							if (mysql_num_rows($result) == 0) {
 								?>
