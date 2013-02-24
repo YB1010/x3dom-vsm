@@ -365,7 +365,10 @@
 				<div class='container'>
 					<ul class='nav'>
 						<li>
-							<a href="http://hassadee.com">&copy; 2013 AUPPA GROUP</a>
+							<a href="http://www.auppagroup.com/" target="_blank">&copy; 2013 AUPPA</a>
+						</li>
+						<li>
+							<a href="http://www.chulabook.com/" target="_blank">ศูนย์หนังสือแห่งจุฬาลงกรณ์มหาวิทยาลัย</a>
 						</li>
 					</ul>
 				</div>
