@@ -102,7 +102,7 @@
 								<!-- C0 -->
 								<Transform translation="10 0 13" rotation="0 1 0 -0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('4', '', 1)" url='scenes/shelf-gensci.x3d' />
 											</Group>
@@ -130,7 +130,7 @@
 								<!-- C1 -->
 								<Transform translation="14 0 13" rotation="0 1 0 -0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('3', '', 1)" url='scenes/shelf-literature.x3d' />
 											</Group>
@@ -158,7 +158,7 @@
 								<!-- C2 -->
 								<Transform translation="17 0 13" rotation="0 1 0 -0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('1', '', 1)" url='scenes/shelf-lang.x3d' />
 											</Group>
@@ -186,7 +186,7 @@
 								<!-- C3 (6) Novel -->
 								<Transform translation="20 0 13" rotation="0 1 0 -0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="15">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf-novel.x3d' />
 											</Group>
@@ -194,7 +194,7 @@
 										</LOD>
 									</Transform>
 									<Transform translation="0 0 1.3">
-										<LOD center="0 0 0" range="15">
+										<LOD center="0 0 0" range="10">
 											<Group>
 												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf-novel.x3d' />
 											</Group>
@@ -202,7 +202,7 @@
 										</LOD>
 									</Transform>
 									<Transform translation="0 0 2.6">
-										<LOD center="0 0 0" range="15">
+										<LOD center="0 0 0" range="10">
 											<Group>
 												<Inline onClick="productslist('6', '', 1)" url='scenes/shelf-novel.x3d' />
 											</Group>
@@ -214,7 +214,7 @@
 								<!-- C4 (2) Religion -->
 								<Transform translation="31.25 0 13.25" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('2', '', 1)" url='scenes/shelf-religion.x3d' />
 											</Group>
@@ -242,7 +242,7 @@
 								<!-- C5 (5) Biz -->
 								<Transform translation="34 0 13" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('5', '', 1)" url='scenes/shelf-biz.x3d' />
 											</Group>
@@ -270,7 +270,7 @@
 								<!-- C6 (7) Inno -->
 								<Transform translation="37 0 13" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('7', '', 1)" url='scenes/shelf-sci.x3d' />
 											</Group>
@@ -298,7 +298,7 @@
 								<!-- C7 (8) Com -->
 								<Transform translation="41.25 0 13.25" rotation="0 1 0 0.78539816339745">
 									<Transform translation="0 0 0">
-										<LOD center="0 0 0" range="10">
+										<LOD center="0 0 0" range="30">
 											<Group>
 												<Inline onClick="productslist('8', '', 1)" url='scenes/shelf-com.x3d' />
 											</Group>
