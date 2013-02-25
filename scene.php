@@ -76,6 +76,18 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
+							<!-- Say Hello -->
+							<Transform translation='21 2 2.2' rotation='0 1 0 -2.0943951023932'>
+								<LOD center="0 0 0" range="10">
+									<Group>
+										<Shape>
+											<Box size="0.5 0.5 0.5" />
+										</Shape>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+
 
 							<Transform translation='23.5 0.875 2.2' rotation='0 1 0 -0.78539816339745'>
 								<LOD center="0 0 0" range="15">
@@ -85,12 +97,35 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
+							<!-- Say Hello -->
+							<Transform translation='23.5 2 2.2' rotation='0 1 0 -2.0943951023932'>
+								<LOD center="0 0 0" range="10">
+									<Group>
+										<Shape>
+											<Box size="0.5 0.5 0.5" />
+										</Shape>
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+
 
 							<!-- Security guy -->
 							<Transform translation='30 0.875 2.2' rotation='0 1 0 -2.0943951023932'>
 								<LOD center="0 0 0" range="15">
 									<Group>
 										<Inline url="scenes/avatars/security.x3d" />
+									</Group>
+									<WorldInfo info='"null node"'/>
+								</LOD>
+							</Transform>
+							<!-- Say Hello -->
+							<Transform translation='30 2 2.2' rotation='0 1 0 -2.0943951023932'>
+								<LOD center="0 0 0" range="10">
+									<Group>
+										<Shape>
+											<Box size="0.5 0.5 0.5" />
+										</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
