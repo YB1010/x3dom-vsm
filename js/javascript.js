@@ -1,14 +1,16 @@
 /**
 	This function is show products list.
 */
-function productslist(v_pcid, v_search, v_page)
+function productslist(v_pcid, v_search, v_shelf, v_page)
 {
 	$('#products').modal('show');
 	$('#p_search').val('');
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
+	console.log(v_shelf);
 	$.get('./ajax.php?p=products&t=page', {
 		pcid: v_pcid,
 		q: v_search,
+		shelf: v_shelf,
 		page: v_page
 	}, function(data) {
 		$('#products div.modal-body').hide().html(data).fadeIn();
@@ -18,12 +20,14 @@ function productslist(v_pcid, v_search, v_page)
 /**
 	This function is show product detail.
 */
-function productsdetail(v_pid, v_pcid)
+function productsdetail(v_pid, v_pcid, v_shelf, v_search)
 {
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
 	$.get('./ajax.php?p=products.detail&t=page', {
 		pid: v_pid,
-		pcid: v_pcid
+		pcid: v_pcid,
+		shelf: v_shelf,
+		q: v_search
 	}, function(data) {
 		$('#products div.modal-body').hide().html(data).fadeIn();
 	});
@@ -123,7 +127,7 @@ $(document).ready(function() {
 	*/
 	$('#hp-search, #p_search').live('keydown', function(e) {
 		if (e.keyCode == 13) {
-			productslist(null, $(this).val(), 1);
+			productslist(null, $(this).val(), '', 1);
 		} // End if.
 	}); // End processes.
 

@@ -5,7 +5,7 @@
 ?>
 <ul class="breadcrumb" style="padding-left: 10px;">
 	<li>
-		<a href="javascript: productslist('<?php echo $_GET['pcid'] == ''? "":$_GET['pcid']; ?>', '', 1)">
+		<a href="javascript: productslist('<?php echo $_GET['pcid'] == ''? "":$_GET['pcid']; ?>', '<?php echo $_GET['q'] == ''? "":$_GET['q']; ?>', '<?php echo $_GET['shelf'] == ''? "":$_GET['shelf']; ?>', 1)">
 			<?php echo $_GET['pcid'] == ''? "ผลการค้นหา":$rows['ProductCategoryName']; ?>
 		</a>
 		<span class="divider">/</span>

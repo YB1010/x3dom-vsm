@@ -8,8 +8,9 @@
 <input type="hidden" id="pcid" value="<?php echo $_GET['pcid']; ?>">
 <?php
 	$query = "SELECT ProductID FROM vx_product";
-	$query .= ($_GET['q'] != '' || $_GET['pcid'] != '')?" WHERE ":"";
-	$query .= ($_GET['pcid'] != '')? "ProductCategoryID = " . $_GET['pcid'] . (($_GET['q'] != '')? " AND ":"") :"";
+	$query .= ($_GET['q'] != '' || $_GET['pcid'] != '' || $_GET['shelf'] != '')?" WHERE ":"";
+	$query .= ($_GET['pcid'] != '')? "ProductCategoryID = " . $_GET['pcid'] . (($_GET['q'] != '' || $_GET['shelf'] != '')? " AND ":"") :"";
+	$query .= ($_GET['shelf'] != '')? "Shelf = " . $_GET['shelf'] . (($_GET['q'] != '')? " AND ":"") :"";
 	$query .= ($_GET['q'] != '')? "(ProductName LIKE '%" . $_GET['q'] . "%' OR Author Like '%" . $_GET['q'] . "%')" : "";
 
 	$result = mysql_query($query . " LIMIT " . ($_GET['page'] - 1) * 10 . ", 10");
@@ -27,7 +28,7 @@
 			<ul class="thumbnails books" id="shelf">
 			<?php } ?>
 				<li class="book" id="book<?php echo $i%5; ?>">
-					<img src="./images/products/<?php echo $rows['ProductID']; ?>.jpg" class="hoverZoomLink" onClick="productsdetail('<?php echo $rows['ProductID'] . "', '" . $_GET['pcid']; ?>')">
+					<img src="./images/products/<?php echo $rows['ProductID']; ?>.jpg" class="hoverZoomLink" onClick="productsdetail('<?php echo $rows['ProductID'] . "', '" . $_GET['pcid'] . "', '" . $_GET['shelf'] . "', '" . $_GET['q']; ?>')">
 				</li>
 			<?php if ($i%5 == 4) { ?>
 				<div class="bookend_left"></div>
@@ -48,21 +49,21 @@
 		<div class="pagination pagination-centered">
 			<ul>
 				<li <?php echo $_GET['page'] == 1? "class='disabled'" : ""; ?>>
-					<a href="<?php echo $_GET['page'] != 1? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', 1)":"#"; ?>">|&lt;</a>
+					<a href="<?php echo $_GET['page'] != 1? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', '".($_GET['shelf']!=''? $_GET['shelf'] : '')."', 1)":"#"; ?>">|&lt;</a>
 				</li>
 				<li <?php echo $_GET['page'] == 1? "class='disabled'" : ""; ?>>
-					<a href="<?php echo $_GET['page'] != 1? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', ".($_GET['page']-1).")":"#"; ?>">&lt;</a>
+					<a href="<?php echo $_GET['page'] != 1? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', '".($_GET['shelf']!=''? $_GET['shelf'] : '')."', ".($_GET['page']-1).")":"#"; ?>">&lt;</a>
 				</li>
 				<?php for ($i=1; $i <= $maxp; $i++) { ?>
 					<li <?php echo $_GET['page'] == $i? "class='active'" : ""; ?>>
-						<a href="<?php echo $_GET['page'] != $i? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', ".$i.")":"#"; ?>"><?php echo $i; ?></a>
+						<a href="<?php echo $_GET['page'] != $i? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', '".($_GET['shelf']!=''? $_GET['shelf'] : '')."', ".$i.")":"#"; ?>"><?php echo $i; ?></a>
 					</li>
 				<?php } ?>
 				<li <?php echo $_GET['page'] == $maxp? "class='disabled'" : ""; ?>>
-					<a href="<?php echo $_GET['page'] != $maxp? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', ".($_GET['page']+1).")":"#"; ?>">&gt;</a>
+					<a href="<?php echo $_GET['page'] != $maxp? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', '".($_GET['shelf']!=''? $_GET['shelf'] : '')."', ".($_GET['page']+1).")":"#"; ?>">&gt;</a>
 				</li>
 				<li <?php echo $_GET['page'] == $maxp? "class='disabled'" : ""; ?>>
-					<a href="<?php echo $_GET['page'] != $maxp? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', ".$maxp.")":"#"; ?>">&gt;|</a>
+					<a href="<?php echo $_GET['page'] != $maxp? "javascript: productslist('".($_GET['pcid']!=''? $_GET['pcid'] : '')."', '".($_GET['q']!=''? $_GET['q'] : '')."', '".($_GET['shelf']!=''? $_GET['shelf'] : '')."', ".$maxp.")":"#"; ?>">&gt;|</a>
 				</li>
 			</ul>
 		</div>
