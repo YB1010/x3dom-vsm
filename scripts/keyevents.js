@@ -67,8 +67,10 @@ function keyPress(press)
 		//var viewpointPosition = new Array();
 		//viewpointPosition = setViewpointPosition;
 
-	    document.getElementById("ViewpointMarker").setAttribute("orientation", viewpointOrientation); /* Assign new viewpoint's orientation */
-	    //document.getElementById("ViewpointMarker").setAttribute("position", viewpointPosition); /* Assign new viewpoint's position */
+	    document.getElementById("ViewpointMarker").setAttribute("orientation", viewpointOrientation);
+	    /* Assign new viewpoint's orientation */
+	    //document.getElementById("ViewpointMarker").setAttribute("position", viewpointPosition);
+	    /* Assign new viewpoint's position */
 
 	    //document.getElementById('ViewpointPC').setAttribute('set_destination', viewpointPosition);
 		//document.getElementById("Avatar").setAttribute("rotation", viewpointOrientation);
@@ -95,6 +97,8 @@ function keyPress(press)
 
 		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
 
+		y = step_up(set_zPosition);
+
 	    var setViewpointPosition = [set_xPosition, y, set_zPosition];
 		var viewpointPosition = new Array();
 		viewpointPosition = setViewpointPosition;
@@ -113,6 +117,8 @@ function keyPress(press)
 
 		if (( set_zPosition < 1 || set_zPosition > 18 ) || ( set_xPosition < 2 || set_xPosition > 48 )) return;
 
+		y = step_up(set_zPosition);
+
 	    var setViewpointPosition = [set_xPosition, y, set_zPosition];
 		var viewpointPosition = new Array();
 		viewpointPosition = setViewpointPosition;
@@ -125,4 +131,13 @@ function keyPress(press)
 	if (press == 13) {
 
 	}
+}
+
+function step_up(zPosition)
+{
+	var step_y = 1.5;
+	if ( zPosition >= 9.600000 ) {
+		step_y = 1.6;
+	}
+	return step_y;
 }
