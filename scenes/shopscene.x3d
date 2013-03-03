@@ -293,27 +293,6 @@
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
-
-				<!-- NPC -->
-				<Transform translation='2 0.875 -1' rotation='0 1 0 -0.78539816339745'>
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline onclick="cartlist('')" url="avatars/seller.x3d" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-				<!-- Say Hello -->
-				<Transform translation='2 2 -1' rotation='0 1 0 -2.0943951023932'>
-					<LOD center="0 0 0" range="10">
-						<Group>
-							<Shape>
-								<Box size="0.5 0.5 0.5" />
-							</Shape>
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
 			</Group>
 		</Transform>
 
@@ -334,27 +313,6 @@
 				<Transform translation="0 0 -3" rotation="0 1 0 0">
 					<LOD center="0 0 0" range="15">
 						<Group USE="Cabinet_GROUP"></Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-
-				<!-- NPC -->
-				<Transform translation='2 0.875 -1' rotation='0 1 0 0.78539816339745'>
-					<LOD center="0 0 0" range="15">
-						<Group>
-							<Inline onclick="cartlist('')" url="avatars/seller.x3d" />
-						</Group>
-						<WorldInfo info='"null node"'/>
-					</LOD>
-				</Transform>
-				<!-- Say Hello -->
-				<Transform translation='2 2 -1' rotation='0 1 0 -2.0943951023932'>
-					<LOD center="0 0 0" range="10">
-						<Group>
-							<Shape>
-								<Box size="0.5 0.5 0.5" />
-							</Shape>
-						</Group>
 						<WorldInfo info='"null node"'/>
 					</LOD>
 				</Transform>
