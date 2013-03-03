@@ -53,7 +53,7 @@
 			</div>
 		</header>
 
-					<X3D id='x3dom-scene' showStat='true'>
+					<X3D id='x3dom-scene' showStat='false'>
 						<Scene>
 
 							<NavigationInfo headlight="true"
@@ -76,7 +76,7 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
-							<!-- Say Hello -->
+							<!-- Balloon : Say Hello -->
 							<Transform translation='21 2 2.2' rotation='0 1 0 -2.0943951023932'>
 								<LOD center="0 0 0" range="10">
 									<Group>
@@ -97,7 +97,7 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
-							<!-- Say Hello -->
+							<!-- Balloon : Say Hello -->
 							<Transform translation='23.5 2 2.2' rotation='0 1 0 -2.0943951023932'>
 								<LOD center="0 0 0" range="10">
 									<Group>
@@ -119,7 +119,7 @@
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
-							<!-- Say Hello -->
+							<!-- Balloon : Say Hello -->
 							<Transform translation='30 2 2.2' rotation='0 1 0 -2.0943951023932'>
 								<LOD center="0 0 0" range="10">
 									<Group>
@@ -400,10 +400,10 @@
 				<div class='container'>
 					<ul class='nav'>
 						<li>
-							<a href="http://www.auppagroup.com/" target="_blank">&copy; 2013 AUPPA</a>
+							<a href="http://www.auppagroup.com/" title="AUPPA GROUP" target="_blank">&copy; 2013 AUPPA</a>
 						</li>
 						<li>
-							<a href="http://www.chulabook.com/" target="_blank">ศูนย์หนังสือแห่งจุฬาลงกรณ์มหาวิทยาลัย</a>
+							<a href="http://www.chulabook.com/" title="ศูนย์หนังสือแห่งจุฬาลงกรณ์มหาวิทยาลัย" target="_blank">ศูนย์หนังสือแห่งจุฬาลงกรณ์มหาวิทยาลัย</a>
 						</li>
 					</ul>
 				</div>

@@ -25,7 +25,7 @@
 						<div class="alert alert-error">
 							<button type="button" class="close" data-dismiss="alert">&times;</button>
 							<h4>Error 404!</h4>
-							<p>ไม่มีหน้าที่คุณต้องการ</p>
+							<p>ไม่พบหน้าที่คุณต้องการ</p>
 						</div>
 					<?php } ?>
 				</section>
