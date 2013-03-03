@@ -6,10 +6,10 @@
 
 .bk-list li {
 	position: relative;
-	width: 150px;
+	width: 250px;
 	float: left;
 	z-index: 1;
-	margin: 0px 50px 10px 0;
+	margin: 0 0 0 20px;
 	-webkit-perspective: 1800px;
 	-moz-perspective: 1800px;
 	perspective: 1800px;
@@ -17,7 +17,7 @@
 
 .bk-info {
 	position: relative;
-	margin-top: 220px;
+	margin-top: 365px;
 }
 
 .bk-info h3 {
@@ -45,7 +45,7 @@
 .bk-list li .bk-book {
 	position: absolute;
 	width: 100%;
-	height: 200px;
+	height: 350px;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
@@ -96,8 +96,8 @@
 	-moz-transform: translate3d(0,0,19px);
 	transform: translate3d(0,0,19px);
 	display: none;
-	width: 145px;
-	height: 190px;
+	width: 245px;
+	height: 340px;
 	top: 5px;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
@@ -108,8 +108,8 @@
 .bk-list li .bk-front,
 .bk-list li .bk-back,
 .bk-list li .bk-front > div {
-	width: 150px;
-	height: 200px;
+	width: 250px;
+	height: 350px;
 }
 
 .bk-list li .bk-left,
@@ -120,7 +120,7 @@
 
 .bk-list li .bk-top,
 .bk-list li .bk-bottom {
-	width: 145px;
+	width: 245px;
 	height: 40px;
 	top: -15px;
 	-webkit-backface-visibility: hidden;
@@ -144,7 +144,7 @@
 }
 
 .bk-list li .bk-right {
-	height: 190px;
+	height: 340px;
 	top: 5px;
 	-webkit-transform: rotate3d(0,1,0,90deg) translate3d(0,0,295px);
 	-moz-transform: rotate3d(0,1,0,90deg) translate3d(0,0,295px);
@@ -155,7 +155,7 @@
 }
 
 .bk-list li .bk-left {
-	height: 200px;
+	height: 340px;
 	-webkit-transform: rotate3d(0,1,0,-90deg);
 	-moz-transform: rotate3d(0,1,0,-90deg);
 	transform: rotate3d(0,1,0,-90deg);
@@ -239,7 +239,7 @@
 }
 
 .bk-left h2 {
-	width: 200px;
+	width: 340px;
 	height: 40px;
 	-webkit-transform-origin: 0 0;
 	-moz-transform-origin: 0 0;
@@ -277,7 +277,7 @@
 	padding: 0 0 10px;
 	-webkit-font-smoothing: antialiased;
 	color: #000;
-	font-size: 3px;
+	font-size: 12px;
 	line-height: 20px;
 	text-align: justify;
 	-webkit-touch-callout: none;

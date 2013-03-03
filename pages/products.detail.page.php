@@ -13,7 +13,7 @@
 	<li class="active"><?php echo $rows['ProductName']; ?></li>
 </ul><br>
 <div class="row-fluid">
-	<div class="span4">
+	<div class="span7">
 
 		<ul id="bk-list" class="bk-list clearfix">
 			<li>
@@ -25,33 +25,38 @@
 					</div>
 					
 					<div class="bk-page">
+						<div class="bk-content bk-content-current">
+							<h3>รายละเอียดทั่วไป</h3>
+							<div class="row-fluid">
+								<small class="span4">ชื่อ</small>
+								<small class="span7"><?php echo $rows['ProductName']; ?></small>
+							</div>
+
+							<div class="row-fluid">
+								<small class="span4">ผู้แต่ง</small>
+								<small class="span7"><?php echo $rows['Author']; ?></small>
+							</div>
+
+							<div class="row-fluid">
+								<small class="span4">จำนวนหน้า</small>
+								<small class="span7"><?php echo $rows['Pages']; ?> หน้า</small>
+							</div>
+						</div>
 						<?php
-							$query = "SELECT ImageFile FROM vx_page WHERE ProductID = '" . $rows['ProductID'] . "' ORDER BY PageIndex, PageID";
-							$result = mysql_query($query);
-							if (mysql_num_rows($result) == 0) {
-								?>
-									<div class="bk-content bk-content-current">
-										<p>
-											<h4>Page not found.</h4>	
-										</p>
-									</div>
-								<?php
-							} else {
-								$page = mysql_fetch_array($result)
-								?>
-									<div class="bk-content bk-content-current">
-										<img src="./images/pages/<?php echo $page['ImageFile']; ?>">
-									</div>
-								<?php
-								while ($page = mysql_fetch_array($result)) {
-									?>
-										<div class="bk-content">
-											<img src="./images/pages/<?php echo $page['ImageFile']; ?>">
-										</div>
-									<?php
-								}
-							}
+							$desc = $rows['Description']? $rows['Description'] : 'ไม่มีรายละเอียด';
+							$len = mb_strlen($desc, 'UTF-8');
+							$maxstr = 300;
+							$maxloop = $len / $maxstr;
+							$maxloop = (((int)$maxloop)!=($maxloop))? (((int)$maxloop)+1):((int)$maxloop);
+							for ($i = 0 ; $i < $maxloop ; $i++) {
 						?>
+							<div class="bk-content">
+								<h3>บทคัดย่อ</h3>
+								<p>
+									<?php echo mb_substr($desc, ($i * $maxstr), $maxstr,'UTF-8'); ?>
+								</p>
+							</div>
+						<?php } ?>
 					</div>
 
 					<div class="bk-back"></div>
@@ -61,10 +66,13 @@
 					<div class="bk-bottom"></div>
 				</div>
 				<div class="bk-info">
-					<a class="btn btn-block btn-primary bk-bookview">View inside</a>
+					<a class="btn btn-block btn-primary bk-bookview">ดูรายละเอียด</a>
 				</div>
 			</li>
 		</ul>
+	</div>
+
+	<div class="span5">
 
 		<div class="row-fluid">
 			<small class="span4">ราคา</small>
@@ -83,27 +91,6 @@
 				<span class="small add-on">เล่ม</span>
 			</div>
 			<a href="#" class="btn btn-block btn-primary" data-loading-text="กำลังโหลดขอมูล..." proc="addtocart" data-pid="<?php echo $rows['ProductID']; ?>" data-name="<?php echo $rows['ProductName']; ?>" data-author="<?php echo $rows['Author']; ?>" data-price="<?php echo $rows['Price']; ?>" data-discount="<?php echo $rows['Discountk']; ?>">หยิบลงตะกร้า</a>
-		</div>
-	</div>
-	<div class="span8">
-		<div class="row-fluid">
-			<small class="span4">ชื่อ</small>
-			<small class="span7"><?php echo $rows['ProductName']; ?></small>
-		</div>
-
-		<div class="row-fluid">
-			<small class="span4">ผู้แต่ง</small>
-			<small class="span7"><?php echo $rows['Author']; ?></small>
-		</div>
-
-		<div class="row-fluid">
-			<small class="span4">จำนวนหน้า</small>
-			<small class="span7"><?php echo $rows['Pages']; ?> หน้า</small>
-		</div>
-
-		<div class="row-fluid">
-			<small class="span4">รายละเอียด</small>
-			<small class="span7"><?php echo $rows['Description']? $rows['Description'] : 'ไม่มีรายละเอียด'; ?></small>
 		</div>
 	</div>
 </div>
