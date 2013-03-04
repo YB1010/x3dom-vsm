@@ -371,6 +371,7 @@
 
 		<aside class="help-sidebar rt">
 			<section class="help-container">
+				<img src="styles/images/chulabook_logo.png" />
 				<h1>การควบคุม</h1>
 				<ul>
 					<li>
