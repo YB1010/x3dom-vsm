@@ -269,8 +269,8 @@
 							<Transform DEF="CabinetMirror_TRANSFORM" translation="0 0.51 0" scale="1 1 1">
 								<Shape>
 									<Appearance>
-										<ImageTexture url="textures/mobile-tablet.jpg" repeatS="true" repeatT="true" />
-										<TextureTransform DEF='ItemCabinet_TextureTransform' scale='6 3' containerField='textureTransform'/>
+										<ImageTexture url="textures/txtr_talking_dict.png" repeatS="true" repeatT="true" />
+										<TextureTransform DEF='ItemCabinet_TextureTransform' scale='1 1' containerField='textureTransform'/>
 									</Appearance>
 									<IndexedFaceSet solid='false' coordIndex="0 1 2 3 -1">
 										<Coordinate point="0 0 0, 4 0 0, 4 0 1, 0 0 1" />
