@@ -77,15 +77,15 @@
 								</LOD>
 							</Transform>
 							<!-- Balloon : Say Hello -->
-							<Transform translation='21 2 2.2' rotation='0 1 0 0'>
+							<Transform translation='21 2.1 2.2' rotation='0 1 0 0'>
 								<LOD center="0 0 0" range="10">
 									<Group>
 										<Shape DEF="Payment_SHAPE">
 											<Appearance>
-												<ImageTexture DEF='Payment_IMAGE' url='scenes/textures/balloons/balloon_payment_npc.png' repeatS='false' repeatT='false' />
+												<ImageTexture DEF='Payment_IMAGE' url='scenes/textures/balloons/balloon-payment-2.png' repeatS='false' repeatT='false' />
 												<TextureTransform DEF='Payment_TextureTransform' scale='1 1' containerField='textureTransform'/>
 											</Appearance>
-											<Box size="2.5 0.5 0.001" />
+											<Box size="2.45 0.7 0.001" />
 										</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
