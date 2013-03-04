@@ -82,10 +82,10 @@
 									<Group>
 										<Shape DEF="Payment_SHAPE">
 											<Appearance>
-												<ImageTexture DEF='Payment_IMAGE' url='scenes/textures/balloons/balloon-payment.png' repeatS='false' repeatT='false' />
+												<ImageTexture DEF='Payment_IMAGE' url='scenes/textures/balloons/balloon_payment_npc.png' repeatS='false' repeatT='false' />
 												<TextureTransform DEF='Payment_TextureTransform' scale='1 1' containerField='textureTransform'/>
 											</Appearance>
-											<Box onclick="cartlist('')" size="2.5 0.5 0.001" />
+											<Box size="2.5 0.5 0.001" />
 										</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
