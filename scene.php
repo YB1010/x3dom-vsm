@@ -80,8 +80,12 @@
 							<Transform translation='21 2 2.2' rotation='0 1 0 -2.0943951023932'>
 								<LOD center="0 0 0" range="10">
 									<Group>
-										<Shape>
-											<Box size="0.5 0.5 0.5" />
+										<Shape DEF="Payment_SHAPE">
+											<Appearance>
+												<ImageTexture DEF='Payment_IMAGE' url='scenes/textures/balloons/balloon-payment.png' repeatS='false' repeatT='false' />
+												<TextureTransform DEF='Payment_TextureTransform' scale='1 1' containerField='textureTransform'/>
+											</Appearance>
+											<Box onclick="cartlist('')" size="2.5 0.5 0.001" />
 										</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
@@ -98,16 +102,15 @@
 								</LOD>
 							</Transform>
 							<!-- Balloon : Say Hello -->
-							<Transform translation='23.5 2 2.2' rotation='0 1 0 -2.0943951023932'>
+							<Transform translation='23.5 2 2.2' rotation='0 1 0 -0.78539816339745'>
 								<LOD center="0 0 0" range="10">
 									<Group>
-										<Shape>
-											<Box size="0.5 0.5 0.5" />
-										</Shape>
+										<Shape USE="Payment_SHAPE">	</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
 								</LOD>
 							</Transform>
+
 
 
 							<!-- Security guy -->
