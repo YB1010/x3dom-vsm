@@ -77,7 +77,7 @@
 								</LOD>
 							</Transform>
 							<!-- Balloon : Say Hello -->
-							<Transform translation='21 2 2.2' rotation='0 1 0 -2.0943951023932'>
+							<Transform translation='21 2 2.2' rotation='0 1 0 0'>
 								<LOD center="0 0 0" range="10">
 									<Group>
 										<Shape DEF="Payment_SHAPE">
@@ -102,7 +102,7 @@
 								</LOD>
 							</Transform>
 							<!-- Balloon : Say Hello -->
-							<Transform translation='23.5 2 2.2' rotation='0 1 0 -0.78539816339745'>
+							<Transform translation='23.5 2 2.2' rotation='0 1 0 0.78539816339745'>
 								<LOD center="0 0 0" range="10">
 									<Group>
 										<Shape USE="Payment_SHAPE">	</Shape>
@@ -123,11 +123,15 @@
 								</LOD>
 							</Transform>
 							<!-- Balloon : Say Hello -->
-							<Transform translation='30 2 2.2' rotation='0 1 0 -2.0943951023932'>
+							<Transform translation='30 2.2 2.2' rotation='0 1 0 -0.5235987755983'>
 								<LOD center="0 0 0" range="10">
 									<Group>
-										<Shape>
-											<Box size="0.5 0.5 0.5" />
+										<Shape DEF="Hello_SHAPE">
+											<Appearance>
+												<ImageTexture DEF='Hello_IMAGE' url='scenes/textures/balloons/balloon-hello.png' repeatS='false' repeatT='false' />
+												<TextureTransform DEF='Hello_TextureTransform' scale='1 1' containerField='textureTransform'/>
+											</Appearance>
+											<Box size="2.5 0.8 0.001" />
 										</Shape>
 									</Group>
 									<WorldInfo info='"null node"'/>
