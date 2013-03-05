@@ -4,6 +4,7 @@
 function productslist(v_pcid, v_search, v_shelf, v_page)
 {
 	$('#products').modal('show');
+	$('#products').animate({'top':'320px'}, 500);
 	$('#p_search').val('');
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
 	console.log(v_shelf);
@@ -22,6 +23,7 @@ function productslist(v_pcid, v_search, v_shelf, v_page)
 */
 function productsdetail(v_pid, v_pcid, v_shelf, v_search)
 {
+	$('#products').animate({'top':'280px'}, 500);
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
 	$.get('./ajax.php?p=products.detail&t=page', {
 		pid: v_pid,
