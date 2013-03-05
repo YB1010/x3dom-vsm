@@ -4,11 +4,6 @@
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 		<h3 id="myModalLabel">
 			รายการสินค้า
-
-			<div class="input-append pull-right">
-				<input type="text" id="p_search">
-				<button type="button" class="btn" onClick="productslist($('#pcid').val(), $('#p_search').val(), 1)">ค้นหา</button>
-			</div>
 		</h3>
 	</div>
 	
