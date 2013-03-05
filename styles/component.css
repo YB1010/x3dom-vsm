@@ -9,7 +9,7 @@
 	width: 250px;
 	float: left;
 	z-index: 1;
-	margin: 0 0 0 20px;
+	margin: -5px 0 0 20px;
 	-webkit-perspective: 1800px;
 	-moz-perspective: 1800px;
 	perspective: 1800px;
@@ -324,6 +324,7 @@
 .book-1 .bk-cover {
 	background-image: url(../images/products/A001.jpg);
 	background-size: 100% 100%;
+	cursor: pointer;
 }
 
 .book-1 .bk-cover h2 {

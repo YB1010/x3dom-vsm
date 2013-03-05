@@ -3,14 +3,14 @@
 	$result = mysql_query($query);
 	$rows = mysql_fetch_array($result);
 ?>
-<ul class="breadcrumb" style="padding-left: 10px;">
+<ul class="breadcrumb">
 	<li>
 		<a href="javascript: productslist('<?php echo $_GET['pcid'] == ''? "":$_GET['pcid']; ?>', '<?php echo $_GET['q'] == ''? "":$_GET['q']; ?>', '<?php echo $_GET['shelf'] == ''? "":$_GET['shelf']; ?>', 1)">
 			<?php echo $_GET['pcid'] == ''? "ผลการค้นหา":$rows['ProductCategoryName']; ?>
 		</a>
 		<span class="divider">/</span>
 	</li>
-	<li class="active"><?php echo $rows['ProductName']; ?></li>
+	<li class="active"><?php echo $rows['ProductName']; // echo mb_substr($rows['ProductName'], 0, 50,'UTF-8'); ?></li>
 </ul><br>
 <div class="row-fluid">
 	<div class="span7">
@@ -66,7 +66,7 @@
 					<div class="bk-bottom"></div>
 				</div>
 				<div class="bk-info">
-					<a class="btn btn-block btn-primary bk-bookview">ดูรายละเอียด</a>
+					<a class="btn btn-block btn-primary bk-bookview">เปิดดูหนังสือ</a>
 				</div>
 			</li>
 		</ul>

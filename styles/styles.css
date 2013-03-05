@@ -124,6 +124,14 @@ body
 	margin-right: 50px;
 }
 
+#products .breadcrumb {
+	padding-left: 10px;
+	white-space: nowrap;
+	width: 520px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
 
 /* ----------------------------------------------------------------------------------------------------------------------------
 == SHELF
