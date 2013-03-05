@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN" "http://www.web3d.org/specifications/x3d-3.0.dtd">
+<X3D version="3.0" profile="Immersive" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:noNamespaceSchemaLocation="http://www.web3d.org/specifications/x3d-3.0.xsd">
+	<Scene>
+		<Collision enabled="false">
+			<Transform DEF="Shelf_TRANSFORM"
+			           translation="0.000000 0.000000 0.000000"
+			           scale="1.000000 1.000000 1.000000">
+				<Group DEF="Shelf_GROUP">
+					<Shape>
+						<Appearance DEF='Shelf_APPEARANCE'>
+							<Material diffuseColor='0.8 0.8 0.8' specularColor='0.8 0.8 0.8' shininess='1' />
+						</Appearance>
+						
+						<IndexedFaceSet solid='false' coordIndex='
+							0 3 4 7 -1
+							1 2 5 6 -1
+							2 9 14 5 -1
+							3 8 15 4 -1
+							9 10 13 14 -1
+							10 11 12 13 -1
+							8 11 12 15 -1'>
+							<Coordinate point='
+								0 0 0
+								0.6 0 0
+								0.6 0.15 0
+								0 0.15 0
+								0 0.15 1.2
+								0.6 0.15 1.2
+								0.6 0 1.2
+								0 0 1.2
+								0.29 0.15 0
+								0.31 0.15 0
+								0.31 1.3 0
+								0.29 1.3 0
+								0.29 1.3 1.2
+								0.31 1.3 1.2
+								0.31 0.15 1.2
+								0.29 0.15 1.2' />		
+						</IndexedFaceSet>
+					</Shape>
+
+					<Transform translation='0 0 0'>
+						<Group DEF='ShelfFloor_GROUP'>
+							<Transform translation='0.31 0.4 0'>
+								<Shape DEF='ShelfFloor'>
+									<Appearance USE='Shelf_APPEARANCE'></Appearance>
+									
+									<IndexedFaceSet solid='false' coordIndex='
+										2 3 4 5 -1
+										1 2 5 6 -1
+										0 3 4 7 -1'>
+										<Coordinate point='
+											0 0 0
+											0 0.02 0
+											0.29 0.02 0
+											0.29 0 0
+											0.29 0 1.2
+											0.29 0.02 1.2
+											0 0.02 1.2
+											0 0 1.2' />		
+									</IndexedFaceSet>
+								</Shape>
+							</Transform>
+
+							<Transform translation='0.31 0.67 0'>
+								<Shape USE='ShelfFloor'></Shape>
+							</Transform>
+
+							<Transform translation='0.31 0.94 0'>
+								<Shape USE='ShelfFloor'></Shape>
+							</Transform>
+
+							<Transform translation='0.31 1.21 0'>
+								<Shape USE='ShelfFloor'></Shape>
+							</Transform>
+						</Group>
+					</Transform>
+
+					<Transform translation='0.6 0 1.2' rotation='0 1 0 3.141592653589793'>
+						<Group USE='ShelfFloor_GROUP'></Group>
+					</Transform>
+
+					<Transform translation='0 0 -0.05'>
+						<Group DEF='OCShelf_GROUP'>
+							<Shape DEF='OCShelf'>
+								<Appearance USE='Shelf_APPEARANCE'></Appearance>
+								
+								<IndexedFaceSet solid='false' coordIndex='
+									0 1 2 3 -1
+									1 2 12 13 -1
+									1 6 14 13 -1
+									5 6 14 15 -1
+									2 5 15 12 -1
+									10 11 12 13 -1
+									9 10 13 14 -1
+									8 9 14 15 -1
+									8 11 12 15 -1
+									0 3 11 10 -1
+									3 4 8 11 -1
+									4 7 9 8 -1
+									0 7 9 10 -1'>
+									<Coordinate point='
+										0 0 0
+										0.6 0 0
+										0.58 0.02 0
+										0.02 0.02 0
+										0.02 0.02 0.05
+										0.58 0.02 0.05
+										0.6 0 0.05
+										0 0 0.05
+										0.02 1.38 0.05
+										0 1.4 0.05
+										0 1.4 0
+										0.02 1.38 0
+										0.58 1.38 0
+										0.6 1.4 0
+										0.6 1.4 0.05
+										0.58 1.38 0.05' />		
+								</IndexedFaceSet>
+							</Shape>
+
+							<Shape DEF='OCShelfWall'>
+								<Appearance DEF='Wood_APPEARANCE'>
+									<ImageTexture DEF='OCShelfWall_IMAGE' url='textures/wood_maple.jpg' repeatS='true' repeatT='true' />
+									<TextureTransform DEF='OCShelfWall_TextureTransform'
+										center='0 0'
+										translation='0 0'
+										rotation='0'
+										scale='1 1' containerField='textureTransform'/>
+								</Appearance>
+								
+								<IndexedFaceSet solid='false' coordIndex='
+									0 1 6 5 -1
+									4 5 6 7 -1
+									2 3 4 7 -1'>
+									<Coordinate point='
+										0.02 0.02 0
+										0.58 0.02 0
+										0.58 0.02 0.05
+										0.02 0.02 0.05
+										0.02 1.3 0.05
+										0.02 1.3 0
+										0.58 1.3 0
+										0.58 1.3 0.05' />		
+								</IndexedFaceSet>
+							</Shape>
+						</Group>
+					</Transform>
+
+					<Transform translation='0.6 0 1.25' rotation='0 1 0 3.141592653589793'>
+						<Group USE='OCShelf_GROUP'></Group>
+					</Transform>
+
+
+				</Group>
+			</Transform>
+
+		</Collision>
+
+		<!-- 1.23 -->
+		<Transform translation="0.4 1.23 0">
+			<Transform translation='0 0 0.15' rotation='0 1 0 -0.39269908169873'>
+				<Group DEF="Book_GROUP">
+					<Shape DEF="TBSBook_SHAPE">
+						<Appearance>
+							<Material ambientIntensity='0.2' diffuseColor='1 1 1' specularColor='1 1 1' />
+						</Appearance>
+						<IndexedFaceSet solid='false' coordIndex='4 5 6 7 -1 2 3 4 5 -1 0 1 6 7 -1 0 3 4 7 -1'>
+							<Coordinate point='0 0 0, 0.04 0 0, 0.04 0 0.2, 0 0 0.2, 0 0.25 0.2, 0.04 0.25 0.2, 0.04 0.25 0, 0 0.25 0' />
+						</IndexedFaceSet>
+					</Shape>
+
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D001.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform DEF='Book_TextureTransform'
+									center='0 0'
+									translation='0 -0.8'
+									rotation='1.5707963267949'
+									scale='1 1' containerField='textureTransform'/>
+							</Appearance>
+							<IndexedFaceSet DEF="FrontPage_IndexedFaceSet" solid='false' coordIndex='0 1 2 3 -1'>
+								<Coordinate point='0.04 0 0, 0.04 0 0.2, 0.04 0.25 0.2, 0.04 0.25 0' />
+							</IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D001.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D001.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D001.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<Transform translation="0.2 1.23 0.15">
+			<Transform translation='0 0 0.15' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D002.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D002.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D002.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D002.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<!-- 0.96 -->
+		<Transform translation="0.4 0.96 0">
+			<Transform translation='0 0 0.15' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D003.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D003.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D003.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D003.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<Transform translation="0.2 0.96 0.15">
+			<Transform translation='0 0 0.15' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D004.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D004.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D004.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D004.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<!-- 0.69 -->
+		<Transform translation="0.4 0.69 0">
+			<Transform translation='0 0 0.15' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D005.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D005.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D005.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D005.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<Transform translation="0.2 0.69 0.15">
+			<Transform translation='0 0 0.15' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D006.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D006.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D006.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D006.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<!-- 0.42 -->
+		<Transform translation="0.4 0.42 0">
+			<Transform translation='0 0 0.15' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D007.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D007.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D007.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D007.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<Transform translation="0.2 0.42 0.15">
+			<Transform translation='0 0 0.15' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D008.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D008.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D008.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D008.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<!-- 0.15 -->
+		<Transform translation="0.4 0.15 0">
+			<Transform translation='0 0 0.15' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D009.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D009.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D009.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 -0.39269908169873'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D009.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+		<Transform translation="0.2 0.15 0.15">
+			<Transform translation='0 0 0.15' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D010.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.4' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D010.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.65' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D010.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+			<Transform translation='0 0 0.9' rotation='0 1 0 2.74889357189106'>
+				<Group>
+					<Shape USE="TBSBook_SHAPE"></Shape>
+					<Transform DEF="FrontPage_TRANSFORM" translation="0 0 0" scale="1 1 1" rotation="0 1 0 0">
+						<Shape>
+							<Appearance>
+								<ImageTexture DEF='FrontPage_IMAGE' url='../images/products/D010.jpg' repeatS='false' repeatT='false' />
+								<TextureTransform USE='Book_TextureTransform'/>
+							</Appearance>
+							<IndexedFaceSet USE="FrontPage_IndexedFaceSet"></IndexedFaceSet>
+						</Shape>
+					</Transform>
+				</Group>
+			</Transform>
+		</Transform>
+
+	</Scene>
+</X3D>
+
