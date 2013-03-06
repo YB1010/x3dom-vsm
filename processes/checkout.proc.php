@@ -19,7 +19,7 @@
 			include './processes/clearcart.proc.php';
 			?>
 				<div class="alert alert-success">
-					<h3>บันทุกรายการสั่งซื้อสำเร็จ</h3>
+					<h3>บันทึกรายการสั่งซื้อสำเร็จ</h3>
 					<p>กรุณากด <a href="home.php">ที่นี่</a> เพื่อไปยังหน้าแรก</p>
 				</div>
 				<div class="alert">
@@ -30,7 +30,7 @@
 		} else {
 			?>
 				<div class="alert alert-error">
-					<h3>บันทุกรายการสั่งซื้อสินค้าไม่สำเร็จ</h3>
+					<h3>บันทึกรายการสั่งซื้อสินค้าไม่สำเร็จ</h3>
 					<p>กรุณาตรวจสอบการทำรายการของท่าน</p>
 				</div>
 			<?php
