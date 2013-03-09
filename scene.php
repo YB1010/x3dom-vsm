@@ -53,7 +53,7 @@
 			</div>
 		</header>
 
-					<X3D id='x3dom-scene' showStat='false'>
+					<X3D id='x3dom-scene' showStat='true'>
 						<Scene>
 
 							<NavigationInfo headlight="true"
