@@ -56,6 +56,18 @@ function cartlist(v_search)
 } // End function.
 
 /**
+	This function is processes to get Screen resolution into input tags.
+*/
+function checkout()
+{
+	$('#screenWidth').val($('#x3dom-scene').width());
+	$('#screenHeight').val($('#x3dom-scene').height());
+	// $('#windowWidth').val($(document).width());
+	// $('#windowHeight').val($(document).height());
+	document.getElementById('hidedata').submit();
+} // End function.
+
+/**
 	This function is alert date in modal ID lightbox (It's about alert msg or someting like that.).
 */
 function alertLightbox(filepath)

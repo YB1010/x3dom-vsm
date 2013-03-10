@@ -34,7 +34,13 @@
 
 	<div class="modal-footer">
 		<button class="btn" data-dismiss="modal" aria-hidden="true">ปิด</button>
-		<a href="home.php?p=checkout" class="btn btn-primary" id="orderbtn">สั่งซื้อ</a>
+		<a href="javascript:;" onclick="checkout()" class="btn btn-primary" id="orderbtn">สั่งซื้อ</a>
+		<form id="hidedata" action="home.php?p=checkout" method="post">
+			<input type="hidden" id="screenWidth" name="screenWidth">
+			<input type="hidden" id="screenHeight" name="screenHeight">
+			<input type="hidden" id="windowWidth" name="windowWidth">
+			<input type="hidden" id="windowHeight" name="windowHeight">
+		</form>
 	</div>
 </div>
 
