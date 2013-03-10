@@ -408,6 +408,12 @@
 				<p>โทร.0-2160-5301 แฟ็กซ์ 0-2160-5304</p>
 				<p>เวลาเปิดบริการ<br>จันทร์ - ศุกร์ เวลา 11.00 - 20.00 น.<br>เสาร์ - อาทิตย์ เวลา 10.30 - 20.00 น.</p>
 			</section>
+
+			<audio controls autoplay loop>
+				<source src="assets/firstlove_acoustic.ogv" type="audio/ogg">
+				<source src="assets/firstlove_acoustic.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio> 
 		</aside>
 
 		<footer class='navbar navbar-fixed-bottom'>
