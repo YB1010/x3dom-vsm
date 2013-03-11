@@ -14,7 +14,7 @@
 			$query .= "('".$orderid."', '".$value['ID']."', ".$value['qty'].", ".($value['qty']*$value['price']).")";
 		} // End foreach.
 		$result = mysql_query($query);
-		print_r($_POST);
+		//print_r($_POST);
 
 		if ($result) {
 			include './processes/clearcart.proc.php';
