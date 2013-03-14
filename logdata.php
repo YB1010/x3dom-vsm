@@ -1,4 +1,5 @@
 <?php
-	echo "Screen width: ".$_GET['sw']."<br>"; // Screen width.
-	echo "Screen height: ".$_GET['sh']; // Screen width.
+	print_r($_POST);
+	echo "Screen width: ".$_POST['screenWidth']."<br>"; // Screen width.
+	echo "Screen height: ".$_POST['screenHeight']; // Screen width.
 ?>

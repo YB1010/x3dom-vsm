@@ -38,8 +38,8 @@
 		<form id="hidedata" action="home.php?p=checkout" method="post">
 			<input type="hidden" id="screenWidth" name="screenWidth">
 			<input type="hidden" id="screenHeight" name="screenHeight">
-			<input type="hidden" id="windowWidth" name="windowWidth">
-			<input type="hidden" id="windowHeight" name="windowHeight">
+			<!-- <input type="hidden" id="windowWidth" name="windowWidth">
+			<input type="hidden" id="windowHeight" name="windowHeight"> -->
 		</form>
 	</div>
 </div>
