@@ -9,26 +9,22 @@
 
 		<title>Chulabook Virtual Store</title>
 		
-		<link rel="shortcut icon" href="styles/favicon/fav.ico" type="image/x-icon"/>
-		<link rel="stylesheet" type="text/css" href="scripts/x3dom-1.5/x3dom.css" />
-		<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+		<link rel="shortcut icon" href="./styles/favicon/fav.ico" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="./scripts/x3dom-1.5/x3dom.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/reset.css" />
 		<!--
 		<link rel="stylesheet" type="text/css" href="styles/text.css" />
 		-->
-		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' />
-		<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+		<link rel='stylesheet' type='text/css' href='./bootstrap/css/bootstrap.min.css' />
+		<link rel="stylesheet" type="text/css" href="./styles/styles.css" />
 		<link rel="stylesheet" type="text/css" href="./styles/component.css">
-	
-		<script type='text/javascript' src='scripts/x3dom-1.5/x3dom-full.js'></script>
 	</head>
 	<body>
 
 		<header class='navbar navbar-fixed-top'>
 			<div class='navbar-inner'>
 				<nav class='container'>
-					<a class="brand" href="#">
-						Chulabook Virtual Store
-					</a>
+					<a class="brand" href="#">Chulabook Virtual Store</a>
 					<ul class='nav'>
 						<li>
 							<a href="javascript: cartlist('')">
@@ -408,6 +404,12 @@
 				<p>โทร.0-2160-5301 แฟ็กซ์ 0-2160-5304</p>
 				<p>เวลาเปิดบริการ<br>จันทร์ - ศุกร์ เวลา 11.00 - 20.00 น.<br>เสาร์ - อาทิตย์ เวลา 10.30 - 20.00 น.</p>
 			</section>
+
+			<audio controls autoplay loop>
+				<source src="assets/firstlove_acoustic.ogv" type="audio/ogg">
+				<source src="assets/firstlove_acoustic.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
 		</aside>
 
 		<footer class='navbar navbar-fixed-bottom'>
@@ -428,12 +430,12 @@
 		<?php include './pages/modal.page.php'; ?>
 	</body>
 
+	<script type='text/javascript' src='./scripts/x3dom-1.5/x3dom-full.js'></script>
 	<script src="./js/jquery-1.8.2.min.js"></script>
-	<script type='text/javascript' src='bootstrap/js/bootstrap.min.js'></script>
+	<script type='text/javascript' src='./bootstrap/js/bootstrap.min.js'></script>
 	<script type='text/javascript' src='./js/javascript.js'></script>
-	<script type="text/javascript" src="scripts/keyevents.js"></script>
-
-	<script src="./js/modernizr.custom.js"></script>
+	<script type="text/javascript" src="./scripts/keyevents.js"></script>
+	<script type="text/javascript" src="./js/modernizr.custom.js"></script>
 	
 
 	<script type='text/javascript'>
