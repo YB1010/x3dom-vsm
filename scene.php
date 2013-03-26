@@ -27,7 +27,7 @@
 					<a class="brand" href="#">Chulabook Virtual Store</a>
 					<ul class='nav'>
 						<li>
-							<a href="javascript: cartlist('')">
+							<a href="javascript: return false;">
 								สินค้าในรถเข็น ( <span id="qty">
 								<?php
 									$qty = 0;

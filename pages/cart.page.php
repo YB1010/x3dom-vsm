@@ -1,5 +1,5 @@
 <?php if (!isset($_SESSION['vx_cart']) || count($_SESSION['vx_cart']) == 0) { ?>
-	<div class="alert">
+	<div class="alert alert-error">
 		<h4>ไม่มีสินค้าอยู่ในรายการ</h4>
 	</div>
 <?php } else {
@@ -10,7 +10,16 @@
 		
 		// Check amount products when search product in cart.
 		foreach ($_SESSION['vx_cart'] as $key => $value) {
-			if ((isset($_POST['q']) && $_POST['q'] != '') && (stripos($value['name'], $_POST['q']) !== false || stripos($vlue['author'], $_POST['q']) !== false))
+			/* Count category */
+			$cat = substr($value['ID'], 0, 1);
+			$ckcat = array();
+			if (!isset($ckcat[$cat])) {
+				$ckcat[$cat] = 1;
+			} // End if-else.
+
+			/* Check searching's qty */
+			if ((isset($_POST['q']) && $_POST['q'] != '') 
+				&& (stripos($value['name'], $_POST['q']) !== false || stripos($vlue['author'], $_POST['q']) !== false))
 				$cnt++;
 			$sumprice += ($value['qty'] * $value['price']) - ($value['qty'] * $value['discount']);
 		} // End foreach.
@@ -50,6 +59,12 @@
 	<?php } else { ?>
 		<div class="alert alert-error">
 			<h4>ไม่มีสินค้าที่ค้นหาอยู่ในรายการสินค้า</h4>
+		</div>
+	<?php } ?>
+
+	<?php if (count($ckcat[$cat]) < 5) { ?>
+		<div class="alert alert-error">
+			<h4>กรุณาซื้อหนังสือไม่ต่ำกว่า 5 หมวด</h4>
 		</div>
 	<?php } ?>
 <?php } ?>

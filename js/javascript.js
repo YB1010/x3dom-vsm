@@ -47,7 +47,7 @@ function cartlist(v_search)
 	}, function(data) {
 		$('#cart > div.modal-body').html(data);
 
-		if (data.indexOf("ไม่มีสินค้า") >= 0) {
+		if (data.search("alert-error") >= 0) {
 			$('#orderbtn').hide();
 		}else {
 			$('#orderbtn').show();
