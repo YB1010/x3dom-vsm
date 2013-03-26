@@ -7,12 +7,12 @@
 		<p class="text-info">สวัสดีค่ะ ถ้าสินค้าถูกต้อง กดยืนยันได้เลยค่ะ</p>
 		<?php
 		$cnt = $sumprice = 0;
+		$ckcat = array();
 		
 		// Check amount products when search product in cart.
 		foreach ($_SESSION['vx_cart'] as $key => $value) {
 			/* Count category */
 			$cat = substr($value['ID'], 0, 1);
-			$ckcat = array();
 			if (!isset($ckcat[$cat])) {
 				$ckcat[$cat] = 1;
 			} // End if-else.
@@ -62,9 +62,9 @@
 		</div>
 	<?php } ?>
 
-	<?php if (count($ckcat[$cat]) < 5) { ?>
-		<div class="alert alert-error">
-			<h4>กรุณาซื้อหนังสือไม่ต่ำกว่า 5 หมวด</h4>
+	<?php if (count($ckcat) < 5) { ?>
+		<div class="alert alert-error" id="ckcat">
+			<h4>กรุณาซื้อหนังสือไม่ต่ำกว่า 5 หมวด ก่อนชำระเงินที่แคชเชียร์ค่ะ</h4>
 		</div>
 	<?php } ?>
 <?php } ?>

@@ -131,6 +131,15 @@ $(document).ready(function() {
 				$('#sumprice').removeClass().addClass('alert');
 				$('#orderbtn').hide();
 			} // End if.
+			if (arr[2] < 5) {
+				if ($('#ckcat').size() == 0) {
+					$('<div class="alert alert-error" id="ckcat"><h4>กรุณาซื้อหนังสือไม่ต่ำกว่า 5 หมวด ก่อนชำระเงินที่แคชเชียร์ค่ะ</h4></div>').insertAfter('#sumprice');
+				} // End if.
+				$('#ckcat').show();
+			} else {
+				$('#ckcat').hide();
+				$('#orderbtn').hide();
+			}
 			$('#qty').text(arr[0]);
 			$('#sumprice > h4').text(arr[1]);
 		});
