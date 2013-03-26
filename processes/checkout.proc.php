@@ -51,16 +51,16 @@
 			?>
 				<div class="alert alert-success">
 					<h3>บันทึกรายการสั่งซื้อสำเร็จ</h3>
-					<form id="hidedata" action="logdata.php" method="post">
+					<form id="hidedata" action="survey.php" method="post">
 						<img style="display: none;" src="./images/speedtest.jpg">
 						<input type="hidden" name="screenWidth" value="<?php echo $_POST['screenWidth']; ?>">
 						<input type="hidden" name="screenHeight" value="<?php echo $_POST['screenHeight']; ?>">
+						<input type="hidden" id="fps" name="fps" value="<?php echo $_POST['fps']; ?>">
 						<input type="hidden" id="speedinternet" name="speedinternet">
 					</form>
 					<p>
-						กรุณากด <a href="javascript: document.getElementById('hidedata').submit();">ที่นี่</a> 
-						<!-- &ww={{ echo $_POST['windowWidth']; }}&wh={{ echo $_POST['windowHeight']; }} -->
-						เพื่อทำการตอบแบบสอบถาม หรือ กด <a href="home.php">ที่นี่</a> เพื่อไปยังหน้าแรก
+						<a href="javascript: document.getElementById('hidedata').submit();">กรุณากด ที่นี่ เพื่อทำการตอบแบบสอบถาม</a><br>
+						หรือ กด <a href="home.php">ที่นี่</a> เพื่อไปยังหน้าแรก
 					</p>
 				</div>
 				<div class="alert">

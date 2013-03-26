@@ -24,7 +24,7 @@
 
 			<div class="input-append pull-right">
 				<input type="text" id="c_search">
-				<button type="button" class="btn" onClick="cartlist($('#c_search').val())">ค้นหา</button>
+				<button type="button" class="btn" onClick="cartlist($('#c_search').val())">ค้นหาในรถเข็น</button>
 			</div>
 		</h3>
 	</div>
@@ -38,6 +38,7 @@
 		<form id="hidedata" action="home.php?p=checkout" method="post">
 			<input type="hidden" id="screenWidth" name="screenWidth">
 			<input type="hidden" id="screenHeight" name="screenHeight">
+			<input type="hidden" id="fps" name="fps">
 			<!-- <input type="hidden" id="windowWidth" name="windowWidth">
 			<input type="hidden" id="windowHeight" name="windowHeight"> -->
 		</form>

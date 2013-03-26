@@ -7,6 +7,7 @@
 	<form action="./proc.php?p=checkout" method="post" class="form-horizontal">
 		<input type="hidden" name="screenWidth" value="<?php echo $_POST['screenWidth']; ?>">
 		<input type="hidden" name="screenHeight" value="<?php echo $_POST['screenHeight']; ?>">
+		<input type="hidden" id="fps" name="fps" value="<?php echo $_POST['fps']; ?>">
 		<!--
 		<input type="hidden" name="windowWidth" value="<?php echo $_POST['windowWidth']; ?>">
 		<input type="hidden" name="windowHeight" value="<?php echo $_POST['windowHeight']; ?>">
@@ -36,6 +37,7 @@
 			<div class="controls" style="margin-left: 90px">
 				<button type="submit" class="btn btn-large btn-block btn-success">ยืนยันการสั่งซื้อ</button>
 			</div>
+			<p>ใส่ข้อมูลใด ๆ เพื่อทดลองไม่ใช่การสั่งซื้อจริง</p>
 		</div>
 	</form>
 </div>

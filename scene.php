@@ -44,7 +44,7 @@
 					</ul>
 
 					<form class='navbar-search pull-right' onSubmit="javascript: return false">
-						<input type='text' class='search-query span2' id="hp-search" placeholder='ค้นหา'>
+						<input type='text' class='search-query span2' id="hp-search" placeholder='ค้นหาหนังสือ'>
 					</form>
 				</nav>
 			</div>

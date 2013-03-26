@@ -2501,6 +2501,11 @@ x3dom.X3DCanvas.prototype.tick = function() {
           console.log("fps = " + fps + " fps_counter = " + fps_counter + " fps_avg = " + fps_avg);
         }
         /* End: Hassadee Pimsuwan | hapztron@gmail.com | Added */
+        /* Start - Chawinrot Niwateak : antana013@gmail.com : Added */
+        if (fps_avg == 4095) {
+            document.getElementById('fps').value = fps_avg;
+        } // End if.
+        /* End - Chawinrot Niwateak : antana013@gmail.com : Added */
 
         this.stateCanvas.addState("ANIM", animD);
         this.stateCanvas.update();
