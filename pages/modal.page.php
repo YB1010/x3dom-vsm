@@ -23,7 +23,7 @@
 			สินค้าในรถเข็น
 
 			<div class="input-append pull-right">
-				<input type="text" id="c_search">
+				<input type="text" id="c_search" class="span2">
 				<button type="button" class="btn" onClick="cartlist($('#c_search').val())">ค้นหาในรถเข็น</button>
 			</div>
 		</h3>
