@@ -7,7 +7,6 @@ function productslist(v_pcid, v_search, v_shelf, v_page)
 	$('#products').animate({'top':'320px'}, 500);
 	$('#p_search').val('');
 	$('div#products div.modal-body').html('<h3>Loading....</h3>').fadeIn();
-	console.log(v_shelf);
 	$.get('./ajax.php?p=products&t=page', {
 		pcid: v_pcid,
 		q: v_search,
@@ -80,6 +79,7 @@ function alertLightbox(filepath)
 }
 
 $(document).ready(function() {
+
 	/**
 		This processes is add product to cart.
 	*/

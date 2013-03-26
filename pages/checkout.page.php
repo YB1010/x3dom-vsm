@@ -37,7 +37,10 @@
 			<div class="controls" style="margin-left: 90px">
 				<button type="submit" class="btn btn-large btn-block btn-success">ยืนยันการสั่งซื้อ</button>
 			</div>
-			<p>ใส่ข้อมูลใด ๆ เพื่อทดลองไม่ใช่การสั่งซื้อจริง</p>
 		</div>
 	</form>
+	<div class="alert" style="width: 300px;">
+		<h4>*หมายเหตุ</h4>
+		<p>ใส่ข้อมูลใด ๆ เพื่อทดลองไม่ใช่การสั่งซื้อจริง และเพื่อแสดงลิงค์ไปยังแบบทดสอบ</p>
+	</div>
 </div>

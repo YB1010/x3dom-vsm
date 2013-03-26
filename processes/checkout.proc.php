@@ -27,6 +27,8 @@
 		timeSecond = parseFloat(diff) * 100;
 		$('#speedinternet').val(fileMb / timeSecond);
 	});
+
+	$('#qty').text('0');
 </script>
 
 <?php
@@ -59,7 +61,7 @@
 						<input type="hidden" id="speedinternet" name="speedinternet">
 					</form>
 					<p>
-						<a href="javascript: document.getElementById('hidedata').submit();">กรุณากด ที่นี่ เพื่อทำการตอบแบบสอบถาม</a><br>
+						&gt;&gt;&gt; <a href="javascript: document.getElementById('hidedata').submit();" class="lead">กรุณาคลิกที่นี่เพื่อทำการตอบแบบสอบถาม</a> &lt;&lt;&lt;<br><br>
 						หรือ กด <a href="home.php">ที่นี่</a> เพื่อไปยังหน้าแรก
 					</p>
 				</div>
