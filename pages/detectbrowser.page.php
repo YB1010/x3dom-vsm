@@ -7,7 +7,7 @@
 	<aside class='span'>
 		<div class="alert alert-error" id="ckcat">
 			<h3>ไม่สามารถเปิดหน้าเว็บนี้ได้</h3>
-			<p>ต้องทำการเปิดเว็บไซต์นี้ผ่านทางเว็บเบราเซอร์ Chrome เท่านั้น สามารถดาน์วโหลดได้ <a href="http://www.google.com/chrome">ที่นี่</a></p>
+			<p>ต้องทำการเปิดเว็บไซต์นี้ผ่านทางเว็บเบราเซอร์ Chrome เท่านั้น สามารถดาวน์โหลดได้ <a href="http://www.google.com/chrome">ที่นี่</a></p>
 		</div>
 	</aside>
 </div>
