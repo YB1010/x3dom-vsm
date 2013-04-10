@@ -35,7 +35,7 @@
 		if ($cnt != 0 || $sumprice != 0) {
 			// Show products in cart.
 			foreach ($_SESSION['vx_cart'] as $key => $value) {
-				if ((isset($_POST['q']) && $_POST['q'] != '') && (stripos($value['name'], $_POST['q']) === false && stripos($vlue['author'], $_POST['q']) === false))
+				if ((isset($_POST['q']) && $_POST['q'] != '') && (stripos($value['name'], $_POST['q']) === false && stripos($value['author'], $_POST['q']) === false))
 					continue;
 		?>
 			<div class="row-fluid">
