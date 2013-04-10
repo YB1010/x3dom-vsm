@@ -19,7 +19,7 @@
 
 			/* Check searching's qty */
 			if ((isset($_POST['q']) && $_POST['q'] != '') 
-				&& (stripos($value['name'], $_POST['q']) !== false || stripos($vlue['author'], $_POST['q']) !== false))
+				&& (stripos($value['name'], $_POST['q']) !== false || stripos($value['author'], $_POST['q']) !== false))
 				$cnt++;
 			$sumprice += ($value['qty'] * $value['price']) - ($value['qty'] * $value['discount']);
 		} // End foreach.

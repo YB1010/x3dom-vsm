@@ -5,12 +5,12 @@
 <div class="span4">
 	<h3>รายละเอียดผู้สั่งซื้อ</h3><hr style="width: 320px">
 	<form action="./proc.php?p=checkout" method="post" class="form-horizontal">
-		<input type="hidden" name="screenWidth" value="<?php echo $_POST['screenWidth']; ?>">
-		<input type="hidden" name="screenHeight" value="<?php echo $_POST['screenHeight']; ?>">
-		<input type="hidden" id="fps" name="fps" value="<?php echo $_POST['fps']; ?>">
+		<input type="hidden" name="screenWidth" value="<?php echo isset($_POST['screenWidth'])?$_POST['screenWidth']:''; ?>">
+		<input type="hidden" name="screenHeight" value="<?php echo isset($_POST['screenHeight'])? $_POST['screenHeight']: ''; ?>">
+		<input type="hidden" id="fps" name="fps" value="<?php echo isset($_POST['fps'])?$_POST['fps']:''; ?>">
 		<!--
-		<input type="hidden" name="windowWidth" value="<?php echo $_POST['windowWidth']; ?>">
-		<input type="hidden" name="windowHeight" value="<?php echo $_POST['windowHeight']; ?>">
+		<input type="hidden" name="windowWidth" value="<?php echo isset($_POST['windowWidth'])?$_POST['windowWidth']:''; ?>">
+		<input type="hidden" name="windowHeight" value="<?php echo isset($_POST['windowHeight'])?$_POST['windowHeight']:''; ?>">
 		-->
 		<div class="control-group">
 			<label class="control-label" for="inputName" style="width: 80px">ชื่อ - นามสกุล</label>

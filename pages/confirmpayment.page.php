@@ -3,7 +3,7 @@
 	<div class="control-group">
 		<label class="control-label" for="inputOrderID">หมายเลขใบสั่งซื้อ</label>
 		<div class="controls">
-			<input class="span10" type="text" id="inputOrderID" name="orderid" required="required" placeholder="หนายเลขใบสั่งซื้อ">
+			<input class="span10" type="text" id="inputOrderID" name="orderid" required="required" placeholder="หมายเลขใบสั่งซื้อ">
 		</div>
 	</div>
 
